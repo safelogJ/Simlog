@@ -1,0 +1,11 @@
+NOTICE
+
+This application includes open source and third-party libraries:
+
+1. MPAndroidChart (https://github.com/PhilJay/MPAndroidChart/)
+   Licensed under the Apache License, Version 2.0.
+   Author: Philipp Jahoda (PhilJay)
+
+2. Free data Animation (https://lottiefiles.com/free-animation/data-V8HWwl7oWO)
+   Licensed under the Lottie Simple License (FL 9.13.21)
+   Author: Revital Cahani
