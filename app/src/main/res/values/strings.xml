@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Simlog</string>
+    <string name="start_button_ok" translatable="false">OK</string>
+    <string name="start_button_notice" translatable="false">Notice</string>
+    <string name="start_button_privacy" translatable="false">Privacy</string>
+    <string name="start_button_permit" translatable="false">Permit</string>
+    <string name="start_promo_text">Allow Ads</string>
+    <string name="choose_button_left" translatable="false">start collect</string>
+    <string name="choose_button_right" translatable="false">open chart</string>
+    <string name="collect_button" translatable="false">stop collect</string>
+    <string name="sim_slot" translatable="false">SIM_</string>
+    <string name="file_read_error">FAILED TO READ FILE.</string>
+    <string name="no_data_to_display">NO DATA TO DISPLAY.</string>
+    <string name="no_data_files">No data files.</string>
+    <string name="need_choose_sim">Need to choose sim cards.</string>
+    <string name="permission_denied">Permission denied.</string>
+    <string name="stop_collect">To exit, stop the generator.</string>
+    <string name="subscription_error">The device does not support the functionality of the application.</string>
+    <string name="collecting_time">Run time :</string>
+    <string name="collecting_write_lines">All data :</string>
+    <string name="collecting_errors">All errors :</string>
+    <string name="collecting_day">d</string>
+    <string name="collecting_hour">h</string>
+    <string name="collecting_min">m</string>
+    <string name="collecting_sec">s</string>
+    <string name="sim_list">sim list</string>
+
+    <string name="permit"><![CDATA[<br><br><b>The app processes the following types of data:</b><br><br>
+<em>1. Mobile network signal strength.</em><br>
+<em>2. Data transfer type.</em><br>
+<em>3. Slot number of the active SIM card.</em><br>
+<em>4. SIM card name.</em><br><br>
+To retrieve this SIM card-related data, the app will request permission to<b> manage calls.</b><br><br>
+For more details, click on the <b>Privacy icon.</b><br><br>
+]]></string>
+
+    <string name="notice"><![CDATA[<br><br><b>This app includes open source and third-party libraries:</b><br><br>
+1. <b>MPAndroidChart</b> <a href="https://github.com/PhilJay/MPAndroidChart/">https://github.com/PhilJay/MPAndroidChart/</a><br>
+   Licensed under the Apache License, Version 2.0.<br>
+   <b>Author:</b> Philipp Jahoda (PhilJay)<br><br>
+2. <b>Free data Animation</b> <a href="https://lottiefiles.com/free-animation/data-V8HWwl7oWO">https://lottiefiles.com/free-animation/data-V8HWwl7oWO</a><br>
+   Licensed under the Lottie Simple License (FL 9.13.21)<br>
+   <b>Author:</b> Revital Cahani <br><br>
+<b>The following data type notations are used in the app:</b> <br><br>
+<font color="#E040FB"><b> 5G </b></font> - it means NR (New Radio) <br>
+<font color="#2962FF"><b> 4G </b></font> - it means LTE <br>
+<font color="#00E676"><b> 3G </b></font> - it means one of HSDPA, HSUPA, HSPA, EVDO_B, EHRPD, UMTS. <br>
+<font color="#E53935"><b> 2G </b></font> - it means one of EDGE, GPRS, CDMA, 1xRTT, IDEN. <br>
+<font color="#795548"><b> xG </b></font> - it means unknown, because no data transfer.<br><br>
+<b>The app is not a measurement tool.</b><br>
+The data displayed on the graphs is generated, taking into account the information received from your device. And may differ from the actual data.<br><br>
+]]></string>
+
+    <string name="privacy"><![CDATA[
+<br><br><b>Full Privacy Policy <a href="https://66">Here</a></b>
+<br><br>
+Last updated: January 01, 2025<br><br>
+<b>Collection and Use Data</b><br><br>
+Types of Data Collected : Usage Data:<br><br>
+Usage Data is collected automatically when you use the Service.<br><br>
+Usage Data may include information such as the time and date of use of the app,
+time spent in the app, the number of active SIM cards in the phone, the name of the SIM card,
+the signal strength of the SIM card, the type of data transfer used by the SIM card.<br><br>
+The collected data is used only in the app itself, including in the user interface.<br><br>
+The SIM card slot number and name are used to display to the user the active SIM cards with which the app can work.<br>
+The SIM card slot number and name are used in the name of the files created by the app,
+ which store the history of changes in the network signal strength and the type of data transfer.<br><br>
+The data in the files is stored in the format (minute per day, data transfer type, network signal strength).<br><br>
+<b>Storage of your personal data:</b><br><br>
+The Company does not store your personal or other data.<br>
+Usage data is stored on your device in the app folder (/Android/data/com.safelogj.simlog/files/).<br><br>
+<b>Delete your collected data:</b><br><br>
+You have the right to delete all files with collected data in the app folder (/Android/data/com.safelogj.simlog/files/).<br><br>
+<b>Links to other sites:</b><br><br>
+Our Service may contain links to other websites that are not operated by Us.<br>
+If you click on a third party link, you will be redirected to that third party\'s site.<br>
+We strongly encourage you to review the Privacy Policy of every site you visit.<br><br>
+We have no control over, and are not responsible for, the content, privacy policies, or practices of any third party sites or services.<br><br>
+<b>Contact Us:</b><br><br>
+If you have any questions about this Privacy Policy, you can contact us:<br><br>
+By email: morebass304@gmail.com<br><br>
+]]></string>
+
+</resources>

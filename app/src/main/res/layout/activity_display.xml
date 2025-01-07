@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/displayView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background">
+
+    <Spinner
+        android:id="@+id/spinner_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="12dp"
+        android:background="@drawable/spinner_background_selector"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/displayGuideline_1"
+        app:layout_constraintEnd_toEndOf="@+id/chart_1"
+        app:layout_constraintStart_toStartOf="@+id/chart_1"
+        app:layout_constraintTop_toTopOf="@+id/displayGuideline_0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/displayGuideline_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.01" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/displayGuideline_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/displayGuideline_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/displayGuideline_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.57" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chart_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/displayGuideline_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/displayGuideline_1"
+        app:layout_constraintWidth_percent="1" />
+
+    <LinearLayout
+        android:id="@+id/linearLegend_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/chart_1"
+        app:layout_constraintEnd_toEndOf="@+id/chart_1"
+        app:layout_constraintStart_toStartOf="@+id/chart_1"></LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="12dp"
+        android:background="@drawable/spinner_background_selector"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/displayGuideline_3"
+        app:layout_constraintEnd_toEndOf="@+id/chart_1"
+        app:layout_constraintStart_toStartOf="@+id/chart_1"
+        app:layout_constraintTop_toTopOf="@+id/displayGuideline_2" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chart_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/displayBtnGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayGuideline_3"
+        app:layout_constraintWidth_percent="1" />
+
+    <LinearLayout
+        android:id="@+id/linearLegend_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/chart_2"
+        app:layout_constraintEnd_toEndOf="@+id/chart_2"
+        app:layout_constraintStart_toStartOf="@+id/chart_2"></LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/displayGuideRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/displayGuideLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/displayBtnGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.99" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

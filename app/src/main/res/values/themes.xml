@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Simlog" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="floatingActionButtonStyle">@style/Widget.App.FloatingActionButton</item>
+    </style>
+
+    <style name="Theme.Simlog" parent="Base.Theme.Simlog" />
+
+    <style name="Widget.App.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/blue_500</item>
+        <item name="rippleColor">@color/light_blue_200</item>
+        <item name="tint">@color/no_data</item>
+        <item name="strokeColor">@color/black2</item> <!-- Цвет рамки -->
+        <item name="strokeWidth">42dp</item> <!-- Ширина рамки -->
+    </style>
+</resources>

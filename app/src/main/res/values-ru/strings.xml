@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Simlog</string>
+    <string name="start_promo_text">Реклама</string>
+    <string name="file_read_error">ОШИБКА ПРИ ЧТЕНИИ ФАЙЛА.</string>
+    <string name="no_data_to_display">НЕТ ДАННЫХ.</string>
+    <string name="no_data_files">Не найдено файлов.</string>
+    <string name="need_choose_sim">Выберите сим-карту.</string>
+    <string name="permission_denied">Разрешение не получено.</string>
+    <string name="stop_collect">Для выхода, остановите генератор.</string>
+    <string name="subscription_error">Устройство не поддерживает функционал приложения.</string>
+    <string name="collecting_time">Время работы :</string>
+    <string name="collecting_write_lines">Всего данных :</string>
+    <string name="collecting_errors">Ошибки :</string>
+    <string name="collecting_day">д</string>
+    <string name="collecting_hour">ч</string>
+    <string name="collecting_min">м</string>
+    <string name="collecting_sec">с</string>
+    <string name="sim_list">sim list</string>
+
+    <string name="permit"><![CDATA[<br><br><b>Приложение обрабатывает следующие типы данных:</b><br><br>
+<em>1. Уровень сигнала мобильной сети.</em><br>
+<em>2. Тип передачи данных.</em><br>
+<em>3. Номер слота активной SIM-карты.</em><br>
+<em>4. Название SIM-карты.</em><br><br>
+Чтобы получить эти данные, связанные с SIM-картой, приложение запросит разрешение на<b> управление звонками.</b><br><br>
+Для получения более подробной информации нажмите на значок<b> «Конфиденциальность».</b><br><br>
+]]></string>
+
+    <string name="notice"><![CDATA[<br><br><b>Это приложение включает в себя библиотеки с открытым исходным кодом и сторонние библиотеки:</b><br><br>
+1. <b>MPAndroidChart</b> <a href="https://github.com/PhilJay/MPAndroidChart/">https://github.com/PhilJay/MPAndroidChart/</a><br>
+   Licensed under the Apache License, Version 2.0.<br>
+   <b>Автор:</b> Philipp Jahoda (PhilJay)<br><br>
+2. <b>Free data Animation</b> <a href="https://lottiefiles.com/free-animation/data-V8HWwl7oWO">https://lottiefiles.com/free-animation/data-V8HWwl7oWO</a><br>
+   Licensed under the Lottie Simple License (FL 9.13.21)<br>
+   <b>Автор:</b> Revital Cahani <br><br>
+<b>В приложении используются следующие обозначения типов данных:</b> <br><br>
+<font color="#E040FB"><b> 5G </b></font> - означает NR (New Radio) <br>
+<font color="#2962FF"><b> 4G </b></font> - означает LTE <br>
+<font color="#00E676"><b> 3G </b></font> - означает один из HSDPA, HSUPA, HSPA, EVDO_B, EHRPD, UMTS. <br>
+<font color="#E53935"><b> 2G </b></font> - означает один из EDGE, GPRS, CDMA, 1xRTT, IDEN. <br>
+<font color="#795548"><b> xG </b></font> - означает неизвестный тип, потому что нет передачи данных.<br><br>
+<b>Приложение не является инструментом измерения.</b><br>
+Данные отображаемые на графиках, являются сгенерированными, с учётом информации полученной от вашего устройства. И могут отличаться от действительных.<br><br>
+
+
+]]></string>
+
+    <string name="privacy"><![CDATA[<br><br><b>Полная Политика конфиденциальности <a href="https://66">Здесь</a></b>
+<br><br>
+Последнее обновление: 01 января 2025 г.<br><br>
+<b>Сбор и использование данных</b><br><br>
+Типы собираемых данных: Данные об использовании:<br><br>
+Данные об использовании собираются автоматически при использовании Сервиса.<br><br>
+Данные об использовании могут включать в себя такую информацию, как время и дата использования приложения,
+время, проведенное в приложении, количество активных SIM-карт в телефоне, имя SIM-карты,
+уровень сигнала и тип передачи данных используемый SIM-картой.<br><br>
+Собранные данные используются только в самом приложении, в том числе в пользовательском интерфейсе.<br><br>
+Номер и имя слота SIM-карты используются для отображения пользователю активных SIM-карт, с которыми может работать приложение.<br>
+Номер и имя слота SIM-карты используются в названии файлов, созданных приложением,
+которые хранят историю изменения уровня сигнала сети и тип передачи данных.<br><br>
+Данные в файлах хранятся в формате (номер минуты, тип передачи данных, уровень сигнала сети).<br><br>
+<b>Хранение ваших персональных данных:</b><br><br>
+Компания не хранит ваши персональные или иные данные.<br>
+Данные об использовании хранятся на вашем устройстве в папке приложения (/Android/data/com.safelogj.simlog/files/).<br><br>
+<b>Удаление ваших собранных данных:</b><br><br>
+Вы имеете право удалить все файлы с собранными данными в папке приложения (/Android/data/com.safelogj.simlog/files/).<br><br>
+<b>Ссылки на другие сайты:</b><br><br>
+Наш Сервис может содержать ссылки на другие веб-сайты, которые не управляются Нами.<br>
+Если вы нажмете на стороннюю ссылку, вы перенаправлены на сайт этой третьей стороны.<br>
+Мы настоятельно рекомендуем вам ознакомиться с Политикой конфиденциальности каждого посещаемого вами сайта.<br><br>
+Мы не контролируем и не несем ответственности за содержание, политику конфиденциальности или практику любых сторонних сайтов или служб.<br><br>
+<b>Свяжитесь с нами:</b><br><br>
+Если у вас есть какие-либо вопросы об этой Политике конфиденциальности, вы можете связаться с нами:<br><br>
+По электронной почте: morebass304@gmail.com<br><br>
+]]></string>
+</resources>

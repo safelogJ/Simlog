@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/startView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background">
+
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/switchAds"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:checked="false"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/start_promo_text"
+        android:textColor="@color/black2"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/startCenterGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/startGuideRight"
+        app:layout_constraintStart_toStartOf="@+id/startGuideLeft"
+        app:layout_constraintTop_toTopOf="parent"
+        app:thumbTint="@color/ads_thumb"
+        app:trackDecorationTint="@color/ads_track"
+        app:trackTint="@color/ads_tint" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startGuideRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startGuideLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startCenterGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startBtnGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/startActCardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardBackgroundColor="@color/no_data"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/startBtnGuideline"
+        app:layout_constraintEnd_toEndOf="@id/startGuideRight"
+        app:layout_constraintStart_toEndOf="@+id/startGuideLeft"
+        app:layout_constraintTop_toTopOf="@+id/startCenterGuideline">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/startTextView0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="serif"
+                android:gravity="center_vertical"
+                android:textColor="@color/black2"
+                android:textColorLink="@color/blue_500"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/startPermitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/start_button_permit"
+        android:onClick="setTextView0ByClick"
+        android:src="@drawable/start_button_permit"
+        app:elevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/startNoticeButton"
+        app:layout_constraintStart_toEndOf="@+id/startGuideLeft"
+        app:layout_constraintTop_toTopOf="@+id/startBtnGuideline" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/startNoticeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/start_button_notice"
+        android:onClick="setTextView0ByClick"
+        android:src="@drawable/start_button_notice"
+        app:elevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/startPrivacyButton"
+        app:layout_constraintStart_toEndOf="@+id/startPermitButton"
+        app:layout_constraintTop_toTopOf="@+id/startBtnGuideline" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/startPrivacyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/start_button_privacy"
+        android:onClick="setTextView0ByClick"
+        android:src="@drawable/start_button_privacy"
+        app:elevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/startOkButton"
+        app:layout_constraintStart_toEndOf="@+id/startNoticeButton"
+        app:layout_constraintTop_toTopOf="@+id/startBtnGuideline" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/startOkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/start_button_ok"
+        android:onClick="setTextView0ByClick"
+        android:src="@drawable/start_button_ok"
+        app:backgroundTint="@color/green_600"
+        app:elevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/startGuideRight"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@+id/startPrivacyButton"
+        app:layout_constraintTop_toTopOf="@+id/startBtnGuideline"
+        app:rippleColor="@color/green_100"
+        app:tint="@color/no_data" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
