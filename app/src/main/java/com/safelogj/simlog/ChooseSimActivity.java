@@ -144,8 +144,13 @@ public class ChooseSimActivity extends AppCompatActivity {
                 mDisplayedSims.add(simCard);
                 mLinearLayoutForSimCard.addView(LinearLayoutBuilder.createConstraintLayoutForSimCard(this, simCard));
             }
+
         } catch (Exception e) {
             Toast.makeText(this, getString(R.string.subscription_error), Toast.LENGTH_LONG).show();
+        }
+
+        if (mDisplayedSims.isEmpty()) {
+            Toast.makeText(this, getString(R.string.no_sim), Toast.LENGTH_LONG).show();
         }
     }
 

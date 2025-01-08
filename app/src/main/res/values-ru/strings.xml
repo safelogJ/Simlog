@@ -6,6 +6,7 @@
     <string name="no_data_to_display">НЕТ ДАННЫХ.</string>
     <string name="no_data_files">Не найдено файлов.</string>
     <string name="need_choose_sim">Выберите сим-карту.</string>
+    <string name="no_sim">Сим-карты не найдены.</string>
     <string name="permission_denied">Разрешение не получено.</string>
     <string name="stop_collect">Для выхода, остановите генератор.</string>
     <string name="subscription_error">Устройство не поддерживает функционал приложения.</string>

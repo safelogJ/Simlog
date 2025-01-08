@@ -13,6 +13,7 @@
     <string name="no_data_to_display">NO DATA TO DISPLAY.</string>
     <string name="no_data_files">No data files.</string>
     <string name="need_choose_sim">Need to choose sim cards.</string>
+    <string name="no_sim">SIM cards not found.</string>
     <string name="permission_denied">Permission denied.</string>
     <string name="stop_collect">To exit, stop the generator.</string>
     <string name="subscription_error">The device does not support the functionality of the application.</string>
