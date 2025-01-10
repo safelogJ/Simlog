@@ -5,6 +5,8 @@
     <string name="start_button_privacy" translatable="false">Privacy</string>
     <string name="start_button_permit" translatable="false">Permit</string>
     <string name="start_promo_text">Allow Ads</string>
+    <string name="ad_id_allow" translatable="false">Allow AD_ID</string>
+    <string name="ad_id_deny" translatable="false">Deny AD_ID</string>
     <string name="choose_button_left" translatable="false">start collect</string>
     <string name="choose_button_right" translatable="false">open chart</string>
     <string name="collect_button" translatable="false">stop collect</string>
@@ -25,6 +27,10 @@
     <string name="collecting_min">m</string>
     <string name="collecting_sec">s</string>
     <string name="sim_list">sim list</string>
+    <string name="ad_id_text"><![CDATA[<br><br>We use an advertising network to serve ads.<br><br>
+The advertising network may collect data, including your device\'s advertising identifier, to serve personalized ads.<br><br>
+You can <font color = "green"><b>allow</b></font> or <font color = "red"><b>turn off</b></font> ad personalization.<br><br>
+If you turn off personalization, we will only serve non-personalized ads.]]></string>
 
     <string name="permit"><![CDATA[<br><br><b>The app processes the following types of data:</b><br><br>
 <em>1. Mobile network signal strength.</em><br>

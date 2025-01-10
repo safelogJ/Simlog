@@ -20,13 +20,14 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.safelogj.simlog.databinding.ActivityStartBinding;
+import com.safelogj.simlog.helpers.AdsIdActivity;
 
 public class StartActivity extends AppCompatActivity {
 
-    private static final String ADS_KEY = "ads";
     private static final String TEXT_VIEW_0_KEY = "text_view0_key";
     private ActivityStartBinding mBinding;
     private int mTextViewNumber = 1;
+    private AppController mController;
 
 
     private final ActivityResultCallback<Boolean> requestDisplayFiles = isGranted -> {
@@ -50,27 +51,39 @@ public class StartActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        mController = (AppController) getApplication();
 
 
         mBinding.startOkButton.setOnClickListener(view -> {
-
             if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
                 requestPermissionLauncher.launch(android.Manifest.permission.READ_PHONE_STATE);
                 return;
             }
-
+            if (mController.isAllowAds()) {
+                mController.loadNativeAd(AdsId.CHOOSE_ACT_1.getId());
+            }
             startActivity(new Intent(this, ChooseSimActivity.class));
         });
 
         setTextView0ByNumber(mTextViewNumber);
         mBinding.startTextView0.setMovementMethod(LinkMovementMethod.getInstance());
+
+        mBinding.switchAds.setChecked(mController.isAllowAds());
         mBinding.switchAds.setOnClickListener(view -> {
             if (mBinding.switchAds.isChecked()) {
+                mController.setAllowAds(true);
+                mController.writeSetting();
                 mBinding.switchAds.setTextColor(getResources().getColor(R.color.blue_500, getTheme()));
+                startActivity(new Intent(this, AdsIdActivity.class));
+
             } else  {
                 mBinding.switchAds.setTextColor(getResources().getColor(R.color.black2, getTheme()));
+                mController.setAllowAdId(false);
+                mController.setAllowAds(false);
+                mController.writeSetting();
             }
         });
+
     }
 
     @Override

@@ -26,6 +26,8 @@ import com.safelogj.simlog.collecting.CollectActivity;
 import com.safelogj.simlog.collecting.SimCard;
 import com.safelogj.simlog.databinding.ActivityChooseSimBinding;
 import com.safelogj.simlog.displaying.DisplayActivity;
+import com.safelogj.simlog.helpers.LinearLayoutBuilder;
+import com.yandex.mobile.ads.nativeads.NativeAd;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -78,6 +80,9 @@ public class ChooseSimActivity extends AppCompatActivity {
             } else {
                 mController.setCheckedSims(mCheckedSims);
                 mController.startCollecting();
+              if (mController.isAllowAds()) {
+                  mController.loadNativeAd(AdsId.COLLECT_ACT_1.getId());
+              }
                 startActivity(new Intent(this, CollectActivity.class));
             }
         });
@@ -102,7 +107,16 @@ public class ChooseSimActivity extends AppCompatActivity {
                 }
             }
         }
+        if (mController.isAllowAds()) {
+            NativeAd nativeAd = mController.getNativeAd(AdsId.CHOOSE_ACT_1.getId());
+            if (nativeAd != null) mBinding.chooseNativeBanner.setAd(nativeAd);
+        }
+    }
 
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        if(mController.isAllowAds()) mController.loadNativeAd(AdsId.CHOOSE_ACT_1.getId());
     }
 
     @Override

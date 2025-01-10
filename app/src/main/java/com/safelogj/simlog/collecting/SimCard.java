@@ -2,7 +2,6 @@ package com.safelogj.simlog.collecting;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -40,6 +39,7 @@ public class SimCard extends AppCompatCheckBox {
         this.subscriptionId = subscriptionId;
     }
 
+
     public SimCard(@NonNull Context context) {
         super(context);
     }
@@ -66,14 +66,6 @@ public class SimCard extends AppCompatCheckBox {
 
     public int getSubscriptionId() {
         return subscriptionId;
-    }
-
-    public String getNetworkType() {
-        return mNetworkType;
-    }
-
-    public int getSignalStrength() {
-        return mSignalStrength;
     }
 
     public void setNetworkType(String mNetworkType) {
@@ -147,5 +139,4 @@ public class SimCard extends AppCompatCheckBox {
         ZonedDateTime now = ZonedDateTime.now(ZoneId.systemDefault());
         return now.getHour() * 60 + now.getMinute();
     }
-
 }

@@ -5,6 +5,7 @@
     <color name="black3">#666666</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#F44336</color>
+    <color name="red_light">#EF9A9A</color>
     <color name="no_data">#FFFFFF</color>
     <color name="signal_2g">#E53935</color>
     <color name="signal_3g">#00E676</color>

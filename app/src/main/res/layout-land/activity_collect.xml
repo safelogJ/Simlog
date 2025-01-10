@@ -20,6 +20,15 @@
         app:layout_constraintStart_toStartOf="@+id/collectGuideLeft"
         app:layout_constraintTop_toTopOf="parent">
 
+        <com.yandex.mobile.ads.nativeads.template.NativeBannerView
+            android:id="@+id/collectNativeBanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginTop="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView

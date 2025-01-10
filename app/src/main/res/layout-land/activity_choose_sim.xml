@@ -23,11 +23,15 @@
         app:layout_constraintStart_toStartOf="@+id/chooseSimGuideLeft"
         app:layout_constraintTop_toTopOf="@+id/chooseSimGuideline_1">
 
-        <TextView
-            android:id="@+id/textInCard"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:linksClickable="true" />
+        <com.yandex.mobile.ads.nativeads.template.NativeBannerView
+            android:id="@+id/chooseNativeBanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginTop="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
     </androidx.cardview.widget.CardView>
 
     <androidx.constraintlayout.widget.Guideline

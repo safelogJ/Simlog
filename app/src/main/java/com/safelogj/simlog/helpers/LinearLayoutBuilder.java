@@ -1,4 +1,4 @@
-package com.safelogj.simlog;
+package com.safelogj.simlog.helpers;
 
 import android.content.Context;
 import android.graphics.Typeface;
@@ -8,6 +8,7 @@ import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.ContextCompat;
 
+import com.safelogj.simlog.R;
 import com.safelogj.simlog.collecting.SimCard;
 
 import java.util.Locale;

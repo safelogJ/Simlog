@@ -13,7 +13,7 @@ import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.formatter.ValueFormatter;
-import com.safelogj.simlog.LinearLayoutBuilder;
+import com.safelogj.simlog.helpers.LinearLayoutBuilder;
 import com.safelogj.simlog.R;
 
 import org.jetbrains.annotations.Contract;
@@ -118,14 +118,13 @@ public class ChartBuilder {
     }
 
     private int getColor(String type) {
-        if (type == null) return mPalette[0];
+        if (type == null) return mPalette[1];
         return switch (type) {
-            case "unknown" -> mPalette[1];
             case "2G" -> mPalette[2];
             case "3G" -> mPalette[3];
             case "4G" -> mPalette[4];
             case "5G" -> mPalette[5];
-            default -> mPalette[0];
+            default -> mPalette[1];
         };
     }
 
@@ -288,12 +287,11 @@ public class ChartBuilder {
             if (mPercentsOfTypeNetwork[i] > 0) {
                 int color = mPalette[i];
                 String type = switch (i) {
-                    case 1 -> "xG";
                     case 2 -> "2G";
                     case 3 -> "3G";
                     case 4 -> "4G";
                     case 5 -> "5G";
-                    default -> "null";
+                    default -> "xG";
                 };
                 String text = String.format(Locale.US, "%s - %d%%", type, mPercentsOfTypeNetwork[i]);
                 mLinearLayoutForLegend.addView(LinearLayoutBuilder.createConstraintLayoutForLegend(mContext, text, color));
@@ -314,7 +312,7 @@ public class ChartBuilder {
     @NonNull
     @Contract("_ -> new")
     private int[] initColors(Context context) {
-        return new int[]{ContextCompat.getColor(context, R.color.no_data),
+        return new int[]{ContextCompat.getColor(context, R.color.main_background),
                 ContextCompat.getColor(context, R.color.signal_xG),
                 ContextCompat.getColor(context, R.color.signal_2g),
                 ContextCompat.getColor(context, R.color.signal_3g),

@@ -14,16 +14,17 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.safelogj.simlog.AdsId;
 import com.safelogj.simlog.AppController;
 import com.safelogj.simlog.R;
 import com.safelogj.simlog.databinding.ActivityCollectBinding;
+import com.yandex.mobile.ads.nativeads.NativeAd;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.List;
 
 public class CollectActivity extends AppCompatActivity {
-
     private ActivityCollectBinding mBinding;
     private AppController mController;
     private List<SimCard> mCheckedSims;
@@ -63,6 +64,22 @@ public class CollectActivity extends AppCompatActivity {
             finish();
         });
 
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if (mController.isAllowAds()) {
+            NativeAd nativeAd = mController.getNativeAd(AdsId.COLLECT_ACT_1.getId());
+            if (nativeAd != null) mBinding.collectNativeBanner.setAd(nativeAd);
+        }
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        if (mController.isAllowAds()) mController.loadNativeAd(AdsId.COLLECT_ACT_1.getId());
     }
 
     @Override

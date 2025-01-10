@@ -49,3 +49,5 @@ fabric.properties
 # Gradle
 .gradle/
 !gradle/wrapper/gradle-wrapper.jar
+
+**/AdsId.java
