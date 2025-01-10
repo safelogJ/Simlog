@@ -40,7 +40,7 @@ public class AppController extends Application {
 
     private ExecutorService mExecutor;
     private Future<?> mTask;
-    private volatile List<SimCard> mCheckedSims;
+    private List<SimCard> mCheckedSims;
     private LocalDateTime mStartCollection;
     private File mExternalFileDir;
     private TelephonyManager mTelephonyManager;
