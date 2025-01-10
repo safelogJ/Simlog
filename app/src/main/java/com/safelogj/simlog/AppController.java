@@ -102,7 +102,11 @@ public class AppController extends Application {
         MobileAds.setUserConsent(isAllowAdId());
         MobileAds.initialize(this, () -> {});
         initNativeLoaders();
-        if (isAllowAds()) loadNativeAd(AdsId.CHOOSE_ACT_1.getId());
+        if (isAllowAds()) {
+            for (AdsId id: AdsId.values()) {
+                loadNativeAd(id.getId());
+            }
+        }
     }
 
 
