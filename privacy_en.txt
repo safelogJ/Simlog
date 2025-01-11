@@ -1,0 +1,80 @@
+Privacy Policy for Simlog
+
+Privacy Policy
+Last updated: January 01, 2025
+
+This Privacy Policy describes Our policies and procedures for collecting
+and using Your information when You use the Service,
+and tells You about Your privacy rights and how the law protects You.
+
+Interpretation and Definitions:
+Interpretation:
+Words with a capitalized first letter have the meanings defined in the following terms.
+The following definitions have the same meaning regardless of whether they are used in the singular or in the plural.
+
+Definitions:
+For the purposes of this Privacy Policy:
+
+Application means Simlog, the software provided by the Company.
+The Company (referred to in this Agreement as the “Company”, “We”, “Us” or “Our”) is an individual entrepreneur Evgeniy Vasilievich Chekmazov.
+Country refers to: Russia
+Device means any device that can access the Service,
+such as a computer, mobile phone or digital tablet.
+Personal Data means any information relating to an identified or identifiable individual.
+Service refers to the Application.
+Usage Data means data collected automatically,
+either generated when you use the Service,
+or from the Service infrastructure itself (e.g. length of a page visit).
+You means the individual accessing or using the Service,
+or the company, or other legal entity on behalf of which such individual is accessing or using the Service,
+as applicable.
+
+Collection and Use of Your Personal Data:
+Types of Data Collected: Usage Data
+
+Usage Data is collected automatically when you use the Service.
+Usage data may include information such as the time and date of application use, time spent in the application,
+the number of active SIM cards in the phone,
+the name of the SIM card, the signal strength of the SIM card,
+the type of data transfer used by the SIM card.
+The collected data is used only in the application itself,
+including in the user interface.
+The slot number and the name of the SIM card are used to display to the user the active SIM cards that the application can work with.
+The slot number and the name of the SIM card are used in the name of the files created by the application,
+which store the history of changes in the network signal strength and the type of data transfer.
+The data in the files is stored in the format (minute number, data transfer type, network signal strength).
+
+Storage of your personal data:
+The Company does not store your personal or other data.
+Usage data is stored on your device in the application folder (/Android/data/com.safelogj.simlog/files/).
+
+Deleting collected data:
+You have the right to delete all files with collected data in the application folder (/Android/data/com.safelogj.simlog/files/).
+
+Links to other sites:
+Our Service may contain links to other websites
+that are not operated by Us. If you click on a third-party link,
+you will be redirected to that third party's site.
+We strongly advise you to review the Privacy Policy of every site you visit.
+We have no control over, and assume no responsibility for, the content,
+privacy policies, or practices of any third-party sites or services.
+
+The Application uses third-party services
+that may collect information used to identify you.
+
+Link to privacy policy of third-party service providers used by the application
+LLC Yandex https://yandex.ru/legal/confidential
+
+Changes to this Privacy Policy:
+We may update our Privacy Policy from time to time.
+We will notify you of any changes by posting the new Privacy Policy on this page.
+We will notify you with a prominent notice on Our Service prior to
+the changes becoming effective and update the "Last updated" date at the top of this Privacy Policy.
+
+We encourage you to periodically review this Privacy Policy for changes.
+Changes to this Privacy Policy are effective when they are posted on this page.
+
+Contact us:
+If you have any questions about this Privacy Policy, you can contact us:
+
+By email: simlog-app@yandex.ru
