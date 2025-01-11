@@ -88,9 +88,21 @@ public class AppController extends Application {
 
     }
 
-    public NativeAd getNativeAd(String id) {
-        LinkedList<NativeAd> listAd = mNativeAdsQueues.get(id);
+    public NativeAd peekNativeAd(String adUnitId) {
+        LinkedList<NativeAd> listAd = mNativeAdsQueues.get(adUnitId);
+        return listAd == null ? null : listAd.peek();
+    }
+
+    public NativeAd pollNativeAd(String adUnitId) {
+        loadNativeAd(adUnitId);
+        LinkedList<NativeAd> listAd = mNativeAdsQueues.get(adUnitId);
         return listAd == null ? null : listAd.poll();
+    }
+
+    public void loadNativeAd(String adUnitId) {
+        MobileAds.setUserConsent(isAllowAdId());
+        NativeAdLoader loader = mNativeLoaders.get(adUnitId);
+        if (loader != null) loader.loadAd(new NativeAdRequestConfiguration.Builder(adUnitId).build());
     }
 
     @Override
@@ -109,13 +121,6 @@ public class AppController extends Application {
                 loadNativeAd(id.getId());
             }
         }
-    }
-
-
-    public void loadNativeAd(String adUnitId) {
-            MobileAds.setUserConsent(isAllowAdId());
-            NativeAdLoader loader = mNativeLoaders.get(adUnitId);
-            if (loader != null) loader.loadAd(new NativeAdRequestConfiguration.Builder(adUnitId).build());
     }
 
     @Override
@@ -251,6 +256,7 @@ public class AppController extends Application {
             mNativeAdsQueues.put(id.getId(), new LinkedList<>());
         }
     }
+
 
 
 }

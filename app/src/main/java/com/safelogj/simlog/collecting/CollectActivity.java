@@ -28,6 +28,8 @@ public class CollectActivity extends AppCompatActivity {
     private ActivityCollectBinding mBinding;
     private AppController mController;
     private List<SimCard> mCheckedSims;
+    private AnimatorListenerAdapter mAnimatorListener;
+    private NativeAd mNativeAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,34 +55,32 @@ public class CollectActivity extends AppCompatActivity {
         mBinding.collectTextView2.setText(R.string.collecting_write_lines);
         mBinding.collectTextView3.setText(R.string.collecting_errors);
 
-        mBinding.lottieView.addAnimatorListener(new AnimatorListenerAdapter() {
-            @Override
-            public void onAnimationRepeat(Animator animation) {
-                writeInfo();
-            }
-        });
         mBinding.lottieView.setOnClickListener(view -> {
             mController.stopCollecting();
             finish();
         });
 
-
+        mAnimatorListener = new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationRepeat(Animator animation) {
+                writeInfo();
+            }
+        };
+        mNativeAd = mController.peekNativeAd(AdsId.COLLECT_ACT_1.getId());
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        if (mController.isAllowAds()) {
-            NativeAd nativeAd = mController.getNativeAd(AdsId.COLLECT_ACT_1.getId());
-            if (nativeAd != null) mBinding.collectNativeBanner.setAd(nativeAd);
-        }
+        if (mController.isAllowAds() && mNativeAd != null) mBinding.collectNativeBanner.setAd(mNativeAd);
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        if (mController.isAllowAds()) mController.loadNativeAd(AdsId.COLLECT_ACT_1.getId());
+        if(mController.isAllowAds()) mNativeAd = mController.pollNativeAd(AdsId.COLLECT_ACT_1.getId());
     }
+
 
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
@@ -91,12 +91,23 @@ public class CollectActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        if (mAnimatorListener != null) mBinding.lottieView.addAnimatorListener(mAnimatorListener);
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (mAnimatorListener != null) mBinding.lottieView.removeAnimatorListener(mAnimatorListener);
+    }
+    @Override
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         mBinding.collectTextView1.setText(savedInstanceState.getString("time"));
         mBinding.collectTextView2.setText(savedInstanceState.getString("lines"));
         mBinding.collectTextView3.setText(savedInstanceState.getString("errors"));
     }
+
 
     @SuppressLint("MissingSuperCall")
     @Override

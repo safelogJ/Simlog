@@ -10,8 +10,8 @@ android {
         applicationId = "com.safelogj.simlog"
         minSdk = 29
         targetSdk = 34
-        versionCode = 3
-        versionName = "1.2"
+        versionCode = 4
+        versionName = "1.3"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -44,7 +44,6 @@ dependencies {
     implementation(libs.chart)
     implementation(libs.worker)
     implementation(libs.yandexsdk)
-    debugImplementation(libs.leakcanary)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

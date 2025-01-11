@@ -42,6 +42,7 @@ public class ChooseSimActivity extends AppCompatActivity {
     private LinearLayout mLinearLayoutForSimCard;
     private ColorStateList mCheckBoxTintList;
     private AppController mController;
+    private NativeAd mNativeAd;
 
 
     private final ActivityResultCallback<Boolean> requestDisplayFiles = isGranted -> {
@@ -80,9 +81,9 @@ public class ChooseSimActivity extends AppCompatActivity {
             } else {
                 mController.setCheckedSims(mCheckedSims);
                 mController.startCollecting();
-              if (mController.isAllowAds()) {
-                  mController.loadNativeAd(AdsId.COLLECT_ACT_1.getId());
-              }
+                if (mController.isAllowAds()) {
+                    mController.loadNativeAd(AdsId.COLLECT_ACT_1.getId());
+                }
                 startActivity(new Intent(this, CollectActivity.class));
             }
         });
@@ -93,6 +94,7 @@ public class ChooseSimActivity extends AppCompatActivity {
                 startActivity(new Intent(this, DisplayActivity.class));
             }
         });
+        mNativeAd = mController.peekNativeAd(AdsId.CHOOSE_ACT_1.getId());
     }
 
     @Override
@@ -107,16 +109,14 @@ public class ChooseSimActivity extends AppCompatActivity {
                 }
             }
         }
-        if (mController.isAllowAds()) {
-            NativeAd nativeAd = mController.getNativeAd(AdsId.CHOOSE_ACT_1.getId());
-            if (nativeAd != null) mBinding.chooseNativeBanner.setAd(nativeAd);
-        }
+        if (mController.isAllowAds() && mNativeAd != null) mBinding.chooseNativeBanner.setAd(mNativeAd);
+
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        if(mController.isAllowAds()) mController.loadNativeAd(AdsId.CHOOSE_ACT_1.getId());
+        if(mController.isAllowAds()) mNativeAd = mController.pollNativeAd(AdsId.CHOOSE_ACT_1.getId());
     }
 
     @Override
