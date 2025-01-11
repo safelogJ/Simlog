@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import com.safelogj.simlog.collecting.LogWriter;
 import com.safelogj.simlog.collecting.SimCard;
 import com.safelogj.simlog.collecting.SimListener;
+import com.safelogj.simlog.helpers.AdsId;
 import com.yandex.mobile.ads.common.AdRequestError;
 import com.yandex.mobile.ads.common.ImpressionData;
 import com.yandex.mobile.ads.common.MobileAds;
@@ -84,8 +85,6 @@ public class AppController extends Application {
 
     public void setAllowAds(boolean allowAds) {
         this.mAllowAds = allowAds;
-        if (allowAds) loadNativeAd(AdsId.CHOOSE_ACT_1.getId());
-
     }
 
     public NativeAd peekNativeAd(String adUnitId) {
@@ -94,15 +93,23 @@ public class AppController extends Application {
     }
 
     public NativeAd pollNativeAd(String adUnitId) {
-        loadNativeAd(adUnitId);
         LinkedList<NativeAd> listAd = mNativeAdsQueues.get(adUnitId);
         return listAd == null ? null : listAd.poll();
     }
 
-    public void loadNativeAd(String adUnitId) {
+    public void loadNativeAd() {
         MobileAds.setUserConsent(isAllowAdId());
-        NativeAdLoader loader = mNativeLoaders.get(adUnitId);
-        if (loader != null) loader.loadAd(new NativeAdRequestConfiguration.Builder(adUnitId).build());
+        for (AdsId id : AdsId.values()) {
+            String adsId = id.getId();
+            LinkedList<NativeAd> queue = mNativeAdsQueues.get(adsId);
+            NativeAdLoader loader = mNativeLoaders.get(adsId);
+            if (queue != null && loader != null) {
+                int queueSize = queue.size();
+                for (int i = 0; i < 2 - queueSize; i++) {
+                    loader.loadAd(new NativeAdRequestConfiguration.Builder(adsId).build());
+                }
+            }
+        }
     }
 
     @Override
@@ -114,13 +121,10 @@ public class AppController extends Application {
         readSettings();
         MobileAds.setAgeRestrictedUser(true);
         MobileAds.setUserConsent(isAllowAdId());
-        MobileAds.initialize(this, () -> {});
+        MobileAds.initialize(this, () -> {
+        });
         initNativeLoaders();
-        if (isAllowAds()) {
-            for (AdsId id: AdsId.values()) {
-                loadNativeAd(id.getId());
-            }
-        }
+        if (isAllowAds()) loadNativeAd();
     }
 
     @Override
@@ -235,8 +239,9 @@ public class AppController extends Application {
             // Called when an impression is recorded for an ad.
         }
     }
+
     private void initNativeLoaders() {
-        for (AdsId id: AdsId.values()) {
+        for (AdsId id : AdsId.values()) {
             final NativeAdLoader newNativeAdLoader = new NativeAdLoader(this);
             newNativeAdLoader.setNativeAdLoadListener(new NativeAdLoadListener() {
                 @Override
@@ -256,7 +261,6 @@ public class AppController extends Application {
             mNativeAdsQueues.put(id.getId(), new LinkedList<>());
         }
     }
-
 
 
 }

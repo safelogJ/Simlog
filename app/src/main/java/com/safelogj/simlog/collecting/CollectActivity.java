@@ -14,7 +14,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.safelogj.simlog.AdsId;
+import com.safelogj.simlog.helpers.AdsId;
 import com.safelogj.simlog.AppController;
 import com.safelogj.simlog.R;
 import com.safelogj.simlog.databinding.ActivityCollectBinding;
@@ -30,6 +30,13 @@ public class CollectActivity extends AppCompatActivity {
     private List<SimCard> mCheckedSims;
     private AnimatorListenerAdapter mAnimatorListener;
     private NativeAd mNativeAd;
+
+
+    @SuppressLint("MissingSuperCall")
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(CollectActivity.this, getString(R.string.stop_collect), Toast.LENGTH_LONG).show();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,12 +73,12 @@ public class CollectActivity extends AppCompatActivity {
                 writeInfo();
             }
         };
-        mNativeAd = mController.peekNativeAd(AdsId.COLLECT_ACT_1.getId());
     }
 
     @Override
     protected void onStart() {
         super.onStart();
+        mNativeAd = mController.peekNativeAd(AdsId.COLLECT_ACT_1.getId());
         if (mController.isAllowAds() && mNativeAd != null) mBinding.collectNativeBanner.setAd(mNativeAd);
     }
 
@@ -80,7 +87,6 @@ public class CollectActivity extends AppCompatActivity {
         super.onRestart();
         if(mController.isAllowAds()) mNativeAd = mController.pollNativeAd(AdsId.COLLECT_ACT_1.getId());
     }
-
 
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
@@ -100,6 +106,13 @@ public class CollectActivity extends AppCompatActivity {
         super.onPause();
         if (mAnimatorListener != null) mBinding.lottieView.removeAnimatorListener(mAnimatorListener);
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if(mController.isAllowAds()) mController.loadNativeAd();
+    }
+
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
@@ -108,12 +121,6 @@ public class CollectActivity extends AppCompatActivity {
         mBinding.collectTextView3.setText(savedInstanceState.getString("errors"));
     }
 
-
-    @SuppressLint("MissingSuperCall")
-    @Override
-    public void onBackPressed() {
-        Toast.makeText(CollectActivity.this, getString(R.string.stop_collect), Toast.LENGTH_LONG).show();
-    }
 
     private void setInfoText(int lines, int errors) {
         String time = getString(R.string.collecting_time) + calculateWorkTime();

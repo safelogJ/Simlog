@@ -26,6 +26,7 @@ import com.safelogj.simlog.collecting.CollectActivity;
 import com.safelogj.simlog.collecting.SimCard;
 import com.safelogj.simlog.databinding.ActivityChooseSimBinding;
 import com.safelogj.simlog.displaying.DisplayActivity;
+import com.safelogj.simlog.helpers.AdsId;
 import com.safelogj.simlog.helpers.LinearLayoutBuilder;
 import com.yandex.mobile.ads.nativeads.NativeAd;
 
@@ -43,8 +44,6 @@ public class ChooseSimActivity extends AppCompatActivity {
     private ColorStateList mCheckBoxTintList;
     private AppController mController;
     private NativeAd mNativeAd;
-
-
     private final ActivityResultCallback<Boolean> requestDisplayFiles = isGranted -> {
         if (Boolean.TRUE == isGranted) {
             displaySimCards();
@@ -54,6 +53,8 @@ public class ChooseSimActivity extends AppCompatActivity {
     };
     private final ActivityResultLauncher<String> requestPermissionLauncher =
             registerForActivityResult(new ActivityResultContracts.RequestPermission(), requestDisplayFiles);
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,9 +82,6 @@ public class ChooseSimActivity extends AppCompatActivity {
             } else {
                 mController.setCheckedSims(mCheckedSims);
                 mController.startCollecting();
-                if (mController.isAllowAds()) {
-                    mController.loadNativeAd(AdsId.COLLECT_ACT_1.getId());
-                }
                 startActivity(new Intent(this, CollectActivity.class));
             }
         });
@@ -94,7 +92,6 @@ public class ChooseSimActivity extends AppCompatActivity {
                 startActivity(new Intent(this, DisplayActivity.class));
             }
         });
-        mNativeAd = mController.peekNativeAd(AdsId.CHOOSE_ACT_1.getId());
     }
 
     @Override
@@ -109,6 +106,7 @@ public class ChooseSimActivity extends AppCompatActivity {
                 }
             }
         }
+        mNativeAd = mController.peekNativeAd(AdsId.CHOOSE_ACT_1.getId());
         if (mController.isAllowAds() && mNativeAd != null) mBinding.chooseNativeBanner.setAd(mNativeAd);
 
     }
@@ -139,6 +137,7 @@ public class ChooseSimActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         mCheckedSims = getCheckedSims();
+        if(mController.isAllowAds()) mController.loadNativeAd();
     }
 
     private void displaySimCards() {

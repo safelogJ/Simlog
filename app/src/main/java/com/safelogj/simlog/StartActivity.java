@@ -28,8 +28,6 @@ public class StartActivity extends AppCompatActivity {
     private ActivityStartBinding mBinding;
     private int mTextViewNumber = 1;
     private AppController mController;
-
-
     private final ActivityResultCallback<Boolean> requestDisplayFiles = isGranted -> {
         if (Boolean.TRUE == isGranted) {
             startActivity(new Intent(this, ChooseSimActivity.class));
@@ -39,6 +37,7 @@ public class StartActivity extends AppCompatActivity {
     };
     private final ActivityResultLauncher<String> requestPermissionLauncher =
             registerForActivityResult(new ActivityResultContracts.RequestPermission(), requestDisplayFiles);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,9 +57,6 @@ public class StartActivity extends AppCompatActivity {
             if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
                 requestPermissionLauncher.launch(android.Manifest.permission.READ_PHONE_STATE);
                 return;
-            }
-            if (mController.isAllowAds()) {
-                mController.loadNativeAd(AdsId.CHOOSE_ACT_1.getId());
             }
             startActivity(new Intent(this, ChooseSimActivity.class));
         });

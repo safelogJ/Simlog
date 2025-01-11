@@ -103,17 +103,6 @@ public class SimCard extends AppCompatCheckBox {
         }
     }
 
-    private BufferedWriter createWriter() {
-        File file = new File(mExternalFileDir, getFileName());
-        try {
-            return new BufferedWriter(new FileWriter(file, true));
-        } catch (IOException e) {
-            mErrors ++;
-            return null;
-        }
-    }
-
-
     public void stopWriter() {
         try {
             if (mBWriter != null) {
@@ -124,6 +113,16 @@ public class SimCard extends AppCompatCheckBox {
             mBWriter = null;
         }
 
+    }
+
+    private BufferedWriter createWriter() {
+        File file = new File(mExternalFileDir, getFileName());
+        try {
+            return new BufferedWriter(new FileWriter(file, true));
+        } catch (IOException e) {
+            mErrors ++;
+            return null;
+        }
     }
 
     private String getFileName() {
