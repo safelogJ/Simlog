@@ -30,6 +30,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.time.LocalDateTime;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ExecutorService;
@@ -49,7 +50,7 @@ public class AppController extends Application {
     private boolean mAllowAdId;
     private boolean mAllowAds;
     private final HashMap<String, NativeAdLoader> mNativeLoaders = new HashMap<>();
-    private final HashMap<String, NativeAd> mNativeAds = new HashMap<>();
+    private final HashMap<String, LinkedList<NativeAd>> mNativeAdsQueues = new HashMap<>();
 
 
     public List<SimCard> getCheckedSims() {
@@ -88,7 +89,8 @@ public class AppController extends Application {
     }
 
     public NativeAd getNativeAd(String id) {
-        return mNativeAds.get(id);
+        LinkedList<NativeAd> listAd = mNativeAdsQueues.get(id);
+        return listAd == null ? null : listAd.poll();
     }
 
     @Override
@@ -235,7 +237,8 @@ public class AppController extends Application {
                 @Override
                 public void onAdLoaded(@NonNull final NativeAd nativeAd) {
                     nativeAd.setNativeAdEventListener(new NativeAdEventLogger());
-                    mNativeAds.put(id.getId(), nativeAd);
+                    LinkedList<NativeAd> listAd = mNativeAdsQueues.get(id.getId());
+                    if (listAd != null) listAd.add(nativeAd);
                 }
 
                 @Override
@@ -245,6 +248,7 @@ public class AppController extends Application {
                 }
             });
             mNativeLoaders.put(id.getId(), newNativeAdLoader);
+            mNativeAdsQueues.put(id.getId(), new LinkedList<>());
         }
     }
 

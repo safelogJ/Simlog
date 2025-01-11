@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Simlog</string>
+    <string name="app_name" translatable="false">Simlog</string>
     <string name="start_button_ok" translatable="false">OK</string>
     <string name="start_button_notice" translatable="false">Notice</string>
     <string name="start_button_privacy" translatable="false">Privacy</string>
@@ -26,7 +26,7 @@
     <string name="collecting_hour">h</string>
     <string name="collecting_min">m</string>
     <string name="collecting_sec">s</string>
-    <string name="sim_list">sim list</string>
+    <string name="sim_list" translatable="false">sim list</string>
     <string name="ad_id_text"><![CDATA[<br><br>We use an advertising network to serve ads.<br><br>
 The advertising network may collect data, including your device\'s advertising identifier, to serve personalized ads.<br><br>
 You can <font color = "green"><b>allow</b></font> or <font color = "red"><b>turn off</b></font> ad personalization.<br><br>

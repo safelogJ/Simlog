@@ -68,7 +68,12 @@ public class StartActivity extends AppCompatActivity {
         setTextView0ByNumber(mTextViewNumber);
         mBinding.startTextView0.setMovementMethod(LinkMovementMethod.getInstance());
 
-        mBinding.switchAds.setChecked(mController.isAllowAds());
+
+        if (mController.isAllowAds()) {
+            mBinding.switchAds.setChecked(mController.isAllowAds());
+            mBinding.switchAds.setTextColor(getResources().getColor(R.color.blue_500, getTheme()));
+        }
+
         mBinding.switchAds.setOnClickListener(view -> {
             if (mBinding.switchAds.isChecked()) {
                 mController.setAllowAds(true);

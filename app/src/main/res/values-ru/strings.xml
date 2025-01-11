@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Simlog</string>
     <string name="start_promo_text">Реклама</string>
     <string name="file_read_error">ОШИБКА ПРИ ЧТЕНИИ ФАЙЛА.</string>
     <string name="no_data_to_display">НЕТ ДАННЫХ.</string>

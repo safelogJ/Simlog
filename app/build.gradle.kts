@@ -44,6 +44,7 @@ dependencies {
     implementation(libs.chart)
     implementation(libs.worker)
     implementation(libs.yandexsdk)
+    debugImplementation(libs.leakcanary)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
