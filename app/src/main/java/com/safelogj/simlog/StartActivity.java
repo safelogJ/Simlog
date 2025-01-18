@@ -2,7 +2,9 @@ package com.safelogj.simlog;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.Toast;
@@ -18,21 +20,24 @@ import androidx.core.graphics.Insets;
 import androidx.core.text.HtmlCompat;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.strictmode.FragmentStrictMode;
 
 import com.safelogj.simlog.databinding.ActivityStartBinding;
 import com.safelogj.simlog.helpers.AdsIdActivity;
+
 
 public class StartActivity extends AppCompatActivity {
 
     private static final String TEXT_VIEW_0_KEY = "text_view0_key";
     private ActivityStartBinding mBinding;
     private int mTextViewNumber = 1;
+    private int mPermissionCounter;
     private AppController mController;
     private final ActivityResultCallback<Boolean> requestDisplayFiles = isGranted -> {
         if (Boolean.TRUE == isGranted) {
             startActivity(new Intent(this, ChooseSimActivity.class));
         } else {
-            Toast.makeText(this, getString(R.string.permission_denied), Toast.LENGTH_SHORT).show();
+            permissionCount();
         }
     };
     private final ActivityResultLauncher<String> requestPermissionLauncher =
@@ -51,7 +56,6 @@ public class StartActivity extends AppCompatActivity {
             return insets;
         });
         mController = (AppController) getApplication();
-
 
         mBinding.startOkButton.setOnClickListener(view -> {
             if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
@@ -77,15 +81,15 @@ public class StartActivity extends AppCompatActivity {
                 mBinding.switchAds.setTextColor(getResources().getColor(R.color.blue_500, getTheme()));
                 startActivity(new Intent(this, AdsIdActivity.class));
 
-            } else  {
+            } else {
                 mBinding.switchAds.setTextColor(getResources().getColor(R.color.black2, getTheme()));
                 mController.setAllowAdId(false);
                 mController.setAllowAds(false);
                 mController.writeSetting();
             }
         });
-
     }
+
 
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
@@ -96,7 +100,7 @@ public class StartActivity extends AppCompatActivity {
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-       setTextView0ByNumber(savedInstanceState.getInt(TEXT_VIEW_0_KEY));
+        setTextView0ByNumber(savedInstanceState.getInt(TEXT_VIEW_0_KEY));
     }
 
     public void setTextView0ByClick(View view) {
@@ -106,12 +110,29 @@ public class StartActivity extends AppCompatActivity {
             if (view == mBinding.startPrivacyButton) setTextView0ByNumber(3);
         }
     }
+
     private void setTextView0ByNumber(int number) {
         mTextViewNumber = number;
         switch (number) {
-            case 2:  mBinding.startTextView0.setText(HtmlCompat.fromHtml(getString(R.string.notice), HtmlCompat.FROM_HTML_MODE_LEGACY)); break;
-            case 3:  mBinding.startTextView0.setText(HtmlCompat.fromHtml(getString(R.string.privacy), HtmlCompat.FROM_HTML_MODE_LEGACY)); break;
-            default:  mBinding.startTextView0.setText(HtmlCompat.fromHtml(getString(R.string.permit), HtmlCompat.FROM_HTML_MODE_LEGACY));
+            case 2:
+                mBinding.startTextView0.setText(HtmlCompat.fromHtml(getString(R.string.notice), HtmlCompat.FROM_HTML_MODE_LEGACY));
+                break;
+            case 3:
+                mBinding.startTextView0.setText(HtmlCompat.fromHtml(getString(R.string.privacy), HtmlCompat.FROM_HTML_MODE_LEGACY));
+                break;
+            default:
+                mBinding.startTextView0.setText(HtmlCompat.fromHtml(getString(R.string.permit), HtmlCompat.FROM_HTML_MODE_LEGACY));
+        }
+    }
+    private void permissionCount() {
+        mPermissionCounter++;
+        if(mPermissionCounter > 2) {
+            Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+            intent.setData(Uri.fromParts("package", getPackageName(), null));
+            startActivity(intent);
+            mPermissionCounter = 0;
+        } else {
+            Toast.makeText(this, getString(R.string.permission_denied), Toast.LENGTH_SHORT).show();
         }
     }
 }

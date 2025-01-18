@@ -6,7 +6,11 @@
     <string name="no_data_files">Не найдено файлов.</string>
     <string name="need_choose_sim">Выберите сим-карту.</string>
     <string name="no_sim">Сим-карты не найдены.</string>
-    <string name="permission_denied">Разрешение не получено.</string>
+    <string name="permission_denied">Необходимо разрешение.</string>
+    <string name="service_stopped">Толкните генератор.</string>
+    <string name="notification_title">Simlog работает.</string>
+    <string name="notification_text">Не удаляйте это уведомление.</string>
+    <string name="notification_channel">Сервис.</string>
     <string name="stop_collect">Для выхода, остановите генератор.</string>
     <string name="subscription_error">Устройство не поддерживает функционал приложения.</string>
     <string name="collecting_time">Время работы :</string>

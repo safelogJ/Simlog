@@ -1,16 +1,13 @@
 package com.safelogj.simlog;
 
 import android.app.Application;
-import android.content.Context;
-import android.telephony.PhoneStateListener;
-import android.telephony.TelephonyManager;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
 
-import com.safelogj.simlog.collecting.LogWriter;
 import com.safelogj.simlog.collecting.SimCard;
-import com.safelogj.simlog.collecting.SimListener;
 import com.safelogj.simlog.helpers.AdsId;
 import com.yandex.mobile.ads.common.AdRequestError;
 import com.yandex.mobile.ads.common.ImpressionData;
@@ -29,30 +26,21 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Path;
-import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 
 public class AppController extends Application {
-
-    private ExecutorService mExecutor;
-    private Future<?> mTask;
+    public static final String NOTIFICATION_CHANNEL_ID = "Notification_CHANNEL_ID";
     private List<SimCard> mCheckedSims;
-    private LocalDateTime mStartCollection;
     private File mExternalFileDir;
-    private TelephonyManager mTelephonyManager;
     private final Map<String, Path> mFilesPaths = new HashMap<>();
-    private final Map<TelephonyManager, SimListener> mMapManagers = new HashMap<>();
     private boolean mAllowAdId;
     private boolean mAllowAds;
     private final HashMap<String, NativeAdLoader> mNativeLoaders = new HashMap<>();
     private final HashMap<String, LinkedList<NativeAd>> mNativeAdsQueues = new HashMap<>();
-
+    private int mAdQueueSize = 2;
 
     public List<SimCard> getCheckedSims() {
         return mCheckedSims;
@@ -65,10 +53,6 @@ public class AppController extends Application {
     public Map<String, Path> getFilesPaths() {
         updateFilesPaths();
         return mFilesPaths;
-    }
-
-    public LocalDateTime getStartCollection() {
-        return mStartCollection;
     }
 
     public boolean isAllowAdId() {
@@ -105,7 +89,7 @@ public class AppController extends Application {
             NativeAdLoader loader = mNativeLoaders.get(adsId);
             if (queue != null && loader != null) {
                 int queueSize = queue.size();
-                for (int i = 0; i < 2 - queueSize; i++) {
+                for (int i = 0; i < mAdQueueSize - queueSize; i++) {
                     loader.loadAd(new NativeAdRequestConfiguration.Builder(adsId).build());
                 }
             }
@@ -115,52 +99,17 @@ public class AppController extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        mTelephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         mExternalFileDir = getExternalFilesDir(null);
-        mExecutor = Executors.newSingleThreadExecutor();
+        SimCard.setExternalFileDir(mExternalFileDir);
+        createNotificationChannel();
         readSettings();
+
         MobileAds.setAgeRestrictedUser(true);
         MobileAds.setUserConsent(isAllowAdId());
         MobileAds.initialize(this, () -> {
         });
         initNativeLoaders();
         if (isAllowAds()) loadNativeAd();
-    }
-
-    @Override
-    public void onTerminate() {
-        super.onTerminate();
-        if (!mExecutor.isShutdown()) mExecutor.shutdown();
-    }
-
-    public void startCollecting() {
-        SimCard.setExternalFileDir(mExternalFileDir);
-        for (SimCard simCard : mCheckedSims) {
-            TelephonyManager simManager = mTelephonyManager.createForSubscriptionId(simCard.getSubscriptionId());
-            SimListener simListener = new SimListener(simCard, simManager, this);
-            simManager.listen(simListener, PhoneStateListener.LISTEN_SIGNAL_STRENGTHS | PhoneStateListener.LISTEN_DATA_CONNECTION_STATE);
-            mMapManagers.put(simManager, simListener);
-        }
-        mStartCollection = LocalDateTime.now();
-        startExecutor();
-    }
-
-    private void startExecutor() {
-        mTask = mExecutor.submit(new LogWriter(mCheckedSims));
-    }
-
-    public void stopCollecting() {
-        for (Map.Entry<TelephonyManager, SimListener> entry : mMapManagers.entrySet()) {
-            TelephonyManager telephonyManager = entry.getKey();
-            SimListener listenerWriter = entry.getValue();
-            telephonyManager.listen(listenerWriter, PhoneStateListener.LISTEN_NONE);
-        }
-        mMapManagers.clear();
-        stopExecutor();
-    }
-
-    private void stopExecutor() {
-        mTask.cancel(true);
     }
 
     public boolean updateFilesPaths() {
@@ -248,13 +197,16 @@ public class AppController extends Application {
                 public void onAdLoaded(@NonNull final NativeAd nativeAd) {
                     nativeAd.setNativeAdEventListener(new NativeAdEventLogger());
                     LinkedList<NativeAd> listAd = mNativeAdsQueues.get(id.getId());
-                    if (listAd != null) listAd.add(nativeAd);
+                    if (listAd != null) {
+                        listAd.add(nativeAd);
+                        mAdQueueSize = 2;
+                    }
+
                 }
 
                 @Override
                 public void onAdFailedToLoad(@NonNull final AdRequestError error) {
-                    // Ad failed to load with AdRequestError.
-                    // Attempting to load a new ad from the onAdFailedToLoad() method is strongly discouraged.
+                    mAdQueueSize = 3;
                 }
             });
             mNativeLoaders.put(id.getId(), newNativeAdLoader);
@@ -262,5 +214,16 @@ public class AppController extends Application {
         }
     }
 
+    private void createNotificationChannel() {
+        NotificationChannel channel = new NotificationChannel(
+                NOTIFICATION_CHANNEL_ID,
+                getString(R.string.notification_channel),
+                NotificationManager.IMPORTANCE_LOW
+        );
+        NotificationManager manager = getSystemService(NotificationManager.class);
+        if (manager != null) {
+            manager.createNotificationChannel(channel);
+        }
+    }
 
 }

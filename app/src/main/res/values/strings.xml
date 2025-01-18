@@ -4,19 +4,24 @@
     <string name="start_button_notice" translatable="false">Notice</string>
     <string name="start_button_privacy" translatable="false">Privacy</string>
     <string name="start_button_permit" translatable="false">Permit</string>
+    <string name="collect_button_notific" translatable="false">Notification</string>
+    <string name="collect_button_battery" translatable="false">Battery</string>
     <string name="start_promo_text">Allow Ads</string>
     <string name="ad_id_allow" translatable="false">Allow AD_ID</string>
     <string name="ad_id_deny" translatable="false">Deny AD_ID</string>
     <string name="choose_button_left" translatable="false">start collect</string>
     <string name="choose_button_right" translatable="false">open chart</string>
-    <string name="collect_button" translatable="false">stop collect</string>
     <string name="sim_slot" translatable="false">SIM_</string>
+    <string name="service_stopped">Push the generator.</string>
+    <string name="notification_title">Simlog is running.</string>
+    <string name="notification_text">Don\'t remove this notification.</string>
+    <string name="notification_channel">Service.</string>
+    <string name="permission_denied">Permission required.</string>
     <string name="file_read_error">FAILED TO READ FILE.</string>
     <string name="no_data_to_display">NO DATA TO DISPLAY.</string>
     <string name="no_data_files">No data files.</string>
     <string name="need_choose_sim">Need to choose sim cards.</string>
     <string name="no_sim">SIM cards not found.</string>
-    <string name="permission_denied">Permission denied.</string>
     <string name="stop_collect">To exit, stop the generator.</string>
     <string name="subscription_error">The device does not support the functionality of the application.</string>
     <string name="collecting_time">Run time :</string>

@@ -4,7 +4,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.ColorStateList;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.telephony.SubscriptionInfo;
 import android.telephony.SubscriptionManager;
 import android.widget.LinearLayout;
@@ -39,6 +41,7 @@ public class ChooseSimActivity extends AppCompatActivity {
     private ActivityChooseSimBinding mBinding;
     private List<SimCard> mDisplayedSims;
     private List<SimCard> mCheckedSims;
+    private int mPermissionCounter;
     private SubscriptionManager mSubscriptionManager;
     private LinearLayout mLinearLayoutForSimCard;
     private ColorStateList mCheckBoxTintList;
@@ -48,12 +51,21 @@ public class ChooseSimActivity extends AppCompatActivity {
         if (Boolean.TRUE == isGranted) {
             displaySimCards();
         } else {
-            Toast.makeText(this, getString(R.string.permission_denied), Toast.LENGTH_SHORT).show();
+            permissionCount();
         }
     };
     private final ActivityResultLauncher<String> requestPermissionLauncher =
             registerForActivityResult(new ActivityResultContracts.RequestPermission(), requestDisplayFiles);
 
+    private final ActivityResultCallback<Boolean> requestNotifications = isGranted -> {
+        if (Boolean.TRUE == isGranted) {
+            startService();
+        } else {
+            permissionCount();
+        }
+    };
+    private final ActivityResultLauncher<String> requestNotificationsLauncher =
+            registerForActivityResult(new ActivityResultContracts.RequestPermission(), requestNotifications);
 
 
     @Override
@@ -80,9 +92,13 @@ public class ChooseSimActivity extends AppCompatActivity {
             if (mCheckedSims.isEmpty()) {
                 Toast.makeText(this, getString(R.string.need_choose_sim), Toast.LENGTH_SHORT).show();
             } else {
-                mController.setCheckedSims(mCheckedSims);
-                mController.startCollecting();
-                startActivity(new Intent(this, CollectActivity.class));
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU
+                        && ContextCompat.checkSelfPermission(this, android.Manifest.permission.POST_NOTIFICATIONS)
+                        != PackageManager.PERMISSION_GRANTED) {
+                    requestNotificationsLauncher.launch(android.Manifest.permission.POST_NOTIFICATIONS);
+                } else {
+                    startService();
+                }
             }
         });
         mBinding.rightButton.setOnClickListener(view -> {
@@ -107,14 +123,15 @@ public class ChooseSimActivity extends AppCompatActivity {
             }
         }
         mNativeAd = mController.peekNativeAd(AdsId.CHOOSE_ACT_1.getId());
-        if (mController.isAllowAds() && mNativeAd != null) mBinding.chooseNativeBanner.setAd(mNativeAd);
-
+        if (mController.isAllowAds() && mNativeAd != null)
+            mBinding.chooseNativeBanner.setAd(mNativeAd);
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        if(mController.isAllowAds()) mNativeAd = mController.pollNativeAd(AdsId.CHOOSE_ACT_1.getId());
+        if (mController.isAllowAds())
+            mNativeAd = mController.pollNativeAd(AdsId.CHOOSE_ACT_1.getId());
     }
 
     @Override
@@ -137,7 +154,7 @@ public class ChooseSimActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         mCheckedSims = getCheckedSims();
-        if(mController.isAllowAds()) mController.loadNativeAd();
+        if (mController.isAllowAds()) mController.loadNativeAd();
     }
 
     private void displaySimCards() {
@@ -177,5 +194,23 @@ public class ChooseSimActivity extends AppCompatActivity {
     private List<SimCard> getCheckedSims() {
         return mDisplayedSims.stream().filter(SimCard::isChecked).collect(Collectors.toList());
 
+    }
+
+    private void startService() {
+        mController.setCheckedSims(mCheckedSims);
+        startService(new Intent(this, LogWriteService.class));
+        startActivity(new Intent(this, CollectActivity.class));
+    }
+
+    private void permissionCount() {
+        mPermissionCounter++;
+        if(mPermissionCounter > 2) {
+            Intent intent = new Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS);
+            intent.putExtra(Settings.EXTRA_APP_PACKAGE, getPackageName());
+            startActivity(intent);
+            mPermissionCounter = 0;
+        } else {
+            Toast.makeText(this, getString(R.string.permission_denied), Toast.LENGTH_SHORT).show();
+        }
     }
 }

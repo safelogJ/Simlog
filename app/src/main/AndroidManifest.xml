@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
         android:name=".AppController"
@@ -15,11 +19,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Simlog"
         tools:targetApi="31">
+        <service
+            android:name=".LogWriteService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="This foreground service is utilized to continuously monitor and record mobile network signal strength
+                 and data transmission type from active SIM cards.
+                 The collected data is written to a local file on the device for user analysis and comparison.
+                  The service ensures uninterrupted operation even when the device screen is turned off,
+                   enabling accurate and reliable data logging over extended periods."/>
+        </service>
+
         <activity
             android:name=".helpers.AdsIdActivity"
             android:exported="false" />
         <activity
-            android:name=".StartActivity"
+            android:name=".collecting.CollectActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,9 +44,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".collecting.CollectActivity" />
-        <activity android:name=".displaying.DisplayActivity" />
-        <activity android:name=".ChooseSimActivity" />
+        <activity
+            android:name=".StartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".displaying.DisplayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChooseSimActivity"
+            android:exported="false" />
 
         <meta-data
             android:name="com.yandex.mobile.ads.AUTOMATIC_SDK_INITIALIZATION"

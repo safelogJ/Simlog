@@ -42,7 +42,6 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.lottie)
     implementation(libs.chart)
-    implementation(libs.worker)
     implementation(libs.yandexsdk)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)

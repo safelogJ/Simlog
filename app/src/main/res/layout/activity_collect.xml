@@ -8,6 +8,36 @@
     android:layout_height="match_parent"
     android:background="@color/main_background">
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/collectNotificButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/collect_button_notific"
+        android:src="@drawable/collect_notific_button"
+        app:elevation="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/collectGuideTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/collectBatteryButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:backgroundTint="@color/black3"
+        app:rippleColor="@color/spinner_font"
+        app:tint="@color/no_data"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/collectBatteryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/collect_button_battery"
+        android:src="@drawable/collect_battery_button"
+        app:elevation="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/collectGuideTop"
+        app:layout_constraintEnd_toStartOf="@+id/collectNotificButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:backgroundTint="@color/black3"
+        app:rippleColor="@color/spinner_font"
+        app:tint="@color/no_data"/>
+
     <androidx.cardview.widget.CardView
         android:id="@+id/collectActCardView"
         android:layout_width="0dp"
@@ -20,7 +50,7 @@
         app:layout_constraintBottom_toTopOf="@+id/collectCenterGuideline"
         app:layout_constraintEnd_toStartOf="@+id/collectGuideRight"
         app:layout_constraintStart_toStartOf="@+id/collectGuideLeft"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/collectGuideTop">
 
         <com.yandex.mobile.ads.nativeads.template.NativeBannerView
             android:id="@+id/collectNativeBanner"
@@ -122,6 +152,13 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/collectGuideTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/collectGuideRight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -148,19 +185,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.9" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/collectButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/collect_button"
-        android:src="@drawable/collect_button_stop"
-        android:visibility="gone"
-        app:elevation="3dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/lottieView"
-        app:layout_constraintStart_toEndOf="@+id/collectGuideLeft"
-        app:layout_constraintTop_toTopOf="@+id/collectBtnGuideline" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottieView"
