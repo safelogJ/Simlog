@@ -20,7 +20,6 @@ import androidx.core.graphics.Insets;
 import androidx.core.text.HtmlCompat;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import androidx.fragment.app.strictmode.FragmentStrictMode;
 
 import com.safelogj.simlog.databinding.ActivityStartBinding;
 import com.safelogj.simlog.helpers.AdsIdActivity;

@@ -20,7 +20,7 @@
         android:theme="@style/Theme.Simlog"
         tools:targetApi="31">
         <service
-            android:name=".LogWriteService"
+            android:name=".collecting.LogWriteService"
             android:enabled="true"
             android:exported="false"
             android:foregroundServiceType="specialUse">

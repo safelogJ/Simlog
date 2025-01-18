@@ -23,7 +23,6 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.safelogj.simlog.LogWriteService;
 import com.safelogj.simlog.StartActivity;
 import com.safelogj.simlog.helpers.AdsId;
 import com.safelogj.simlog.AppController;
@@ -120,12 +119,6 @@ public class CollectActivity extends AppCompatActivity {
         super.onRestart();
         if (mController.isAllowAds())
             mNativeAd = mController.pollNativeAd(AdsId.COLLECT_ACT_1.getId());
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-
     }
 
     @Override
@@ -253,5 +246,4 @@ public class CollectActivity extends AppCompatActivity {
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
     }
-
 }

@@ -225,10 +225,10 @@ public class ChartBuilder {
         mChart.setBackgroundColor(ContextCompat.getColor(mContext, R.color.main_background));
         mChart.setDrawBorders(false);
 
-        mChart.setDragEnabled(true); // Включает прокрутку
-        mChart.setScaleEnabled(true); // Включает масштабирование
-        mChart.setScaleXEnabled(true);// Масштабирование по X
-        mChart.setScaleYEnabled(false); // Отключить масштабирование по Y
+        mChart.setDragEnabled(true);
+        mChart.setScaleEnabled(true);
+        mChart.setScaleXEnabled(true);
+        mChart.setScaleYEnabled(false);
         mChart.getLegend().setEnabled(false);
 
     }

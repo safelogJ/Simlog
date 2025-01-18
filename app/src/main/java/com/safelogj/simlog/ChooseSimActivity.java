@@ -25,6 +25,7 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.core.widget.CompoundButtonCompat;
 
 import com.safelogj.simlog.collecting.CollectActivity;
+import com.safelogj.simlog.collecting.LogWriteService;
 import com.safelogj.simlog.collecting.SimCard;
 import com.safelogj.simlog.databinding.ActivityChooseSimBinding;
 import com.safelogj.simlog.displaying.DisplayActivity;
