@@ -19,7 +19,7 @@
         app:layout_constraintBottom_toTopOf="@+id/collectBatteryButton"
         app:layout_constraintEnd_toStartOf="@+id/collectGuideLeft"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/collectCenterGuideline"
         app:rippleColor="@color/spinner_font"
         app:tint="@color/no_data" />
 
@@ -31,7 +31,7 @@
         android:src="@drawable/collect_battery_button"
         app:backgroundTint="@color/black3"
         app:elevation="3dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/collectBtnGuideline"
         app:layout_constraintEnd_toStartOf="@+id/collectGuideLeft"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/collectNotificButton"
@@ -49,7 +49,7 @@
         app:layout_constraintBottom_toTopOf="@+id/collectBtnGuideline"
         app:layout_constraintEnd_toStartOf="@+id/collectGuideRight"
         app:layout_constraintStart_toStartOf="@+id/collectGuideLeft"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="@+id/collectCenterGuideline">
 
         <com.yandex.mobile.ads.nativeads.template.NativeBannerView
             android:id="@+id/collectNativeBanner"

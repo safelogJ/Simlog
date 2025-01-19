@@ -35,7 +35,7 @@
     <string name="ad_id_text"><![CDATA[<br><br>We use an advertising network to serve ads.<br><br>
 The advertising network may collect data, including your device\'s advertising identifier, to serve personalized ads.<br><br>
 You can <font color = "green"><b>allow</b></font> or <font color = "red"><b>turn off</b></font> ad personalization.<br><br>
-If you turn off personalization, we will only serve non-personalized ads.]]></string>
+If you turn off personalization, we will only serve non-personalized ads.<br><br>]]></string>
 
     <string name="permit"><![CDATA[<br><br><b>The app processes the following types of data:</b><br><br>
 <em>1. Mobile network signal strength.</em><br>
@@ -44,6 +44,9 @@ If you turn off personalization, we will only serve non-personalized ads.]]></st
 <em>4. SIM card name.</em><br><br>
 To retrieve this SIM card-related data, the app will request permission to<b> manage calls.</b><br><br>
 For more details, click on the <b>Privacy icon.</b><br><br>
+Additionally, for long-term and stable operation, the application requires permission to display a persistent notification.<br>
+    If the notification is turned off during operation, the application may be stopped by the system.<br><br>
+    Disabling background activity control (recommended) will further protect the app from being stopped by the system during prolonged operation.<br><br>
 ]]></string>
 
     <string name="notice"><![CDATA[<br><br><b>This app includes open source and third-party libraries:</b><br><br>
