@@ -19,7 +19,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/collectBatteryButton"
         app:layout_constraintTop_toTopOf="parent"
-        app:backgroundTint="@color/black3"
+        app:background="@color/black3"
         app:rippleColor="@color/spinner_font"
         app:tint="@color/no_data"/>
 

@@ -27,13 +27,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
+import java.util.Set;
 import java.util.TreeMap;
+import java.util.TreeSet;
 import java.util.regex.Pattern;
 
 public class ChartBuilder {
 
     public static final Path EMPTY_PATH = Paths.get("empty");
-    private static final int CHART_LENGTH = 1440;
+    private static final int CHART_LENGTH = 1500;
     private final int[] mColorsInChart = new int[CHART_LENGTH];
     private static final Pattern LOG_PATTERN = Pattern.compile("^\\d+,\\w+,\\d$");
     private final Context mContext;
@@ -84,6 +86,7 @@ public class ChartBuilder {
             mChart.setData(barData);
 
             mChart.fitScreen();
+            mChart.setVisibleXRangeMinimum(5f);
 
             setHorizontalAxis();
             setVerticalAxis();
@@ -107,10 +110,10 @@ public class ChartBuilder {
     }
 
     private void fillFutureBar(List<BarEntry> emptyEntries, LogLine log) {
-        int time = log.getTime();
+        int time = log.getTime() + 30;
         int color = getColor(log.getType());
         int level = log.getLevel() + 1;
-        int futureEnd = time < CHART_LENGTH - 60 ? time + 60 : CHART_LENGTH;
+        int futureEnd = time < CHART_LENGTH - 90 ? time + 60 : CHART_LENGTH - 30;
         for (int j = time; j < futureEnd; j++) {
             emptyEntries.set(j, new BarEntry(j, level));
             mColorsInChart[j] = color;
@@ -236,7 +239,7 @@ public class ChartBuilder {
     private void setHorizontalAxis() {
         XAxis xAxis = mChart.getXAxis();
         xAxis.setPosition(XAxis.XAxisPosition.TOP);
-        xAxis.setGranularity(0f);
+        xAxis.setGranularity(1f);
         xAxis.setDrawGridLines(false);
         xAxis.setTextColor(ContextCompat.getColor(mContext, R.color.black));
         xAxis.setTextSize(11f);
@@ -244,10 +247,16 @@ public class ChartBuilder {
         xAxis.setValueFormatter(new ValueFormatter() {
             @Override
             public String getFormattedValue(float value) {
-                int totalMinutes = (int) value;
-                int hours = totalMinutes / 60;
-                int minutes = totalMinutes % 60;
-                return String.format(Locale.US, "%02d:%02d", hours, minutes);
+
+                if(value < CHART_LENGTH - 30 && value >= 30) {
+                    int totalMinutes = (int) value - 30;
+                    int hours = totalMinutes / 60;
+                    int minutes = totalMinutes % 60;
+                    return String.format(Locale.US, "%02d:%02d", hours, minutes);
+                } else {
+                    return "";
+                }
+
             }
         });
 
