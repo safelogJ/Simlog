@@ -16,7 +16,7 @@ Definitions:
 For the purposes of this Privacy Policy:
 
 Application means Simlog, the software provided by the Company.
-The Company (referred to in this Agreement as the “Company”, “We”, “Us” or “Our”) is an individual entrepreneur Evgeniy Vasilievich Chekmazov.
+The Company (referred to in this Agreement as the “Company”, “We”, “Us” or “Our”) is an individual entrepreneur Evgenii Chekmazov.
 Country refers to: Russia
 Device means any device that can access the Service,
 such as a computer, mobile phone or digital tablet.
