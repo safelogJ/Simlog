@@ -74,8 +74,6 @@ public class ChartBuilder {
             mChart.invalidate();
 
         } else {
-            setMLevelPercents(entryList);
-            setTypePercents();
 
             BarDataSet dataSet = new BarDataSet(entryList, "Graph");
             dataSet.setColors(mColorsInChart);
@@ -160,69 +158,7 @@ public class ChartBuilder {
         }
         return new ArrayList<>(logTree.values());
     }
-
-    private void setMLevelPercents(List<BarEntry> entryList) {
-        Arrays.fill(mPercentsOfSignalLvl, 0);
-        Arrays.fill(mLevels, 0);
-        for (BarEntry entry : entryList) {
-            int lvl = (int) entry.getY();
-            mLevels[lvl]++;
-        }
-        countPercents(mPercentsOfSignalLvl, mLevels);
-    }
-
-
-    private void countPercents(int[] result, int[] counter) {
-        int sum = 0;
-        int counterLength = counter.length;
-        for (int i = 1; i < counterLength; i++) {
-            sum += counter[i];
-        }
-
-        if (sum == 0) {
-            return;
-        }
-        int totalPercentage = 0;
-
-        for (int i = 1; i < counterLength; i++) {
-            result[i] = (int) Math.ceil((counter[i] * 100.0) / sum);
-            totalPercentage += result[i];
-        }
-        adjustPercents(result, totalPercentage);
-    }
-
-    private void adjustPercents(int[] result, int totalPercentage) {
-        int diff = 100 - totalPercentage;
-        int resultLength = result.length;
-        while (diff < 0) {
-            for (int i = 1; i < resultLength; i++) {
-                if (result[i] > 1 && diff < 0) {
-                    result[i]--;
-                    diff++;
-                }
-            }
-        }
-
-    }
-
-    private void setTypePercents() {
-        Arrays.fill(mPercentsOfTypeNetwork, 0);
-        Arrays.fill(mColors, 0);
-        int colorLength = mColorsInChart.length;
-        int paletteLength = mPalette.length;
-
-        for (int i = 0; i < colorLength; i++) {
-            for (int j = 1; j < paletteLength; j++) {
-                if (mColorsInChart[i] == mPalette[j]) {
-                    mColors[j]++;
-                    break;
-                }
-            }
-        }
-
-        countPercents(mPercentsOfTypeNetwork, mColors);
-    }
-
+  
     private void initChart() {
         mChart.getDescription().setEnabled(false);
         mChart.setBackgroundColor(ContextCompat.getColor(mContext, R.color.main_background));
@@ -243,23 +179,7 @@ public class ChartBuilder {
         xAxis.setDrawGridLines(false);
         xAxis.setTextColor(ContextCompat.getColor(mContext, R.color.black));
         xAxis.setTextSize(11f);
-
-        xAxis.setValueFormatter(new ValueFormatter() {
-            @Override
-            public String getFormattedValue(float value) {
-
-                if(value < CHART_LENGTH - 30 && value >= 30) {
-                    int totalMinutes = (int) value - 30;
-                    int hours = totalMinutes / 60;
-                    int minutes = totalMinutes % 60;
-                    return String.format(Locale.US, "%02d:%02d", hours, minutes);
-                } else {
-                    return "";
-                }
-
-            }
-        });
-
+        
     }
 
     private void setVerticalAxis() {
