@@ -1,26 +1,31 @@
-Приложение для сохранения истории, об уровне сигнала сим-карты и типе передачи данных (интернета). Приложение сохраняет полученные данные (по минутам) и рисует из них суточный график.
+An application for tracking the history of mobile signal strength and data transmission type (internet). The app records the collected data (per minute) and creates a daily graph from it.
 
- С его помощью можно сравнить как ведут себя разные симки в равных условиях. Или просто узнать когда, какой сигнал был в течении дня. 
-Приложение не является инструментом измерения.
-Все данные о работе сим-карт хранятся в вашем телефоне в папке приложения в текстовых файлах. И никуда не передаются.
+With this app, you can compare how different SIM cards perform under identical conditions or simply check the signal status at any given time during the day.
+The application is not a measurement tool.
+The data displayed on the graphs is generated based on information received from your device and may differ from actual values.
 
-Данные с которыми работает приложение:
-1. Уровень сигнала мобильной сети.
-2. Тип передачи данных.
-3. Номер слота активной SIM-карты.
-4. Название SIM-карты.
+All information about SIM card performance is stored locally on your phone in text files located in the app's folder. The data is not shared or transmitted anywhere.
 
-Для получения таких данных от телефона, приложение потребует разрешение на управление звонками.
-Приложение работает как фоновый сервис, поэтому для длительной и стабильной работы ему требуется разрешение на отображение постоянного уведомления и рекомендуется снятие ограничения контроля активности (батарейка).
+Data handled by the app:
+Mobile network signal strength.
+Type of data transmission.
+Active SIM card slot number.
+SIM card name.
+To access such information from your phone, the app requires permission to manage calls.
 
-С помощью приложения вы так же можете отобразить график уровня сигнала и типа интернета вашего роутера Mikrotik с LTE модемом, следуя следующей инструкции.
+The app functions as a background service, so for stable and long-term operation, it requires permission to display a persistent notification. It is also recommended to disable battery optimization for the app to ensure uninterrupted activity tracking.
 
-Скрипт проверен на роутере hAP AC3 LTE6 RouterOs 7.20.4 , прошивка модема R11e-LTE6_V039
-У вас в роутере должен быть настроен инструмент email (tools/email)
+With this app, you can also display a graph of the signal level and internet type of your MikroTik router with an LTE modem by following this guide.
 
-1. добавьте планировщик
+The script has been tested on hAP ac³ LTE6 RouterOS 7.20.4, modem firmware R11e-LTE6_V039.
+Your router must have the email tool configured (/tool/email).
+
+1. Add a scheduler:
+```bash
  /system/scheduler/add name=simlogger start-time=startup interval=00:00:55 on-event=simlogger
-2. создайте скрипт с названием simlogger и добавьте в скрипт следующий код, не забудьте указать свою почту в скрипте.
+ ```
+2. Create a script named simlogger and add the following code.
+Don't forget to specify your email in the script:
 ```bash
 :local toEmail "you@email.net"
 :local MAXMINUTE 1438
@@ -123,10 +128,15 @@
     }
 }
 ```
-этот скрипт будет каждые 55 секунд запрашивать уровень сигнала и тип подключения у модеме и сохранять в глобальную переменную, 
-в 23:58 он будет отправлять письмо на указанную вами почту с файлом с наокпленной за сутки статистикой, в 23:59 он будет удалять этот файл из роутера после отправки.
-Имя файла будет состоять из Identity роутера и текущей даты, этот файл вы можете положить в телефон,
-в папку приложения (/Android/data/com.safelogj.simlog/files/) и открыть в приложении.
+This script queries the LTE modem every 55 seconds for signal level and connection type, and stores the data in a global variable.
+
+At 23:58, it sends the collected daily statistics to your email as a file.
+At 23:59, it deletes the file from the router after sending it.
+
+The filename will consist of the router’s Identity and the current date.
+You can save this file to your phone in the folder:
+/Android/data/com.safelogj.simlog/files/
+and then open it in the app.
 
 
 Unless required by applicable law or agreed to in writing, software
