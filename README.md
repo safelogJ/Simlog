@@ -1,24 +1,23 @@
 ## An application for tracking the history of mobile signal strength and data transmission type (internet). The app records the collected data (per minute) and creates a daily graph from it.
 
-### With this app, you can compare how different SIM cards perform under identical conditions or simply check the signal status at any given time during the day.
+With this app, you can compare how different SIM cards perform under identical conditions or simply check the signal status at any given time during the day.
 The application is not a measurement tool.
 The data displayed on the graphs is generated based on information received from your device and may differ from actual values.
-
 All information about SIM card performance is stored locally on your phone in text files located in the app's folder. The data is not shared or transmitted anywhere.
 
-Data handled by the app:
-Mobile network signal strength.
-Type of data transmission.
-Active SIM card slot number.
-SIM card name.
-To access such information from your phone, the app requires permission to manage calls.
+#### Data handled by the app:
+- Mobile network signal strength.
+- Type of data transmission.
+- Active SIM card slot number.
+- SIM card name.
+#### To access such information from your phone, the app requires permission to manage calls.
 
 The app functions as a background service, so for stable and long-term operation, it requires permission to display a persistent notification. It is also recommended to disable battery optimization for the app to ensure uninterrupted activity tracking.
 
 With this app, you can also display a graph of the signal level and internet type of your MikroTik router with an LTE modem by following this guide.
 
-The script has been tested on hAP ac³ LTE6 RouterOS 7.20.4, modem firmware R11e-LTE6_V039.
-Your router must have the email tool configured (/tool/email).
+#### The script has been tested on hAP ac³ LTE6 RouterOS 7.20.4, modem firmware R11e-LTE6_V039.
+##### Your router must have the email tool configured (/tool/email).
 
 1. Add a scheduler:
 ```bash
@@ -129,9 +128,8 @@ Don't forget to specify your email in the script:
 }
 ```
 This script queries the LTE modem every 55 seconds for signal level and connection type, and stores the data in a global variable.
-
-At 23:58, it sends the collected daily statistics to your email as a file.
-At 23:59, it deletes the file from the router after sending it.
+- At 23:58, it sends the collected daily statistics to your email as a file.
+- At 23:59, it deletes the file from the router after sending it.
 
 The filename will consist of the router’s Identity and the current date.
 You can save this file to your phone in the folder:
