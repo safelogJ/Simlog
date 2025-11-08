@@ -1,6 +1,6 @@
-An application for tracking the history of mobile signal strength and data transmission type (internet). The app records the collected data (per minute) and creates a daily graph from it.
+## An application for tracking the history of mobile signal strength and data transmission type (internet). The app records the collected data (per minute) and creates a daily graph from it.
 
-With this app, you can compare how different SIM cards perform under identical conditions or simply check the signal status at any given time during the day.
+# With this app, you can compare how different SIM cards perform under identical conditions or simply check the signal status at any given time during the day.
 The application is not a measurement tool.
 The data displayed on the graphs is generated based on information received from your device and may differ from actual values.
 
