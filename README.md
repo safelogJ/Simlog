@@ -118,25 +118,17 @@ Don't forget to specify your email in the script:
 :local line ($minute . "," . $tech . "," . $lvl)
 
 :if ($minute < $MAXMINUTE) do={
-
-    # накапливаем лог
     :if ($LTELog = "" || [:len $LTELog] = 0) do={
         :set LTELog $line
     } else={
         :set LTELog ($LTELog . "\r\n" . $line)
     }
-
 } else={
-
-    # конец суток – запись и отправка
     :if ([:len $LTELog] > 0 && $LTELog != "") do={
-
         :local dateStr [/system/clock/get date]
         :set LTEFileName ($id . "_" . $dateStr . ".txt")
-
         /file add name=$LTEFileName contents=$LTELog
         /tool e-mail send to=$toEmail subject=("LTE Log for " . $dateStr . " (" . $id . ")") file=$LTEFileName
-
         :set LTELog ""
     } else={
         :if ([/file find name=$LTEFileName] != "") do={
