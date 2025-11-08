@@ -17,13 +17,13 @@ The app functions as a background service, so for stable and long-term operation
 With this app, you can also display a graph of the signal level and internet type of your MikroTik router with an LTE modem by following this guide.
 
 #### The script has been tested on hAP ac³ LTE6 RouterOS 7.20.4, modem firmware R11e-LTE6_V039.
-##### Your router must have the email tool configured (/tool/email).
+#### Your router must have the email tool configured (/tool/email).
 
-1. Add a scheduler:
+#### 1. Add a scheduler:
 ```bash
  /system/scheduler/add name=simlogger start-time=startup interval=00:00:55 on-event=simlogger
  ```
-2. Create a script named simlogger and add the following code.
+#### 2. Create a script named simlogger and add the following code.
 Don't forget to specify your email in the script:
 ```bash
 :local toEmail "you@email.net"
@@ -131,10 +131,10 @@ This script queries the LTE modem every 55 seconds for signal level and connecti
 - At 23:58, it sends the collected daily statistics to your email as a file.
 - At 23:59, it deletes the file from the router after sending it.
 
-The filename will consist of the router’s Identity and the current date.
-You can save this file to your phone in the folder:
-/Android/data/com.safelogj.simlog/files/
-and then open it in the app.
+#### The filename will consist of the router’s Identity and the current date.
+#### You can save this file to your phone in the folder:
+#### /Android/data/com.safelogj.simlog/files/
+#### and then open it in the app.
 
 
 Unless required by applicable law or agreed to in writing, software
