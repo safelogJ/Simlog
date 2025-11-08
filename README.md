@@ -26,7 +26,7 @@ The app functions as a background service, so for stable and long-term operation
 #### 2. Create a script named simlogger and add the following code.
 Don't forget to specify your email in the script:
 ```bash
-:local toEmail "you@email.net"
+:local toEmail "you@mail.net"
 :local MAXMINUTE 1438
 :local id [/system/identity/get name]
 
@@ -73,16 +73,29 @@ Don't forget to specify your email in the script:
 }
 
 :local tech "xG"
-:if ($techRaw = "LTE" || $techRaw = "E-UTRAN" || $techRaw = "3") do={
+
+# LTE / 4G variants
+:if ($techRaw = "LTE" || \
+     $techRaw = "Evolved 3G (LTE)" || \
+     $techRaw = "LTE (CA2)" || \
+     $techRaw = "Evolved 3G (LTE CA2)") do={
     :set tech "4G"
 } else={
-    :if ($techRaw = "NR5G") do={
+    # 5G variants
+    :if ($techRaw = "NR5G" || \
+         $techRaw = "5G" || \
+         $techRaw = "NR") do={
         :set tech "5G"
     } else={
-        :if ($techRaw = "WCDMA" || $techRaw = "UTRAN" || $techRaw = "1" || $techRaw = "2") do={
+        # 3G variants
+        :if ($techRaw = "3G" || \
+             $techRaw = "3G HSDPS & HSUPA" || \
+             $techRaw = "3G HSPA+" || \
+             $techRaw = "3G HSDPA") do={
             :set tech "3G"
         } else={
-            :if ($techRaw = "GPRS" || $techRaw = "EDGE" || $techRaw = "GSM" || $techRaw = "0") do={
+            # 2G variant
+            :if ($techRaw = "GSM compact") do={
                 :set tech "2G"
             }
         }
@@ -105,26 +118,32 @@ Don't forget to specify your email in the script:
 :local line ($minute . "," . $tech . "," . $lvl)
 
 :if ($minute < $MAXMINUTE) do={
-    :if ($LTELog = "") do={
+
+    # накапливаем лог
+    :if ($LTELog = "" || [:len $LTELog] = 0) do={
         :set LTELog $line
     } else={
         :set LTELog ($LTELog . "\r\n" . $line)
     }
+
 } else={
-    :if ([:len $LTELog] > 0) do={
+
+    # конец суток – запись и отправка
+    :if ([:len $LTELog] > 0 && $LTELog != "") do={
+
         :local dateStr [/system/clock/get date]
         :set LTEFileName ($id . "_" . $dateStr . ".txt")
 
-        /file print file=$LTEFileName
-        /file set $LTEFileName contents=$LTELog
-
+        /file add name=$LTEFileName contents=$LTELog
         /tool e-mail send to=$toEmail subject=("LTE Log for " . $dateStr . " (" . $id . ")") file=$LTEFileName
+
         :set LTELog ""
     } else={
         :if ([/file find name=$LTEFileName] != "") do={
-         /file remove $LTEFileName
-         }
+           /file remove $LTEFileName
+        }
     }
+  }
 }
 ```
 This script queries the LTE modem every 55 seconds for signal level and connection type, and stores the data in a global variable.
