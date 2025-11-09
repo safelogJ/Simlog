@@ -78,35 +78,57 @@ Don't forget to specify your email in the script:
 :if ($techRaw = "LTE" || \
      $techRaw = "Evolved 3G (LTE)" || \
      $techRaw = "LTE (CA2)" || \
+     $techRaw = "LTE-A" || \
+     $techRaw = "LTE CA" || \
+     $techRaw = "LTE (CA)" || \
+     $techRaw = "E-UTRAN" || \
      $techRaw = "Evolved 3G (LTE CA2)") do={
     :set tech "4G"
 } else={
+
     # 5G variants
     :if ($techRaw = "NR5G" || \
          $techRaw = "5G" || \
          $techRaw = "NR") do={
         :set tech "5G"
     } else={
+
         # 3G variants
         :if ($techRaw = "3G" || \
+             $techRaw = "WCDMA" || \
+             $techRaw = "UTRAN" || \
+             $techRaw = "HSPA" || \
+             $techRaw = "HSPA+" || \
+             $techRaw = "HSUPA" || \
+             $techRaw = "3G HSUPA" || \
+             $techRaw = "HSDPA" || \
+             $techRaw = "HSDPA & HSUPA" || \
+             $techRaw = "HSDPS & HSUPA" || \
+             $techRaw = "3G HSDPA & HSUPA" || \
              $techRaw = "3G HSDPS & HSUPA" || \
              $techRaw = "3G HSPA+" || \
              $techRaw = "3G HSDPA") do={
             :set tech "3G"
         } else={
-            # 2G variant
-            :if ($techRaw = "GSM compact") do={
+
+            # 2G variants
+            :if ($techRaw = "GSM" || \
+                 $techRaw = "GPRS" || \
+                 $techRaw = "EDGE" || \
+                 $techRaw = "GSM compact" || \
+                 $techRaw = "EGPRS") do={
                 :set tech "2G"
             }
         }
     }
 }
 
-:local lvl 0
-:if ($rssi > -75) do={:set lvl 4} else={
-    :if ($rssi > -85) do={:set lvl 3} else={
-        :if ($rssi > -95) do={:set lvl 2} else={
-            :if ($rssi > -105) do={:set lvl 1} else={:set lvl 0}
+
+:local lvl -1
+:if ($rssi > -65) do={:set lvl 4} else={
+    :if ($rssi > -75) do={:set lvl 3} else={
+        :if ($rssi > -85) do={:set lvl 2} else={
+            :if ($rssi > -95) do={:set lvl 1} else={:set lvl 0}
         }
     }
 }
@@ -135,7 +157,6 @@ Don't forget to specify your email in the script:
            /file remove $LTEFileName
         }
     }
-  }
 }
 ```
 This script queries the LTE modem every 55 seconds for signal level and connection type, and stores the data in a global variable.
