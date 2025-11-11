@@ -15,7 +15,7 @@ All information about SIM card performance is stored locally on your phone in te
 The app functions as a background service, so for stable and long-term operation, it requires permission to display a persistent notification. It is also recommended to disable battery optimization for the app to ensure uninterrupted activity tracking.
 
 ### With this app, you can also display a graph of the signal level and internet type of your MikroTik router with an LTE modem by following this guide.
-![Simlog](.simlogNew4.png)
+![Simlog](./simlogNew4.png)
 
 #### The script has been tested on hAP ac³ LTE6 RouterOS 7.20.4, modem firmware R11e-LTE6_V039.
 #### Your router must have the email tool configured (/tool/email).
