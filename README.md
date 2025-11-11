@@ -200,7 +200,7 @@ This script queries the LTE modem every 55 seconds for signal level and connecti
 - At 23:58, it sends the collected daily statistics to your email as a file.
 - At 23:59, it deletes the file from the router after sending it.
 
-#### The filename will consist of the router’s Identity and the current date. You can save this file to your phone in the folder: /Android/data/com.safelogj.simlog/files/ and then open it in the app.
+#### The filename will consist of the router’s Identity and the current date. You must put this file to your phone in the folder: /Android/data/com.safelogj.simlog/files/ and then open it in the app.
 
 
 Unless required by applicable law or agreed to in writing, software
