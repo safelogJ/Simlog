@@ -36,7 +36,7 @@ Don't forget to specify your email in the script:
 :if ([:len $lteData] > 0) do={
     :set ifaceName ([:pick $lteData 0]->"name")
 } else={
-    :return
+    :quit
 }
 
 :global LTELog
