@@ -20,7 +20,7 @@ The app functions as a background service, so for stable and long-term operation
 #### The script has been tested on hAP ac³ LTE6 RouterOS 7.20.4, modem firmware R11e-LTE6_V039.
 #### Your router must have the email tool configured (/tool/email).
 
-#### 1. Add a scheduler:
+#### 1. Add a scheduler using terminal command:
 ```bash
  /system/scheduler/add name=simlogger start-time=startup interval=00:00:55 on-event=simlogger
  ```
