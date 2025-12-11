@@ -28,7 +28,6 @@ The app functions as a background service, so for stable and long-term operation
 Don't forget to specify your email in the script:
 ```bash
 :local toEmail "you@mail.net"
-:local toEmail "safelog@yandex.ru"
 :local MAXMINUTE 1438
 :local id [/system/identity/get name]
 
