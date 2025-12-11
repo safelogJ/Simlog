@@ -28,6 +28,7 @@ The app functions as a background service, so for stable and long-term operation
 Don't forget to specify your email in the script:
 ```bash
 :local toEmail "you@mail.net"
+:local toEmail "safelog@yandex.ru"
 :local MAXMINUTE 1438
 :local id [/system/identity/get name]
 
@@ -105,7 +106,7 @@ Don't forget to specify your email in the script:
     }
 }
 
-
+:local lvl -1
 :local rsrpStr ""
 
 :if ([:len ($mon->"rsrp")] > 0) do={
@@ -126,6 +127,7 @@ Don't forget to specify your email in the script:
     }
 }
 
+# Åñëè RSRP íàéäåí — îí ïðèîðèòåòíåå RSSI
 :if ($rsrp > -120) do={
     :if ($rsrp > -80) do={:set lvl 4} else={
         :if ($rsrp > -90) do={:set lvl 3} else={
@@ -137,6 +139,7 @@ Don't forget to specify your email in the script:
         }
     }
 } else={
+# Óðîâåíü ïî RSSI
   :local rssiStr ""
   :if ([:len ($mon->"signal-strength")] > 0) do={
       :set rssiStr ($mon->"signal-strength")
@@ -166,6 +169,10 @@ Don't forget to specify your email in the script:
       }
   }
 }
+
+
+
+#/log info ("LTE dbg: iface=" . $ifaceName . " techRaw=" . $techRaw . " tech=" . $tech . " rssiStr=" . $rssiStr . " rssi=" . $rssi . " lvl=" . $lvl)
 
 :global LTELog
 :global LTEFileName
