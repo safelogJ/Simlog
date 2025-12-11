@@ -106,38 +106,8 @@ Don't forget to specify your email in the script:
 }
 
 
-:local rssiStr ""
-:if ([:len ($mon->"signal-strength")] > 0) do={
-    :set rssiStr ($mon->"signal-strength")
-} else={
-    :if ([:len ($mon->"rssi")] > 0) do={
-        :set rssiStr ($mon->"rssi")
-    }
-}
-
-:local rssi -140
-:if ([:len $rssiStr] > 0) do={
-    :local L [:len $rssiStr]
-    :if ($L > 3 && [:pick $rssiStr ($L-3) $L] = "dBm") do={
-        :set rssi [:tonum [:pick $rssiStr 0 ($L-3)]]
-    } else={
-        :set rssi [:tonum $rssiStr]
-    }
-}
-
-:local lvl -1
-
-:if ($rssi > -65) do={:set lvl 4} else={
-    :if ($rssi > -75) do={:set lvl 3} else={
-        :if ($rssi > -85) do={:set lvl 2} else={
-            :if ($rssi > -95) do={:set lvl 1} else={
-                :if ($rssi > -120) do={:set lvl 0}
-            }
-        }
-    }
-}
-
 :local rsrpStr ""
+
 :if ([:len ($mon->"rsrp")] > 0) do={
     :set rsrpStr ($mon->"rsrp")
 } else={
@@ -166,11 +136,36 @@ Don't forget to specify your email in the script:
             }
         }
     }
+} else={
+  :local rssiStr ""
+  :if ([:len ($mon->"signal-strength")] > 0) do={
+      :set rssiStr ($mon->"signal-strength")
+  } else={
+      :if ([:len ($mon->"rssi")] > 0) do={
+          :set rssiStr ($mon->"rssi")
+      }
+  }
+
+  :local rssi -140
+  :if ([:len $rssiStr] > 0) do={
+      :local L [:len $rssiStr]
+      :if ($L > 3 && [:pick $rssiStr ($L-3) $L] = "dBm") do={
+          :set rssi [:tonum [:pick $rssiStr 0 ($L-3)]]
+      } else={
+          :set rssi [:tonum $rssiStr]
+      }
+  }
+
+  :if ($rssi > -65) do={:set lvl 4} else={
+      :if ($rssi > -75) do={:set lvl 3} else={
+          :if ($rssi > -85) do={:set lvl 2} else={
+              :if ($rssi > -95) do={:set lvl 1} else={
+                  :if ($rssi > -120) do={:set lvl 0}
+              }
+          }
+      }
+  }
 }
-
-
-
-#/log info ("LTE dbg: iface=" . $ifaceName . " techRaw=" . $techRaw . " tech=" . $tech . " rssiStr=" . $rssiStr . " rssi=" . $rssi . " lvl=" . $lvl)
 
 :global LTELog
 :global LTEFileName
