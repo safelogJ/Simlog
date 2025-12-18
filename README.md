@@ -185,8 +185,9 @@ Don't forget to specify your email in the script:
         /tool e-mail send to=$toEmail subject=("LTE Log for " . $dateStr . " (" . $id . ")") file=$LTEFileName
         :set LTELog ""
     } else={
-        :if ([/file find name=$LTEFileName] != "") do={
-           /file remove $LTEFileName
+        :local fileID [/file find name=$LTEFileName];
+        :if ([:len $fileID] > 0) do={
+           /file remove $fileID
         }
     }
 }
