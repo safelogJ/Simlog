@@ -172,13 +172,13 @@ Don't forget to specify your email in the script:
 :local line ($minute . "," . $tech . "," . $lvl)
 
 :if ($minute < $MAXMINUTE) do={
-    :if ($LTELog = "" || [:len $LTELog] = 0) do={
+    :if ([:len $LTELog] = 0) do={
         :set LTELog $line
     } else={
         :set LTELog ($LTELog . "\r\n" . $line)
     }
 } else={
-    :if ([:len $LTELog] > 0 && $LTELog != "") do={
+    :if ([:len $LTELog] > 0) do={
         :local dateStr [/system/clock/get date]
         :set LTEFileName ($id . "_" . $dateStr . ".txt")
         /file add name=$LTEFileName contents=$LTELog
