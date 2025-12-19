@@ -63,7 +63,8 @@ Don't forget to specify your email in the script:
     "HSDPA & HSUPA"="3G"; "HSDPS & HSUPA"="3G";
     "3G HSDPA & HSUPA"="3G"; "3G HSDPS & HSUPA"="3G";
     "3G HSPA+"="3G"; "3G HSDPA"="3G";
-    "GSM"="2G"; "GPRS"="2G"; "EDGE"="2G"; "EGPRS"="2G"; "GSM compact"="2G"
+    "GSM"="2G"; "GPRS"="2G"; "EDGE"="2G"; "EGPRS"="2G"; "GSM compact"="2G";
+    "GSM EGPRS"="2G"; "GSM GPRS"="2G"; "GSM EDGE"="2G"
 }
 
 :local tech "xG"
