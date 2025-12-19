@@ -54,55 +54,21 @@ Don't forget to specify your email in the script:
     :set techRaw ($mon->"access-technology")
 }
 
+:local techMap {
+    "LTE"="4G"; "LTE-A"="4G"; "LTE CA"="4G"; "LTE (CA)"="4G"; "LTE (CA2)"="4G"; "E-UTRAN"="4G"; 
+    "Evolved 3G (LTE)"="4G"; "Evolved 3G (LTE CA2)"="4G";
+    "NR5G"="5G"; "5G"="5G"; "NR"="5G";
+    "3G"="3G"; "WCDMA"="3G"; "UTRAN"="3G"; "HSPA"="3G"; "HSPA+"="3G";
+    "HSUPA"="3G"; "3G HSUPA"="3G"; "HSDPA"="3G";
+    "HSDPA & HSUPA"="3G"; "HSDPS & HSUPA"="3G";
+    "3G HSDPA & HSUPA"="3G"; "3G HSDPS & HSUPA"="3G";
+    "3G HSPA+"="3G"; "3G HSDPA"="3G";
+    "GSM"="2G"; "GPRS"="2G"; "EDGE"="2G"; "EGPRS"="2G"; "GSM compact"="2G"
+}
+
 :local tech "xG"
-
-# LTE / 4G variants
-:if ($techRaw = "LTE" || \
-     $techRaw = "Evolved 3G (LTE)" || \
-     $techRaw = "LTE (CA2)" || \
-     $techRaw = "LTE-A" || \
-     $techRaw = "LTE CA" || \
-     $techRaw = "LTE (CA)" || \
-     $techRaw = "E-UTRAN" || \
-     $techRaw = "Evolved 3G (LTE CA2)") do={
-    :set tech "4G"
-} else={
-
-    # 5G variants
-    :if ($techRaw = "NR5G" || \
-         $techRaw = "5G" || \
-         $techRaw = "NR") do={
-        :set tech "5G"
-    } else={
-
-        # 3G variants
-        :if ($techRaw = "3G" || \
-             $techRaw = "WCDMA" || \
-             $techRaw = "UTRAN" || \
-             $techRaw = "HSPA" || \
-             $techRaw = "HSPA+" || \
-             $techRaw = "HSUPA" || \
-             $techRaw = "3G HSUPA" || \
-             $techRaw = "HSDPA" || \
-             $techRaw = "HSDPA & HSUPA" || \
-             $techRaw = "HSDPS & HSUPA" || \
-             $techRaw = "3G HSDPA & HSUPA" || \
-             $techRaw = "3G HSDPS & HSUPA" || \
-             $techRaw = "3G HSPA+" || \
-             $techRaw = "3G HSDPA") do={
-            :set tech "3G"
-        } else={
-
-            # 2G variants
-            :if ($techRaw = "GSM" || \
-                 $techRaw = "GPRS" || \
-                 $techRaw = "EDGE" || \
-                 $techRaw = "GSM compact" || \
-                 $techRaw = "EGPRS") do={
-                :set tech "2G"
-            }
-        }
-    }
+:if ([:len ($techMap->$techRaw)] > 0) do={
+    :set tech ($techMap->$techRaw)
 }
 
 :local lvl -1
@@ -178,17 +144,18 @@ Don't forget to specify your email in the script:
         :set LTELog ($LTELog . "\r\n" . $line)
     }
 } else={
-    :if ([:len $LTELog] > 0) do={
         :local dateStr [/system/clock/get date]
         :set LTEFileName ($id . "_" . $dateStr . ".txt")
+        :if ([:len $LTEFileName] > 0) do={
+            :local oldFile [/file find name=$LTEFileName]
+            :if ([:len $oldFile] > 0) do={
+                /file remove $oldFile
+            }
+        }
+    :if ([:len $LTELog] > 0) do={
         /file add name=$LTEFileName contents=$LTELog
         /tool e-mail send to=$toEmail subject=("LTE Log for " . $dateStr . " (" . $id . ")") file=$LTEFileName
         :set LTELog ""
-    } else={
-        :local fileID [/file find name=$LTEFileName];
-        :if ([:len $fileID] > 0) do={
-           /file remove $fileID
-        }
     }
 }
 ```
