@@ -144,14 +144,14 @@ Don't forget to specify your email in the script:
         :set LTELog ($LTELog . "\r\n" . $line)
     }
 } else={
-        :local dateStr [/system/clock/get date]
-        :set LTEFileName ($id . "_" . $dateStr . ".txt")
-        :if ([:len $LTEFileName] > 0) do={
-            :local oldFile [/file find name=$LTEFileName]
-            :if ([:len $oldFile] > 0) do={
-                /file remove $oldFile
-            }
+    :local dateStr [/system/clock/get date]
+    :set LTEFileName ($id . "_" . $dateStr . ".txt")
+    :if ([:len $LTEFileName] > 0) do={
+        :local oldFile [/file find name=$LTEFileName]
+        :if ([:len $oldFile] > 0) do={
+            /file remove $oldFile
         }
+    }
     :if ([:len $LTELog] > 0) do={
         /file add name=$LTEFileName contents=$LTELog
         /tool e-mail send to=$toEmail subject=("LTE Log for " . $dateStr . " (" . $id . ")") file=$LTEFileName
