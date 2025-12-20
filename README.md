@@ -167,9 +167,13 @@ This script queries the LTE modem every 55 seconds for signal level and connecti
 
 #### The filename will consist of the router’s Identity and the current date. You must put this file to your phone in the folder: /Android/data/com.safelogj.simlog/files/ and then open it in the app.
 
-
+### If your SIM card has internet access but the graph shows an unknown network type (brown color,  type “xG”),
+the script may not recognize your Access Technology.
+Please check LTE interface → Cellular tab → Access Technology in WinBox and compare it with the values in the script.
+If your value is missing, please report it to simlog-app@yandex.ru.
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+## WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
