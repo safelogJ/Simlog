@@ -176,7 +176,7 @@ Please check LTE interface → Cellular tab → Access Technology in WinBox and 
  3G, WCDMA, UTRAN, HSPA, HSPA+, HSUPA, 3G HSUPA, HSDPA, HSDPA & HSUPA, HSDPS & HSUPA, 3G HSDPA & HSUPA, 3G HSDPS & HSUPA, 3G HSPA+, 3G HSDPA,
  GSM, GPRS, EDGE, EGPRS, GSM compact, GSM EGPRS, GSM GPRS, GSM EDGE
 
-If your value is missing, please report it to simlog-app@yandex.ru
+### If your value is missing, please report it to simlog-app@yandex.ru
 
    Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
