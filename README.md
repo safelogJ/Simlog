@@ -57,6 +57,7 @@ Don't forget to specify your email in the script:
 :local techMap {
     "LTE"="4G"; "LTE-A"="4G"; "LTE CA"="4G"; "LTE (CA)"="4G"; "LTE (CA2)"="4G"; "E-UTRAN"="4G"; 
     "Evolved 3G (LTE)"="4G"; "Evolved 3G (LTE CA2)"="4G";
+    "LTE (CA3)"="4G"; "Evolved 3G (LTE CA3)"="4G";
     "NR5G"="5G"; "5G"="5G"; "NR"="5G";
     "3G"="3G"; "WCDMA"="3G"; "UTRAN"="3G"; "HSPA"="3G"; "HSPA+"="3G";
     "HSUPA"="3G"; "3G HSUPA"="3G"; "HSDPA"="3G";
