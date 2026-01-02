@@ -52,6 +52,10 @@ Don't forget to specify your email in the script:
 :local techRaw ""
 :if ([:len ($mon->"access-technology")] > 0) do={
     :set techRaw ($mon->"access-technology")
+} else={
+    :if ([:len ($mon->"data-class")] > 0) do={
+        :set techRaw ($mon->"data-class")
+    }
 }
 
 :local techMap {
