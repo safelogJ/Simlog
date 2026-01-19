@@ -175,7 +175,7 @@ This script queries the LTE modem every 55 seconds for signal level and connecti
 the script may not recognize your Access Technology.
 Please check LTE interface → Cellular tab → Access Technology in WinBox and compare it with the values in the script:
 
- NR5G, 5G, NR,
+ NR5G, 5G, NR, 5G NSA, 5G SA,
  LTE, LTE-A, LTE CA, LTE (CA), LTE (CA2), E-UTRAN, Evolved 3G (LTE), Evolved 3G (LTE CA2), LTE (CA3), Evolved 3G (LTE CA3),
  3G, WCDMA, UTRAN, HSPA, HSPA+, HSUPA, 3G HSUPA, HSDPA, HSDPA & HSUPA, HSDPS & HSUPA, 3G HSDPA & HSUPA, 3G HSDPS & HSUPA, 3G HSPA+, 3G HSDPA,
  GSM, GPRS, EDGE, EGPRS, GSM compact, GSM EGPRS, GSM GPRS, GSM EDGE
