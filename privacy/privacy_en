@@ -1,7 +1,7 @@
 Privacy Policy for Simlog
 
 Privacy Policy
-Last update: September 02, 2025
+Last update: February 05, 2026.
 
 This Privacy Policy describes Our policies and procedures for collecting
 and using Your information when You use the Service,
@@ -47,9 +47,11 @@ The data in the files is stored in the format (minute number, data transfer type
 Storage of your personal data:
 The Company does not store your personal or other data.
 Usage data is stored on your device in the application folder (/Android/data/com.safelogj.simlog/files/).
+Data about saved routers (IP, login, password) is stored in the internal system folder of the application in encrypted form.
 
 Deleting collected data:
 You have the right to delete all files with collected data in the application folder (/Android/data/com.safelogj.simlog/files/).
+You have the right to delete data about saved routers through the application interface. To do this, select the router to be deleted, enter the command remove in the login field, and press the (+) button.
 
 Links to other sites:
 Our Service may contain links to other websites
