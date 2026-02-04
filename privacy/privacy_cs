@@ -1,6 +1,6 @@
 
 Zásady ochrany osobních údajů
-Poslední aktualizace: 02. září 2025
+Poslední aktualizace: 05. února 2026.
 
 Tato zásady ochrany osobních údajů popisují naše zásady a postupy sběru
 a používání vašich informací, když používáte službu,
@@ -46,9 +46,11 @@ Data v souborech jsou uchovávána ve formátu (číslo minuty, typ přenosu dat
 Uchovávání vašich osobních údajů:
 Společnost neuchovává vaše osobní ani jiné údaje.
 Údaje o používání jsou uchovávány ve vašem zařízení ve složce aplikace (/Android/data/com.safelogj.simlog/files/).
+Data o uložených routrech (IP, přihlašovací jméno, heslo) jsou uložena v interní systémové složce aplikace v zašifrované podobě.
 
 Mazání shromážděných údajů:
 Máte právo smazat všechny soubory se shromážděnými údaji ve složce aplikace (/Android/data/com.safelogj.simlog/files/).
+Máte právo odstranit data o uložených routrech přes rozhraní aplikace. Chcete-li to provést, vyberte router, který chcete smazat, zadejte do pole pro přihlášení příkaz remove a stiskněte tlačítko (+).
 
 Odkazy na jiné weby:
 Naše služba může obsahovat odkazy na jiné webové stránky,
