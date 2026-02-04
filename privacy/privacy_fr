@@ -1,6 +1,6 @@
 
 Politique de confidentialité
-Dernière mise à jour : 02 septembre 2025
+Dernière mise à jour : 05 février 2026.
 
 Cette politique de confidentialité décrit nos politiques et procédures de collecte
 et d'utilisation de vos informations lorsque vous utilisez le Service,
@@ -46,9 +46,11 @@ Les données dans les fichiers sont stockées au format (numéro de minute, type
 Stockage de vos données personnelles :
 L'Entreprise ne stocke aucune de vos données personnelles ou autres données.
 Les données d'utilisation sont stockées sur votre appareil dans le dossier de l'application (/Android/data/com.safelogj.simlog/files/).
+Les données des routeurs enregistrés (IP, login, mot de passe) sont stockées dans le dossier système interne de l’application de manière chiffrée.
 
 Suppression des données collectées :
 Vous avez le droit de supprimer tous les fichiers contenant des données collectées dans le dossier de l'application (/Android/data/com.safelogj.simlog/files/).
+Vous avez le droit de supprimer les données des routeurs enregistrés via l’interface de l’application. Pour ce faire, sélectionnez le routeur à supprimer, saisissez la commande remove dans le champ de login et appuyez sur le bouton (+).
 
 Liens vers d'autres sites :
 Notre Service peut contenir des liens vers d'autres sites web
