@@ -1,6 +1,6 @@
 
 Datenschutzerklärung
-Letzte Aktualisierung: 02. September 2025
+Letzte Aktualisierung: 05. Februar 2026.
 
 Diese Datenschutzerklärung beschreibt unsere Richtlinien und Verfahren zur Erhebung
 und Nutzung Ihrer Informationen, wenn Sie den Dienst nutzen,
@@ -46,9 +46,11 @@ Die Daten in den Dateien werden im Format (Minutennummer, Datentransfertyp, Netz
 Speicherung Ihrer personenbezogenen Daten:
 Die Firma speichert keine Ihrer personenbezogenen oder anderen Daten.
 Nutzungsdaten werden auf Ihrem Gerät im Anwendungsverzeichnis (/Android/data/com.safelogj.simlog/files/) gespeichert.
+Daten zu gespeicherten Routern (IP, Login, Passwort) werden im internen Systemordner der Anwendung verschlüsselt gespeichert.
 
 Löschen der gesammelten Daten:
 Sie haben das Recht, alle Dateien mit gesammelten Daten im Anwendungsverzeichnis (/Android/data/com.safelogj.simlog/files/) zu löschen.
+Sie haben das Recht, Daten zu gespeicherten Routern über die Benutzeroberfläche der Anwendung zu löschen. Wählen Sie dazu den zu löschenden Router aus, geben Sie im Login-Feld den Befehl remove ein und drücken Sie die (+)-Taste.
 
 Links zu anderen Seiten:
 Unser Dienst kann Links zu anderen Websites enthalten,
