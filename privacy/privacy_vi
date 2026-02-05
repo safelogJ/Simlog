@@ -1,6 +1,6 @@
 
 Chính Sách Quyền Riêng Tư
-Cập nhật lần cuối: 02 tháng 9, 2025
+Cập nhật lần cuối: 05 tháng 2, 2026.
 
 Chính sách quyền riêng tư này mô tả các chính sách và thủ tục của chúng tôi trong việc thu thập
 và sử dụng thông tin của bạn khi bạn sử dụng Dịch Vụ,
@@ -46,9 +46,11 @@ Dữ liệu trong các tệp được lưu trữ theo định dạng (số phút
 Lưu trữ Dữ liệu Cá nhân của Bạn:
 Công ty không lưu trữ dữ liệu cá nhân hoặc các dữ liệu khác của bạn.
 Dữ liệu sử dụng được lưu trữ trên thiết bị của bạn trong thư mục ứng dụng (/Android/data/com.safelogj.simlog/files/).
+Dữ liệu về các router đã lưu (IP, đăng nhập, mật khẩu) được lưu trữ trong thư mục hệ thống nội bộ của ứng dụng dưới dạng mã hóa.
 
 Xóa Dữ liệu Được Thu thập:
 Bạn có quyền xóa tất cả các tệp chứa dữ liệu thu thập được trong thư mục ứng dụng (/Android/data/com.safelogj.simlog/files/).
+Bạn có quyền xóa dữ liệu về các router đã lưu thông qua giao diện ứng dụng. Để làm điều này, chọn router cần xóa, nhập lệnh remove vào trường đăng nhập và nhấn nút (+).
 
 Liên kết đến Các Trang Web Khác:
 Dịch Vụ của chúng tôi có thể chứa các liên kết đến các trang web khác
