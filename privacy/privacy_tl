@@ -1,6 +1,6 @@
 
 Patakaran sa Privacy
-Huling update: Setyembre 02, 2025
+Huling update: Pebrero 05, 2026.
 
 Ang Patakaran sa Privacy na ito ay naglalarawan ng aming mga patakaran at pamamaraan sa pangangalap
 at paggamit ng iyong impormasyon kapag ginagamit mo ang Serbisyo,
@@ -46,9 +46,11 @@ Ang mga data sa mga file ay iniimbak sa format na (numero ng minuto, uri ng data
 Pag-iimbak ng Iyong Personal na Data:
 Ang Kumpanya ay hindi nag-iimbak ng iyong personal o ibang mga data.
 Ang Data ng Paggamit ay iniimbak sa iyong device sa folder ng aplikasyon (/Android/data/com.safelogj.simlog/files/).
+Ang data tungkol sa mga nai-save na router (IP, login, password) ay naka-imbak sa internal system folder ng app sa encrypted na anyo.
 
 Pagbura ng Nakolektang Data:
 May karapatan kang tanggalin ang lahat ng mga file na may nakolektang data sa folder ng aplikasyon (/Android/data/com.safelogj.simlog/files/).
+May karapatan kang tanggalin ang data ng mga nai-save na router sa pamamagitan ng interface ng app. Upang gawin ito, piliin ang router na tatanggalin, ilagay ang utos na remove sa login field, at pindutin ang (+) button.
 
 Mga Link sa Ibang Mga Site:
 Ang aming Serbisyo ay maaaring maglaman ng mga link sa ibang mga website
