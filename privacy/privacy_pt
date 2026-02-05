@@ -1,6 +1,6 @@
 
 Política de Privacidade
-Última atualização: 02 de setembro de 2025
+Última atualização: 05 de fevereiro de 2026.
 
 Esta Política de Privacidade descreve as nossas políticas e procedimentos para coletar
 e usar as suas informações quando você utiliza o Serviço,
@@ -46,9 +46,11 @@ Os dados nos arquivos são armazenados no formato (número do minuto, tipo de tr
 Armazenamento de seus Dados Pessoais:
 A Empresa não armazena seus dados pessoais ou outros dados.
 Os Dados de Uso são armazenados no seu dispositivo na pasta do aplicativo (/Android/data/com.safelogj.simlog/files/).
+Os dados sobre os routers salvos (IP, login, senha) são armazenados na pasta de sistema interna da aplicação de forma encriptada.
 
 Exclusão de Dados Coletados:
 Você tem o direito de excluir todos os arquivos com dados coletados na pasta do aplicativo (/Android/data/com.safelogj.simlog/files/).
+Você tem o direito de excluir os dados dos routers salvos através da interface da aplicação. Para isso, selecione o router a ser excluído, digite o comando remove no campo de login e pressione o botão (+).
 
 Links para outros sites:
 Nosso Serviço pode conter links para outros sites
