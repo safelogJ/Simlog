@@ -1,6 +1,6 @@
 
 Privacybeleid
-Laatste update: 02 september 2025
+Laatste update: 05 februari 2026.
 
 Dit Privacybeleid beschrijft ons beleid en de procedures voor het verzamelen
 en gebruiken van uw gegevens wanneer u de Dienst gebruikt,
@@ -46,9 +46,11 @@ De gegevens in de bestanden worden opgeslagen in het formaat (minuutnummer, gege
 Opslag van uw persoonlijke gegevens:
 Het Bedrijf slaat uw persoonlijke of andere gegevens niet op.
 Gebruiksgegevens worden opgeslagen op uw apparaat in de applicatiemap (/Android/data/com.safelogj.simlog/files/).
+Gegevens over opgeslagen routers (IP, login, wachtwoord) worden in de interne systeemmap van de applicatie versleuteld opgeslagen.
 
 Verwijdering van verzamelde gegevens:
 U heeft het recht om alle bestanden met verzamelde gegevens in de applicatiemap (/Android/data/com.safelogj.simlog/files/) te verwijderen.
+U hebt het recht om gegevens van opgeslagen routers te verwijderen via de gebruikersinterface van de applicatie. Selecteer de te verwijderen router, voer de opdracht remove in het login-veld in en druk op de (+)-knop.
 
 Links naar andere websites:
 Onze Dienst kan links naar andere websites bevatten
