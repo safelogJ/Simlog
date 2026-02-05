@@ -1,6 +1,6 @@
 
 Politica sulla privacy
-Ultimo aggiornamento: 02 settembre 2025
+Ultimo aggiornamento: 05 febbraio 2026.
 
 Questa politica sulla privacy descrive le nostre politiche e procedure per raccogliere
 e utilizzare le tue informazioni quando utilizzi il Servizio,
@@ -46,9 +46,11 @@ I dati nei file vengono memorizzati nel formato (numero minuto, tipo di trasferi
 Archiviazione dei tuoi Dati Personali:
 L'Azienda non archivia i tuoi dati personali o altri dati.
 I Dati di Utilizzo vengono archiviati sul tuo dispositivo nella cartella dell'applicazione (/Android/data/com.safelogj.simlog/files/).
+I dati dei router salvati (IP, login, password) sono memorizzati nella cartella di sistema interna dell’applicazione in forma crittografata.
 
 Eliminazione dei dati raccolti:
 Hai il diritto di eliminare tutti i file con i dati raccolti nella cartella dell'applicazione (/Android/data/com.safelogj.simlog/files/).
+ Hai il diritto di eliminare i dati dei router salvati tramite l’interfaccia dell’app. Per farlo, seleziona il router da eliminare, inserisci il comando remove nel campo login e premi il pulsante (+).
 
 Link ad altri siti:
 Il nostro Servizio può contenere link ad altri siti web
