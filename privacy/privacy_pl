@@ -1,6 +1,6 @@
 Polityka Prywatności dla Simlog
 Polityka Prywatności
-Ostatnia aktualizacja: 2 września 2025 r.
+Ostatnia aktualizacja: 05 lutego 2026.
 
 Niniejsza Polityka Prywatności opisuje nasze zasady i procedury dotyczące gromadzenia i wykorzystywania Twoich informacji podczas korzystania z Usługi oraz informuje Cię o Twoich prawach związanych z prywatnością i o tym, jak prawo Cię chroni.
 
@@ -42,9 +42,11 @@ Dane w plikach są przechowywane w formacie (numer minuty, typ transmisji danych
 Przechowywanie Twoich Danych Osobowych:
 Firma nie przechowuje Twoich danych osobowych ani innych danych.
 Dane użytkowania są przechowywane na Twoim urządzeniu w folderze aplikacji (/Android/data/com.safelogj.simlog/files/).
+Dane o zapisanych routerach (IP, login, hasło) są przechowywane w wewnętrznym folderze systemowym aplikacji w formie zaszyfrowanej.
 
 Usuwanie Zebranych Danych:
 Masz prawo usunąć wszystkie pliki z zebranymi danymi w folderze aplikacji (/Android/data/com.safelogj.simlog/files/).
+Masz prawo usunąć dane o zapisanych routerach za pomocą interfejsu aplikacji. Aby to zrobić, wybierz router do usunięcia, wpisz w polu logowania komendę remove i naciśnij przycisk (+).
 
 Linki do Innych Stron:
 Nasza Usługa może zawierać linki do innych witryn internetowych, którymi nie zarządzamy. Jeśli klikniesz link strony trzeciej, zostaniesz przekierowany do witryny tej strony trzeciej.
