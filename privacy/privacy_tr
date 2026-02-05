@@ -1,6 +1,6 @@
 
 Gizlilik Politikası
-Son güncelleme: 02 Eylül 2025
+Son güncelleme: 05 Şubat 2026.
 
 Bu Gizlilik Politikası, Hizmetimizi kullanırken bilgilerinizi toplama ve kullanma politikalarımızı ve prosedürlerimizi açıklar,
 ve gizlilik haklarınız ve yasanın sizi nasıl koruduğu hakkında bilgi verir.
@@ -43,9 +43,11 @@ Dosyalardaki veriler şu formatta saklanır (dakika numarası, veri iletim tür�
 Kişisel Verilerinizin Saklanması:
 Şirket, kişisel verilerinizi veya diğer verilerinizi saklamaz.
 Kullanım verileri cihazınızda uygulama klasöründe (/Android/data/com.safelogj.simlog/files/) saklanır.
+Kaydedilmiş yönlendiriciler (IP, kullanıcı adı, şifre) hakkındaki veriler uygulamanın dahili sistem klasöründe şifreli olarak saklanır.
 
 Toplanan Verilerin Silinmesi:
 Uygulama klasöründeki (/Android/data/com.safelogj.simlog/files/) tüm dosyaları silme hakkınız vardır.
+Uygulama arayüzü üzerinden kaydedilmiş yönlendirici verilerini silme hakkına sahipsiniz. Bunu yapmak için silinecek yönlendiriciyi seçin, giriş alanına remove komutunu girin ve (+) düğmesine basın.
 
 Diğer Siteler için Bağlantılar:
 Hizmetimiz, bizim tarafımızdan işletilmeyen diğer web sitelerine bağlantılar içerebilir.
