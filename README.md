@@ -14,6 +14,10 @@ All information about SIM card performance is stored locally on your phone in te
 
 The app functions as a background service, so for stable and long-term operation, it requires permission to display a persistent notification. It is also recommended to disable battery optimization for the app to ensure uninterrupted activity tracking.
 
+Supported routers :
+Keenetic | Netcraze
+Huawei CPE B593s-22
+
 ### With this app, you can also display a graph of the signal level and internet type of your MikroTik router with an LTE modem by following this guide.
 ![Simlog](./simlogNew5.png)
 
