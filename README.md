@@ -16,9 +16,10 @@ The app functions as a background service, so for stable and long-term operation
 
 #### Supported routers :
 
-Keenetic | Netcraze
-
-Huawei CPE B593s-22
+🔹 Keenetic | Netcraze
+🔹 Cudy — LT500 V2.0
+🔹 TP-Link — TL-MR150 v2
+🔹 Huawei CPE B593s-22
 
 ### With this app, you can also display a graph of the signal level and internet type of your MikroTik router with an LTE modem by following this guide.
 ![Simlog](./simlogNew5.png)
