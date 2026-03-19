@@ -10,7 +10,7 @@ This application includes open source and third-party libraries:
    Licensed under the Lottie Simple License (FL 9.13.21)
    Author: Revital Cahani
 
-3.Lottie
+3. Lottie
    Copyright © Airbnb, Inc.
    Licensed under the Apache License, Version 2.0
    https://github.com/airbnb/lottie-android
@@ -25,5 +25,7 @@ This application includes open source and third-party libraries:
    Licensed under the Apache License, Version 2.0
    https://github.com/square/okio
 
-6. Eralde rci-tools
-   https://github.com/Eralde/rci-tools
+6. rci-tools
+   Author: Eralde
+   License: ISC License
+   Link: https://github.com/Eralde/rci-tools
