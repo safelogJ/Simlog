@@ -1,0 +1,79 @@
+<resources>
+    <string name="start_promo_text">광고</string>
+    <string name="file_read_error">파일 읽기 오류.</string>
+    <string name="no_data_to_display">표시할 데이터가 없습니다.</string>
+    <string name="no_data_files">파일을 찾을 수 없습니다.</string>
+    <string name="need_choose_sim">SIM 카드를 선택하십시오.</string>
+    <string name="no_sim">SIM 카드가 없습니다.</string>
+    <string name="permission_denied">권한이 필요합니다.</string>
+    <string name="privacy_checkbox">저는 개인정보 보호정책의 조건을 읽고 동의함을 확인합니다.</string>
+    <string name="service_stopped">발전기를 밀어주세요.</string>
+    <string name="notification_title">Simlog가 실행 중입니다.</string>
+    <string name="notification_text">이 알림을 제거하지 마세요.</string>
+    <string name="notification_channel">서비스</string>
+    <string name="subscription_error">디바이스가 앱 기능을 지원하지 않습니다.</string>
+    <string name="collecting_time">작업 시간:</string>
+    <string name="collecting_write_lines">전체 데이터:</string>
+    <string name="collecting_errors">오류:</string>
+    <string name="collecting_day">일</string>
+    <string name="collecting_hour">시간</string>
+    <string name="collecting_min">분</string>
+    <string name="collecting_sec">초</string>
+    <string name="ad_id_text"><![CDATA[<br><br>우리는 광고 네트워크를 사용하여 광고를 표시합니다.<br><br>
+광고 네트워크는 개인화된 광고를 표시하기 위해 장치의 광고 ID를 포함한 데이터를 수집할 수 있습니다.<br><br>
+광고 개인화를 <font color = "#43A047"><b>허용</b></font>하거나 <font color = "#F44336"><b>비활성화</b></font>할 수 있습니다.<br><br>
+개인화를 비활성화하면 비개인화된 광고만 표시됩니다.<br><br>]]></string>
+
+    <string name="permit"><![CDATA[<br><br><b>이 앱은 다음과 같은 데이터 유형을 처리합니다:</b><br><br>
+<em>1. 모바일 네트워크 신호 강도.</em><br>
+<em>2. 데이터 전송 유형.</em><br>
+<em>3. 활성 SIM 카드 슬롯 번호.</em><br>
+<em>4. SIM 카드 이름.</em><br><br>
+SIM 카드와 관련된 데이터를 얻기 위해, 이 앱은 <b>통화 관리</b> 권한을 요청합니다.<br><br>
+자세한 정보를 보려면 <b>‘개인정보 보호’</b> 아이콘을 클릭하십시오.<br><br>
+또한 장기적이고 안정적인 작동을 위해서는 지속적인 알림을 표시할 수 있는 권한이 필요합니다.<br>
+    알림이 작동 중에 꺼지면 시스템에 의해 애플리케이션이 종료될 수 있습니다.<br><br>
+    백그라운드 활동 제어를 비활성화하는 것(권장)은 장시간 작동 중에 시스템에 의해 앱이 종료되지 않도록 추가적인 보호를 제공합니다.<br><br>
+
+<b>이 앱에서 사용되는 데이터 유형 기호:</b> <br><br>
+<font color="#E040FB"><b> 5G </b></font> - NR (New Radio), 5G NSA, 5G SA 표시<br>
+<font color="#2962FF"><b> 4G </b></font> - LTE, LTE (CA2), Evolved 3G (LTE) 표시<br>
+<font color="#00C853"><b> 3G </b></font> - HSDPA, HSUPA, HSPA, EVDO_B, EHRPD, UMTS 중 하나 표시<br>
+<font color="#E53935"><b> 2G </b></font> - EDGE, GPRS, CDMA, 1xRTT, IDEN 중 하나 표시<br>
+<font color="#795548"><b> xG </b></font> - 데이터 전송이 없기 때문에 알려지지 않은 유형 표시<br><br>
+<b><font color="#43A047">RSRP&nbsp;&gt;&nbsp;&nbsp;-80&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-65&nbsp;=&nbsp;&nbsp;&nbsp;5</font></b><br>
+<b><font color="#7CB342">RSRP&nbsp;&gt;&nbsp;&nbsp;-90&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-75&nbsp;=&nbsp;&nbsp;&nbsp;4</font></b><br>
+<b><font color="#FBC02D">RSRP&nbsp;&gt;&nbsp;-100&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-85&nbsp;=&nbsp;&nbsp;&nbsp;3</font></b><br>
+<b><font color="#FB8C00">RSRP&nbsp;&gt;&nbsp;-110&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-95&nbsp;=&nbsp;&nbsp;&nbsp;2</font></b><br>
+<b><font color="#D32F2F">RSRP&nbsp;&gt;&nbsp;-120&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-120&nbsp;=&nbsp;1</font></b><br><br>
+<b>지원되는 라우터 :</b><br>
+Keenetic | Netcraze<br>
+Cudy LT500 V2.0<br>
+TP-Link TL-MR150 v2<br>
+Huawei CPE B593s-22<br><br>
+<b>이 앱은 측정 도구가 아닙니다.</b><br>
+그래프에 표시된 데이터는 장치에서 수집된 정보를 기반으로 생성되었으며 실제 데이터와 다를 수 있습니다.<br><br>
+]]></string>
+
+    <string name="notice"><![CDATA[<br><br><b>이 앱은 오픈 소스 라이브러리와 타사 라이브러리를 사용합니다:</b><br><br>
+1. <b>MPAndroidChart</b> <a href="https://github.com/PhilJay/MPAndroidChart/">https://github.com/PhilJay/MPAndroidChart/</a><br>
+   아파치 라이선스, 버전 2.0에 따라 라이선스가 부여됩니다.<br>
+   <b>작성자:</b> 필립 자호다 (PhilJay)<br><br>
+2. <b>Free data Animation</b> <a href="https://lottiefiles.com/free-animation/data-V8HWwl7oWO">https://lottiefiles.com/free-animation/data-V8HWwl7oWO</a><br>
+   로티 심플 라이선스 (FL 9.13.21)에 따라 라이선스가 부여됩니다.<br>
+   <b>작성자:</b> 레비탈 카하니 <br><br>
+3. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">https://github.com/airbnb/lottie-android</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Airbnb, Inc. <br><br>
+4. <b>OkHttp</b> <a href="https://github.com/square/okhttp">https://github.com/square/okhttp</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+5. <b>Okio</b> <a href="https://github.com/square/okio">https://github.com/square/okio</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+
+
+]]></string>
+
+
+</resources>

@@ -1,0 +1,72 @@
+<br><br><b><a href="https://github.com/safelogJ/Simlog/blob/master/privacy/privacy_tr">Simlog İçin Gizlilik Politikası</a></b><br><br>
+
+Gizlilik Politikası<br>
+Son güncelleme: 05 Şubat 2026.<br><br>
+
+Bu Gizlilik Politikası, Hizmetimizi kullanırken bilgilerinizi toplama ve kullanma politikalarımızı ve prosedürlerimizi açıklar,
+ve gizlilik haklarınız ve yasanın sizi nasıl koruduğu hakkında bilgi verir.<br><br>
+
+Yorumlama ve Tanımlar:<br>
+Yorumlama:<br>
+Büyük harfle başlayan kelimeler, aşağıdaki terimlerde tanımlanan anlamlara sahiptir.<br>
+Aşağıdaki tanımlar, tekil ya da çoğul olarak kullanılsalar da aynı anlamı taşır.<br><br>
+
+Tanımlar:<br>
+Bu Gizlilik Politikası amacıyla:<br><br>
+
+Uygulama, Şirket tarafından sağlanan yazılım olan Simlog’u ifade eder.<br>
+Şirket (bu Sözleşmede “Şirket”, “Biz”, “Bize” veya “Bizim” olarak adlandırılır) bir bireysel girişimci olan Evgenii Chekmazov’dur.<br>
+Ülke: Rusya<br>
+Cihaz, Hizmeti erişebilen herhangi bir cihazı ifade eder,
+örneğin bir bilgisayar, mobil telefon veya dijital tablet.<br>
+Kişisel Veriler, kimliği belirlenmiş veya belirlenebilir bir bireyle ilgili herhangi bir bilgiyi ifade eder.<br>
+Hizmet, Uygulamayı ifade eder.<br>
+Kullanım Verileri, otomatik olarak toplanan verilerdir,
+Hizmeti kullanırken oluşturulabilir veya Hizmetin altyapısından (örneğin, bir sayfa ziyaretinin süresi) elde edilebilir.<br>
+Siz, Hizmeti erişen veya kullanan bireyi,
+veya bu birey adına Hizmeti erişen veya kullanan şirketi veya diğer tüzel kişiliği ifade eder,<br><br>
+
+Kişisel Verilerinizin Toplanması ve Kullanılması:<br>
+Toplanan Veri Türleri: Kullanım Verileri<br><br>
+
+Kullanım Verileri, Hizmeti kullandığınızda otomatik olarak toplanır.<br>
+Kullanım verileri, uygulama kullanım zamanı ve tarihi, uygulamada geçirilen zaman,
+telefondaki aktif SIM kart sayısı,
+SIM kartın adı, SIM kartın sinyal gücü,
+SIM kart tarafından kullanılan veri iletim türü gibi bilgileri içerebilir.<br>
+Toplanan veriler yalnızca uygulama içinde kullanılmakta,
+kullanıcı arayüzü dahil.<br>
+SIM kartların aktif durumlarını kullanıcıya göstermek için SIM kartın adı ve slot numarası kullanılır.<br>
+Slot numarası ve SIM kart adı, uygulama tarafından oluşturulan dosyaların adlarında kullanılır,
+bu dosyalar ağ sinyali gücü değişikliklerinin ve veri iletim türünün geçmişini saklar.<br>
+Dosyalardaki veriler şu formatta saklanır (dakika numarası, veri iletim türü, ağ sinyali gücü).<br><br>
+
+Kişisel Verilerinizin Saklanması:<br>
+Şirket, kişisel verilerinizi veya diğer verilerinizi saklamaz.<br>
+Kullanım verileri cihazınızda uygulama klasöründe (/Android/data/com.safelogj.simlog/files/) saklanır.<br>
+Kaydedilmiş yönlendiriciler (IP, kullanıcı adı, şifre) hakkındaki veriler uygulamanın dahili sistem klasöründe şifreli olarak saklanır.<br><br>
+
+Toplanan Verilerin Silinmesi:<br>
+Uygulama klasöründeki (/Android/data/com.safelogj.simlog/files/) tüm dosyaları silme hakkınız vardır.<br>
+Uygulama arayüzü üzerinden kaydedilmiş yönlendirici verilerini silme hakkına sahipsiniz. Bunu yapmak için silinecek yönlendiriciyi seçin, giriş alanına remove komutunu girin ve (+) düğmesine basın.<br><br>
+
+Diğer Siteler için Bağlantılar:<br>
+Hizmetimiz, bizim tarafımızdan işletilmeyen diğer web sitelerine bağlantılar içerebilir.
+Bir üçüncü taraf bağlantısına tıklarsanız,
+o üçüncü tarafın sitesine yönlendirileceksiniz.<br>
+Ziyaret ettiğiniz her site için Gizlilik Politikasını gözden geçirmenizi şiddetle tavsiye ederiz.<br>
+Üçüncü taraf sitelerinin içeriği,
+gizlilik politikaları veya uygulamaları üzerinde hiçbir kontrolümüz yoktur ve bu nedenle sorumluluk kabul etmiyoruz.<br><br>
+
+Bu Gizlilik Politikasındaki Değişiklikler:<br>
+Zaman zaman Gizlilik Politikamızı güncelleyebiliriz.<br>
+Değişiklikleri, bu sayfada yeni Gizlilik Politikasını yayımlayarak size bildireceğiz.<br>
+Değişiklikler geçerli olmadan önce, Hizmetimizde belirgin bir bildirimle sizi bilgilendireceğiz ve bu Gizlilik Politikasının başındaki “Son Güncellenme” tarihini güncelleyeceğiz.<br><br>
+
+Bu Gizlilik Politikasını zaman zaman gözden geçirmenizi öneririz.<br>
+Bu Gizlilik Politikasındaki değişiklikler, bu sayfada yayımlandığında geçerli olacaktır.<br><br>
+
+Bizimle İletişime Geçin:<br>
+Bu Gizlilik Politikası ile ilgili herhangi bir sorunuz varsa, bizimle iletişime geçebilirsiniz:<br><br>
+
+E-posta ile: simlog-app@yandex.ru<br><br>

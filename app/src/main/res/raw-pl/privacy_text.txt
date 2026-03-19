@@ -1,0 +1,77 @@
+<br><br><b><a href="https://github.com/safelogJ/Simlog/blob/master/privacy/privacy_pl">Polityka prywatności dla Simlog</a></b><br><br>
+
+Polityka prywatności<br>
+Ostatnia aktualizacja: 05 lutego 2026.<br><br>
+
+Niniejsza Polityka prywatności opisuje nasze zasady i procedury dotyczące gromadzenia
+i wykorzystywania Twoich informacji podczas korzystania z Usługi,
+oraz informuje Cię o Twoich prawach dotyczących prywatności i o tym, jak prawo Cię chroni.<br><br>
+
+Interpretacja i definicje:<br>
+Interpretacja:<br>
+Słowa rozpoczynające się wielką literą mają znaczenie określone w poniższych terminach.<br>
+Poniższe definicje mają to samo znaczenie niezależnie od tego, czy są używane w liczbie pojedynczej czy mnogiej.<br><br>
+
+Definicje:<br>
+Na potrzeby niniejszej Polityki prywatności:<br><br>
+
+Aplikacja oznacza Simlog, oprogramowanie udostępniane przez Firmę.<br>
+Firma (określana w niniejszej Umowie jako „Firma”, „My”, „Nas” lub „Nasz”) to indywidualny przedsiębiorca Evgenii Chekmazov.<br>
+Kraj odnosi się do: Rosja<br>
+Urządzenie oznacza każde urządzenie, które może uzyskać dostęp do Usługi,
+takie jak komputer, telefon komórkowy lub tablet cyfrowy.<br>
+Dane osobowe oznaczają wszelkie informacje dotyczące zidentyfikowanej lub możliwej do zidentyfikowania osoby.<br>
+Usługa odnosi się do Aplikacji.<br>
+Dane o użytkowaniu oznaczają dane zbierane automatycznie,
+wygenerowane w trakcie korzystania z Usługi,
+lub z samej infrastruktury Usługi (np. czas odwiedzin strony).<br>
+„Ty” oznacza osobę uzyskującą dostęp do Usługi lub korzystającą z niej,
+lub firmę albo inną osobę prawną, w imieniu której taka osoba korzysta z Usługi,
+jeśli dotyczy.<br><br>
+
+Gromadzenie i wykorzystanie Twoich danych osobowych:<br>
+Rodzaje zbieranych danych: Dane o użytkowaniu<br><br>
+
+Dane o użytkowaniu są zbierane automatycznie podczas korzystania z Usługi.<br>
+Dane o użytkowaniu mogą zawierać informacje, takie jak czas i data korzystania z aplikacji, czas spędzony w aplikacji,
+liczba aktywnych kart SIM w telefonie,
+nazwa karty SIM, siła sygnału karty SIM,
+typ używanego transferu danych przez kartę SIM.<br>
+Zebrane dane są wykorzystywane wyłącznie w samej aplikacji,
+w tym w interfejsie użytkownika.<br>
+Numer slotu i nazwa karty SIM są używane do wyświetlania użytkownikowi aktywnych kart SIM, z którymi aplikacja może współpracować.<br>
+Numer slotu i nazwa karty SIM są używane w nazwach plików tworzonych przez aplikację,
+które przechowują historię zmian siły sygnału sieci i rodzaju transferu danych.<br>
+Dane w plikach są przechowywane w formacie (numer minuty, typ transferu danych, siła sygnału sieci).<br><br>
+
+Przechowywanie Twoich danych osobowych:<br>
+Firma nie przechowuje Twoich danych osobowych ani innych danych.<br>
+Dane o użytkowaniu są przechowywane na Twoim urządzeniu w folderze aplikacji (/Android/data/com.safelogj.simlog/files/).<br>
+Dane o zapisanych routerach (IP, login, hasło) są przechowywane w wewnętrznym folderze systemowym aplikacji w formie zaszyfrowanej.<br><br>
+
+Usuwanie zebranych danych:<br>
+Masz prawo usunąć wszystkie pliki z zebranymi danymi w folderze aplikacji (/Android/data/com.safelogj.simlog/files/).<br>
+Masz prawo usunąć dane o zapisanych routerach za pomocą interfejsu aplikacji. Aby to zrobić, wybierz router do usunięcia, wpisz w polu logowania komendę remove i naciśnij przycisk (+).<br><br>
+
+Linki do innych stron:<br>
+Nasza Usługa może zawierać linki do innych stron internetowych,
+które nie są przez nas obsługiwane. Jeśli klikniesz w link strony trzeciej,
+zostaniesz przekierowany na stronę tej strony trzeciej.<br>
+Zdecydowanie zalecamy zapoznanie się z Polityką prywatności każdej odwiedzanej strony.<br>
+Nie mamy kontroli nad i nie ponosimy odpowiedzialności za treść,
+polityki prywatności ani praktyki żadnych stron lub usług osób trzecich.<br><br>
+
+Zmiany w Polityce prywatności:<br>
+Możemy od czasu do czasu aktualizować naszą Politykę prywatności.<br>
+Poinformujemy Cię o wszelkich zmianach, publikując nową Politykę prywatności na tej stronie.<br>
+Poinformujemy Cię za pomocą widocznego powiadomienia w naszej Usłudze przed
+wejściem zmian w życie i zaktualizujemy datę „Ostatnia aktualizacja” na początku tej Polityki prywatności.<br><br>
+
+Zalecamy okresowe przeglądanie tej Polityki prywatności w celu sprawdzenia zmian.<br>
+Zmiany w tej Polityce prywatności obowiązują w momencie ich opublikowania na tej stronie.<br><br>
+
+Kontakt:<br>
+Jeśli masz jakiekolwiek pytania dotyczące tej Polityki prywatności, możesz skontaktować się z nami:<br><br>
+
+E-mail: simlog-app@yandex.ru
+<br><br>

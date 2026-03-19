@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/chooseSimView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:paddingHorizontal="6dp"
+    tools:context=".ChooseSimActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/chooseActCardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        app:cardBackgroundColor="@color/gold"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/chooseSimGuideline_1"
+        app:layout_constraintEnd_toEndOf="@+id/chooseActSimCardView"
+        app:layout_constraintStart_toStartOf="@+id/chooseActSimCardView"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/innerConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+           <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <!-- Пара: Connect To -->
+                <EditText
+                    android:id="@+id/editAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:autofillHints="emailAddress"
+                    android:background="@drawable/router_field_bg"
+                    android:hint="@string/default_ip"
+                    android:inputType="textUri"
+                    android:padding="8dp"
+                    android:textColor="@color/black2"
+                    android:textColorHint="@color/spinner_font_hard" />
+
+                <!-- Пара: Login -->
+                <EditText
+                    android:id="@+id/editLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:autofillHints="username"
+                    android:background="@drawable/router_field_bg"
+                    android:hint="@string/default_login"
+                    android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:textColor="@color/black2"
+                    android:textColorHint="@color/spinner_font_hard" />
+
+                <!-- Пара: Password -->
+                <EditText
+                    android:id="@+id/editPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:autofillHints="password"
+                    android:background="@drawable/router_field_bg"
+                    android:drawableEnd="@drawable/visibility_off_20px"
+                    android:hint="@string/default_password"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:textColor="@color/black2"
+                    android:textColorHint="@color/spinner_font_hard" />
+
+               <!-- Custom cmd + FAB в одной строке -->
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginStart="8dp"
+                   android:layout_marginTop="16dp"
+                   android:layout_marginEnd="8dp"
+                   android:gravity="center_vertical">
+
+                   <EditText
+                       android:id="@+id/editCustomCmd"
+                       android:layout_width="0dp"
+                       android:layout_height="54dp"
+                       android:layout_weight="1"
+                       android:background="@drawable/router_field_bg"
+                       android:hint="@string/custom_cmd"
+                       android:inputType="textPersonName"
+                       android:padding="8dp"
+                       android:textColor="@color/black2"
+                       android:textColorHint="@color/spinner_font_hard" />
+
+                   <com.google.android.material.floatingactionbutton.FloatingActionButton
+                       android:id="@+id/addRouterButton"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="16dp"
+                       android:contentDescription="@string/add_router_btn"
+                       app:backgroundTint="@color/green_600"
+                       app:elevation="3dp"
+                       app:fabSize="mini"
+                       app:rippleColor="@color/green_100"
+                       app:srcCompat="@drawable/add_24px"
+                       app:tint="@color/no_data" />
+
+               </LinearLayout>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/chooseSimGuideline_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/chooseActSimCardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@color/gold"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/rightButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/chooseSimGuideline_1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/linearScroll"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="@string/sim_list"
+                android:fillViewport="true"
+                android:scrollbars="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/linearSimCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_marginVertical="10dp"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </ScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/rightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/choose_button_right"
+        android:src="@drawable/choose_button_right"
+        app:backgroundTint="@color/blue_500"
+        app:elevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/leftButton"
+        app:rippleColor="@color/light_blue_200"
+        app:tint="@color/no_data" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/leftButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/choose_button_left"
+        android:src="@drawable/choose_button_left"
+        app:backgroundTint="@color/blue_500"
+        app:elevation="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rightButton"
+        app:layout_constraintEnd_toStartOf="@+id/rightButton"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@color/light_blue_200"
+        app:tint="@color/no_data" />
+</androidx.constraintlayout.widget.ConstraintLayout>

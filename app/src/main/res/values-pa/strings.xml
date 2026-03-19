@@ -1,0 +1,78 @@
+<resources>
+    <string name="start_promo_text">ਐਡਵਰਟਾਈਜ਼ਮੈਂਟ</string>
+    <string name="file_read_error">ਫਾਇਲ ਪੜ੍ਹਨ ਵਿੱਚ ਗਲਤੀ।</string>
+    <string name="no_data_to_display">ਦਿਖਾਉਣ ਲਈ ਕੋਈ ਡੇਟਾ ਨਹੀਂ ਹੈ।</string>
+    <string name="no_data_files">ਕੋਈ ਫਾਇਲਾਂ ਨਹੀਂ ਮਿਲੀਆਂ।</string>
+    <string name="need_choose_sim">ਕਿਰਪਾ ਕਰਕੇ SIM ਕਾਰਡ ਚੁਣੋ।</string>
+    <string name="no_sim">SIM ਕਾਰਡ ਨਹੀਂ ਮਿਲੇ।</string>
+    <string name="permission_denied">ਅਧਿਕਾਰ ਪ੍ਰਾਪਤ ਨਹੀਂ ਕੀਤਾ ਗਿਆ।</string>
+    <string name="privacy_checkbox">ਮੈਂ ਪਸ਼ਚਾਤਾਪ ਕਰਦਾ ਹਾਂ ਕਿ ਮੈਂ ਗੋਪਨੀਯਤਾ ਨੀਤੀ ਦੀਆਂ ਸ਼ਰਤਾਂ ਨੂੰ ਪੜ੍ਹ ਲਿਆ ਹੈ ਅਤੇ ਉਨ੍ਹਾਂ ਨਾਲ ਸਹਿਮਤ ਹਾਂ।</string>
+    <string name="service_stopped">ਜਨਰੇਟਰ ਨੂੰ ਦਬਾਓ।</string>
+    <string name="notification_title">Simlog ਚੱਲ ਰਿਹਾ ਹੈ।</string>
+    <string name="notification_text">ਇਸ ਨੋਟੀਫਿਕੇਸ਼ਨ ਨੂੰ ਹਟਾਉਣਾ ਨਾ ਕਰੋ।</string>
+    <string name="notification_channel">ਸੇਵਾ।</string>
+    <string name="subscription_error">ਡਿਵਾਈਸ ਐਪਲਿਕੇਸ਼ਨ ਦੀ ਫੰਕਸ਼ਨਾਲਿਟੀ ਦਾ ਸਮਰਥਨ ਨਹੀਂ ਕਰਦਾ।</string>
+    <string name="collecting_time">ਕੰਮ ਦਾ ਸਮਾਂ:</string>
+    <string name="collecting_write_lines">ਕੁੱਲ ਡੇਟਾ:</string>
+    <string name="collecting_errors">ਗਲਤੀਆਂ:</string>
+    <string name="collecting_day">ਦਿਨ</string>
+    <string name="collecting_hour">ਘੰਟਾ</string>
+    <string name="collecting_min">ਮਿੰਟ</string>
+    <string name="collecting_sec">ਸੈਕਿੰਟ</string>
+    <string name="ad_id_text"><![CDATA[<br><br>ਅਸੀਂ ਐਡਵਰਟਾਈਜ਼ਮੈਂਟ ਦਰਸਾਉਣ ਲਈ ਵਿਗਿਆਪਨ ਨੈਟਵਰਕ ਵਰਤਦੇ ਹਾਂ।<br><br>
+ਵਿਗਿਆਪਨ ਨੈਟਵਰਕ ਤੁਹਾਡੇ ਡਿਵਾਈਸ ਦੇ ਵਿਗਿਆਪਨ ਆਈਡੀ ਸਮੇਤ ਕੁਝ ਡੇਟਾ ਇਕੱਠਾ ਕਰ ਸਕਦਾ ਹੈ ਤਾਂ ਜੋ ਵਿਅਕਤੀਗਤ ਵਿਗਿਆਪਨ ਦਿਖਾਈ ਜਾ ਸਕੇ।<br><br>
+ਤੁਸੀਂ ਵਿਗਿਆਪਨ ਦੀ ਵਿਅਕਤੀਗਤਤਾ ਨੂੰ <font color = "#43A047"><b>ਸਹਿਮਤੀ</b></font> ਦੇ ਸਕਦੇ ਹੋ ਜਾਂ <font color = "#F44336"><b>ਬੰਦ</b></font> ਕਰ ਸਕਦੇ ਹੋ।<br><br>
+ਜੇਕਰ ਤੁਸੀਂ ਵਿਅਕਤੀਗਤਤਾ ਬੰਦ ਕਰਦੇ ਹੋ, ਤਾਂ ਅਸੀਂ ਸਿਰਫ਼ ਨਾਨ ਵਿਅਕਤੀਗਤ ਵਿਗਿਆਪਨ ਦਿਖਾਵਾਂਗੇ।<br><br>]]></string>
+
+    <string name="permit"><![CDATA[<br><br><b>ਇਹ ਐਪਲਿਕੇਸ਼ਨ ਹੇਠਾਂ ਦਿੱਤੇ ਡੇਟਾ ਕਿਸਮਾਂ ਨੂੰ ਸੰਭਾਲਦੀ ਹੈ:</b><br><br>
+<em>1. ਮੋਬਾਈਲ ਨੈਟਵਰਕ ਦੀ ਸਿਗਨਲ ਤਾਕਤ।</em><br>
+<em>2. ਡੇਟਾ ਟ੍ਰਾਂਸਮਿਸ਼ਨ ਦੀ ਕਿਸਮ।</em><br>
+<em>3. ਐਕਟਿਵ SIM ਕਾਰਡ ਦਾ ਸਲਾਟ ਨੰਬਰ।</em><br>
+<em>4. SIM ਕਾਰਡ ਦਾ ਨਾਮ।</em><br><br>
+ਇਹ SIM ਕਾਰਡ ਨਾਲ ਸਬੰਧਿਤ ਡੇਟਾ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ, ਇਹ ਐਪਲਿਕੇਸ਼ਨ <b>ਕਾਲ ਪ੍ਰਬੰਧਨ</b> ਦੀ ਅਨੁਮਤੀ ਮੰਗੇਗੀ।<br><br>
+ਹੋਰ ਜਾਣਕਾਰੀ ਲਈ, <b>«ਪ੍ਰਾਈਵੇਸੀ»</b> ਚਿੰਨ੍ਹ \'ਤੇ ਕਲਿੱਕ ਕਰੋ।<br><br>
+ਇਸ ਤਰ੍ਹਾਂ, ਲੰਬੇ ਸਮੇਂ ਅਤੇ ਸਥਿਰ ਕੰਮ ਕਰਨ ਲਈ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਇੱਕ ਪਾਈਦੀ ਸੂਚਨਾ ਦਿਖਾਉਣ ਦੀ ਇਜਾਜ਼ਤ ਦੀ ਲੋੜ ਹੈ।<br>
+    ਜੇਕਰ ਸੂਚਨਾ ਚਾਲੂ ਹੋਣ ਦੌਰਾਨ ਬੰਦ ਕਰ ਦਿੱਤੀ ਜਾਂਦੀ ਹੈ, ਤਾਂ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਸਿਸਟਮ ਦੁਆਰਾ ਰੋਕਿਆ ਜਾ ਸਕਦਾ ਹੈ।<br><br>
+    ਪਿਛੋਕੜ ਸੇਵਾ ਨਿਯੰਤਰਣ ਨੂੰ ਬੰਦ ਕਰਨਾ (ਸਿਫਾਰਸ਼ੀ) ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਲੰਬੇ ਸਮੇਂ ਤੱਕ ਕੰਮ ਕਰਨ ਦੌਰਾਨ ਸਿਸਟਮ ਦੁਆਰਾ ਰੋਕਿਆ ਜਾਣ ਤੋਂ ਵਾਧੂ ਸੁਰੱਖਿਆ ਪ੍ਰਦਾਨ ਕਰੇਗਾ।<br><br>
+
+<b>ਇਹ ਐਪਲਿਕੇਸ਼ਨ ਵਿੱਚ ਵਰਤੇ ਜਾਂਦੇ ਡੇਟਾ ਕਿਸਮਾਂ ਦੇ ਚਿੰਨ੍ਹ:</b> <br><br>
+<font color="#E040FB"><b> 5G </b></font> - NR (New Radio), 5G NSA, 5G SA ਦਾ ਸੰਕੇਤ ਹੈ।<br>
+<font color="#2962FF"><b> 4G </b></font> - LTE, LTE (CA2), Evolved 3G (LTE) ਦਾ ਸੰਕੇਤ ਹੈ।<br>
+<font color="#00C853"><b> 3G </b></font> - HSDPA, HSUPA, HSPA, EVDO_B, EHRPD, UMTS ਵਿੱਚੋਂ ਇੱਕ ਦਾ ਸੰਕੇਤ ਹੈ।<br>
+<font color="#E53935"><b> 2G </b></font> - EDGE, GPRS, CDMA, 1xRTT, IDEN ਵਿੱਚੋਂ ਇੱਕ ਦਾ ਸੰਕੇਤ ਹੈ।<br>
+<font color="#795548"><b> xG </b></font> - ਇਹ ਅਣਜਾਣ ਕਿਸਮ ਦਾ ਸੰਕੇਤ ਹੈ ਕਿਉਂਕਿ ਕੋਈ ਡੇਟਾ ਟ੍ਰਾਂਸਮਿਸ਼ਨ ਨਹੀਂ ਹੈ।<br><br>
+<b><font color="#43A047">RSRP&nbsp;&gt;&nbsp;&nbsp;-80&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-65&nbsp;=&nbsp;&nbsp;&nbsp;5</font></b><br>
+<b><font color="#7CB342">RSRP&nbsp;&gt;&nbsp;&nbsp;-90&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-75&nbsp;=&nbsp;&nbsp;&nbsp;4</font></b><br>
+<b><font color="#FBC02D">RSRP&nbsp;&gt;&nbsp;-100&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-85&nbsp;=&nbsp;&nbsp;&nbsp;3</font></b><br>
+<b><font color="#FB8C00">RSRP&nbsp;&gt;&nbsp;-110&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-95&nbsp;=&nbsp;&nbsp;&nbsp;2</font></b><br>
+<b><font color="#D32F2F">RSRP&nbsp;&gt;&nbsp;-120&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-120&nbsp;=&nbsp;1</font></b><br><br>
+<b>ਸਮਰਥਿਤ ਰਾਊਟਰ :</b><br>
+Keenetic | Netcraze<br>
+Cudy LT500 V2.0<br>
+TP-Link TL-MR150 v2<br>
+Huawei CPE B593s-22<br><br>
+<b>ਇਹ ਐਪਲਿਕੇਸ਼ਨ ਮਾਪਣ ਦਾ ਸੰਦ ਨਹੀਂ ਹੈ।</b><br>
+ਗ੍ਰਾਫਾਂ \'ਤੇ ਦਰਸਾਈ ਗਈ ਡੇਟਾ ਤੁਹਾਡੇ ਡਿਵਾਈਸ ਤੋਂ ਪ੍ਰਾਪਤ ਜਾਣਕਾਰੀ ਦੇ ਅਧਾਰ \'ਤੇ ਬਣਾਈ ਗਈ ਹੈ ਅਤੇ ਇਹ ਮੂਲ ਡੇਟਾ ਨਾਲ ਵੱਖਰੀ ਹੋ ਸਕਦੀ ਹੈ।<br><br>
+]]></string>
+
+    <string name="notice"><![CDATA[<br><br><b>ਇਹ ਐਪਲਿਕੇਸ਼ਨ ਖੁਲ੍ਹੇ ਸੋਰਸ ਲਾਇਬ੍ਰੇਰੀਆਂ ਅਤੇ ਤੀਜੀ ਪਾਰਟੀ ਲਾਇਬ੍ਰੇਰੀਆਂ ਵਰਤਦੀ ਹੈ:</b><br><br>
+1. <b>MPAndroidChart</b> <a href="https://github.com/PhilJay/MPAndroidChart/">https://github.com/PhilJay/MPAndroidChart/</a><br>
+   ਅਪਾਚੀ ਲਾਇਸੈਂਸ, ਵਰਜ਼ਨ 2.0 ਦੇ ਤਹਿਤ ਲਾਇਸੈਂਸ ਕੀਤਾ ਗਿਆ।<br>
+   <b>ਲੇਖਕ:</b> ਫਿਲਿਪ ਜਾਹੋਦਾ (PhilJay)<br><br>
+2. <b>Free data Animation</b> <a href="https://lottiefiles.com/free-animation/data-V8HWwl7oWO">https://lottiefiles.com/free-animation/data-V8HWwl7oWO</a><br>
+   ਲੋਟੀ ਸਿੰਪਲ ਲਾਇਸੈਂਸ (FL 9.13.21) ਦੇ ਤਹਿਤ ਲਾਇਸੈਂਸ ਕੀਤਾ ਗਿਆ।<br>
+   <b>ਲੇਖਕ:</b> ਰੇਵਿਟਲ ਕਾਹਨੀ <br><br>
+3. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">https://github.com/airbnb/lottie-android</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Airbnb, Inc. <br><br>
+4. <b>OkHttp</b> <a href="https://github.com/square/okhttp">https://github.com/square/okhttp</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+5. <b>Okio</b> <a href="https://github.com/square/okio">https://github.com/square/okio</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+
+]]></string>
+
+
+</resources>

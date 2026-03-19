@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="start_promo_text">ప్రచారం</string>
+    <string name="file_read_error">ఫైల్ చదవడంలో లోపం.</string>
+    <string name="no_data_to_display">ప్రదర్శించడానికి డేటా లేదు.</string>
+    <string name="no_data_files">ఫైల్‌లు కనబడలేదు.</string>
+    <string name="need_choose_sim">దయచేసి SIM కార్డ్ ఎంచుకోండి.</string>
+    <string name="no_sim">SIM కార్డ్‌లు కనబడలేదు.</string>
+    <string name="permission_denied">అనుమతి అవసరం.</string>
+    <string name="privacy_checkbox">నేను గోప్యతా విధానాన్ని చదివినట్లు మరియు అంగీకరించినట్లు నిర్ధారిస్తున్నాను.</string>
+    <string name="service_stopped">జనరేటర్‌ను ప్రారంభించండి.</string>
+    <string name="notification_title">Simlog నడుస్తోంది.</string>
+    <string name="notification_text">ఈ నోటిఫికేషన్‌ను తొలగించవద్దు.</string>
+    <string name="notification_channel">సర్వీస్</string>
+    <string name="subscription_error">ఈ డివైస్‌లో ఈ ఫీచర్‌ను మద్దతు ఇవ్వదు.</string>
+    <string name="collecting_time">పనిచేసిన సమయం :</string>
+    <string name="collecting_write_lines">మొత్తం డేటా :</string>
+    <string name="collecting_errors">లోపాలు :</string>
+    <string name="collecting_day">రోజు</string>
+    <string name="collecting_hour">గం.</string>
+    <string name="collecting_min">నిమి.</string>
+    <string name="collecting_sec">సెక్.</string>
+    <string name="ad_id_text"><![CDATA[<br><br>మేము ప్రకటనలను చూపించడానికి ప్రకటన నెట్‌వర్క్‌ను ఉపయోగిస్తున్నాము.<br><br>
+ప్రకటన నెట్‌వర్క్ మీ డివైస్ యొక్క ప్రకటన ID సహా డేటాను సేకరించవచ్చు, వ్యక్తిగతీకరించిన ప్రకటనలను చూపించడానికి.<br><br>
+మీరు <font color = "#43A047"><b>అనుమతించవచ్చు</b></font> లేదా <font color = "#F44336"><b>వ్యక్తిగతీకరణను అచేతనం చేయవచ్చు</b></font>.<br><br>
+మీరు వ్యక్తిగతీకరణను నిలిపివేస్తే, మేము కేవలం వ్యక్తిగతీకరించని ప్రకటనలే చూపిస్తాము.<br><br>]]></string>
+
+    <string name="permit"><![CDATA[<br><br><b>ఈ యాప్ క్రింది రకాల డేటాను ప్రాసెస్ చేస్తుంది:</b><br><br>
+<em>1. మొబైల్ నెట్‌వర్క్ సంకేతం స్థాయి.</em><br>
+<em>2. డేటా ట్రాన్స్‌మిషన్ రకం.</em><br>
+<em>3. యాక్టివ్ SIM కార్డ్ యొక్క స్లాట్ నంబర్.</em><br>
+<em>4. SIM కార్డ్ పేరు.</em><br><br>
+ఈ SIM సంబంధిత సమాచారం పొందేందుకు యాప్‌కు <b>కాల్స్‌ను నిర్వహించే</b> అనుమతి అవసరం.<br><br>
+మరింత సమాచారం కోసం <b>“గోప్యతా”</b> ఐకాన్‌ను నొక్కండి.<br><br>
+యాప్ స్థిరంగా మరియు సుదీర్ఘంగా పనిచేయాలంటే, శాశ్వత నోటిఫికేషన్ ప్రదర్శించడానికి అనుమతి అవసరం.<br>
+కార్యాచరణలో ఉండగా నోటిఫికేషన్ నిలిపివేస్తే, యాప్ వ్యవస్థచే ఆపబడవచ్చు.<br><br>
+బ్యాక్‌గ్రౌండ్ కార్యకలాపాలను ఆపివేయడం (సిఫారసు చేయబడింది), యాప్‌ను ఆపకుండా ఉండేందుకు సహాయపడుతుంది.<br><br>
+
+<b>ఈ యాప్ డేటా రకాల గుర్తింపులకు ఈ సూచనలను ఉపయోగిస్తుంది:</b> <br><br>
+<font color="#E040FB"><b> 5G </b></font> - NR (New Radio), 5G NSA, 5G SA అని అర్థం<br>
+<font color="#2962FF"><b> 4G </b></font> - LTE, LTE (CA2), Evolved 3G (LTE) అని అర్థం<br>
+<font color="#00C853"><b> 3G </b></font> - HSDPA, HSUPA, HSPA, EVDO_B, EHRPD, UMTS వంటివి<br>
+<font color="#E53935"><b> 2G </b></font> - EDGE, GPRS, CDMA, 1xRTT, IDEN వంటివి<br>
+<font color="#795548"><b> xG </b></font> - తెలియని రకం (డేటా లేదు)<br><br>
+<b><font color="#43A047">RSRP&nbsp;&gt;&nbsp;&nbsp;-80&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-65&nbsp;=&nbsp;&nbsp;&nbsp;5</font></b><br>
+<b><font color="#7CB342">RSRP&nbsp;&gt;&nbsp;&nbsp;-90&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-75&nbsp;=&nbsp;&nbsp;&nbsp;4</font></b><br>
+<b><font color="#FBC02D">RSRP&nbsp;&gt;&nbsp;-100&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-85&nbsp;=&nbsp;&nbsp;&nbsp;3</font></b><br>
+<b><font color="#FB8C00">RSRP&nbsp;&gt;&nbsp;-110&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-95&nbsp;=&nbsp;&nbsp;&nbsp;2</font></b><br>
+<b><font color="#D32F2F">RSRP&nbsp;&gt;&nbsp;-120&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-120&nbsp;=&nbsp;1</font></b><br><br>
+<b>మద్దతు ఉన్న రౌటర్లు :</b><br>
+Keenetic | Netcraze<br>
+Cudy LT500 V2.0<br>
+TP-Link TL-MR150 v2<br>
+Huawei CPE B593s-22<br><br>
+<b>ఈ యాప్ కొలత కోసం ఉపకరణం కాదు.</b><br>
+గ్రాఫ్‌లలో చూపిన డేటా మీ డివైస్ నుండి పొందిన సమాచారాన్ని ఆధారంగా సృష్టించబడినది. ఇది నిజమైన విలువలతో తేడా ఉండవచ్చు.<br><br>
+]]></string>
+
+    <string name="notice"><![CDATA[<br><br><b>ఈ యాప్ ఓపెన్ సోర్స్ మరియు తృతీయ పార్టీ లైబ్రరీలను కలిగి ఉంది:</b><br><br>
+1. <b>MPAndroidChart</b> <a href="https://github.com/PhilJay/MPAndroidChart/">https://github.com/PhilJay/MPAndroidChart/</a><br>
+   Apache License, Version 2.0 ఆధారంగా లైసెన్స్ పొందినది.<br>
+   <b>రచయిత:</b> Philipp Jahoda (PhilJay)<br><br>
+2. <b>Free data Animation</b> <a href="https://lottiefiles.com/free-animation/data-V8HWwl7oWO">https://lottiefiles.com/free-animation/data-V8HWwl7oWO</a><br>
+   Lottie Simple License (FL 9.13.21) ఆధారంగా.<br>
+   <b>రచయిత:</b> Revital Cahani <br><br>
+3. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">https://github.com/airbnb/lottie-android</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Airbnb, Inc. <br><br>
+4. <b>OkHttp</b> <a href="https://github.com/square/okhttp">https://github.com/square/okhttp</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+5. <b>Okio</b> <a href="https://github.com/square/okio">https://github.com/square/okio</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+]]></string>
+
+
+
+</resources>

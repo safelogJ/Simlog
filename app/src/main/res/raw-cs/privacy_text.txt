@@ -1,0 +1,75 @@
+<br><br><b><a href="https://github.com/safelogJ/Simlog/blob/master/privacy/privacy_cs">Zásady ochrany osobních údajů pro Simlog</a></b><br><br>
+
+Zásady ochrany osobních údajů<br>
+Poslední aktualizace: 05. února 2026.<br><br>
+
+Tato zásady ochrany osobních údajů popisují naše zásady a postupy sběru
+a používání vašich informací, když používáte službu,
+a informují vás o vašich právech na ochranu soukromí a jak vás zákon chrání.<br><br>
+
+Výklad a definice:<br>
+Výklad:<br>
+Slova s velkým počátečním písmenem mají významy definované v následujících podmínkách.<br>
+Následující definice mají stejný význam, bez ohledu na to, zda jsou použity v jednotném nebo množném čísle.<br><br>
+
+Definice:<br>
+Pro účely těchto zásad ochrany osobních údajů:<br><br>
+
+Aplikace znamená Simlog, software poskytovaný společností.<br>
+Společnost (v této smlouvě označována jako „Společnost“, „My“, „Nás“ nebo „Naše“) je individuální podnikatel Evgenii Chekmazov.<br>
+Země znamená: Rusko<br>
+Zařízení znamená jakékoli zařízení, které může přistupovat ke službě,
+například počítač, mobilní telefon nebo digitální tablet.<br>
+Osobní údaje znamenají jakékoli informace týkající se identifikované nebo identifikovatelné osoby.<br>
+Služba znamená Aplikaci.<br>
+Údaje o používání znamenají data shromážděná automaticky,
+buď generována, když používáte službu,
+nebo z infrastruktury služby (např. délka návštěvy stránky).<br>
+Vy znamenáte osobu, která přistupuje k nebo používá službu,
+nebo společnost, nebo jiný právní subjekt, za který tato osoba přistupuje nebo používá službu,
+jak je to relevantní.<br><br>
+
+Sběr a použití vašich osobních údajů:<br>
+Typy shromažďovaných údajů: Údaje o používání<br><br>
+
+Údaje o používání jsou shromažďovány automaticky, když používáte službu.<br>
+Údaje o používání mohou zahrnovat informace, jako je čas a datum používání aplikace, čas strávený v aplikaci,
+počet aktivních SIM karet v telefonu,
+název SIM karty, síla signálu SIM karty,
+typ přenosu dat používaný SIM kartou.<br>
+Shromážděná data jsou používána pouze v samotné aplikaci,
+včetně uživatelského rozhraní.<br>
+Číslo slotu a název SIM karty se používají k zobrazení aktivních SIM karet, s kterými může aplikace pracovat.<br>
+Číslo slotu a název SIM karty se používají v názvech souborů vytvořených aplikací,
+které uchovávají historii změn síly signálu sítě a typu přenosu dat.<br>
+Data v souborech jsou uchovávána ve formátu (číslo minuty, typ přenosu dat, síla signálu sítě).<br><br>
+
+Uchovávání vašich osobních údajů:<br>
+Společnost neuchovává vaše osobní ani jiné údaje.<br>
+Údaje o používání jsou uchovávány ve vašem zařízení ve složce aplikace (/Android/data/com.safelogj.simlog/files/).<br>
+Data o uložených routrech (IP, přihlašovací jméno, heslo) jsou uložena v interní systémové složce aplikace v zašifrované podobě.<br><br>
+
+Mazání shromážděných údajů:<br>
+Máte právo smazat všechny soubory se shromážděnými údaji ve složce aplikace (/Android/data/com.safelogj.simlog/files/).<br>
+Máte právo odstranit data o uložených routrech přes rozhraní aplikace. Chcete-li to provést, vyberte router, který chcete smazat, zadejte do pole pro přihlášení příkaz remove a stiskněte tlačítko (+).<br><br>
+
+Odkazy na jiné weby:<br>
+Naše služba může obsahovat odkazy na jiné webové stránky,
+které nejsou provozovány námi. Pokud kliknete na odkaz třetí strany,
+budete přesměrováni na web třetí strany.<br>
+Důrazně vám doporučujeme, abyste si prohlédli zásady ochrany osobních údajů každé stránky, kterou navštívíte.<br>
+Nemáme žádnou kontrolu nad obsahem,
+zásadami ochrany osobních údajů ani postupy třetích stran a neneseme za ně žádnou odpovědnost.<br><br>
+
+Změny těchto zásad ochrany osobních údajů:<br>
+Naše zásady ochrany osobních údajů mohou být čas od času aktualizovány.<br>
+O jakýchkoli změnách vás informujeme zveřejněním nových zásad ochrany osobních údajů na této stránce.<br>
+Před účinností změn vás informujeme výrazným upozorněním na naší službě a aktualizujeme datum „Poslední aktualizace“ na vrcholu těchto zásad ochrany osobních údajů.<br><br>
+
+Doporučujeme vám pravidelně kontrolovat tyto zásady ochrany osobních údajů na změny.<br>
+Změny těchto zásad ochrany osobních údajů jsou účinné, když jsou zveřejněny na této stránce.<br><br>
+
+Kontaktujte nás:<br>
+Pokud máte nějaké dotazy ohledně těchto zásad ochrany osobních údajů, můžete nás kontaktovat:<br><br>
+
+E-mailem: simlog-app@yandex.ru<br><br>

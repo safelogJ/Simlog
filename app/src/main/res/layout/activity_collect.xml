@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/collectView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:keepScreenOn="true">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/collect_lottie_power"
+        android:onClick="collectBtnListener"
+        app:layout_constraintEnd_toEndOf="@+id/collectActCardView"
+        app:layout_constraintStart_toStartOf="@+id/collectActCardView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/animation" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/collectActCardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        app:cardBackgroundColor="@color/gold"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/collectActStatsCardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieView">
+
+        <FrameLayout
+            android:id="@+id/collectNativeFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/collectImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/user_image" />
+
+            <View
+                android:id="@+id/collectOverlayButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="@string/user_image_btn"/>
+
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/collectActStatsCardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="@color/no_data"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/line_right_1"
+        app:layout_constraintEnd_toEndOf="@+id/collectActCardView"
+        app:layout_constraintStart_toStartOf="@+id/collectActCardView"
+        app:layout_constraintTop_toTopOf="@id/collectCenterGuideline">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/textsHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/textGuideline1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.33" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/textGuideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.66" />
+
+            <HorizontalScrollView
+                android:id="@+id/collectScrollText1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:fillViewport="true"
+                android:paddingHorizontal="8dp"
+                android:scrollbars="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/textGuideline1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/collectTextView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="none"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black3"
+                    android:textSize="16sp" />
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/collectTextView1d"
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:background="@color/gold_hard"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textGuideline1" />
+
+            <HorizontalScrollView
+                android:id="@+id/collectScrollText2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:fillViewport="true"
+                android:paddingHorizontal="8dp"
+                android:scrollbars="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/textGuideline2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/collectTextView1d">
+
+                <TextView
+                    android:id="@+id/collectTextView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="none"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black3"
+                    android:textSize="16sp" />
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/collectTextView2d"
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:background="@color/gold_hard"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textGuideline2" />
+
+            <HorizontalScrollView
+                android:id="@+id/errorScrollView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/sim_list_error"
+                android:fillViewport="true"
+                android:paddingHorizontal="8dp"
+                android:scrollbars="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/collectTextView2d">
+
+                <LinearLayout
+                    android:id="@+id/errorLinearH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/collectTextView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="serif"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black3"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/collectTextView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="serif"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/error_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/collectCenterGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.71" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/line_up_0"
+        android:layout_width="3dp"
+        android:layout_height="0dp"
+        app:cardBackgroundColor="@color/main_background"
+        app:cardCornerRadius="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/line_up_1"
+        app:layout_constraintEnd_toEndOf="@id/collectPowerButton"
+        app:layout_constraintStart_toStartOf="@id/collectPowerButton" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/line_up_1"
+        android:layout_width="3dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@color/gold"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/collectPowerButton"
+        app:layout_constraintStart_toEndOf="@+id/line_up_0"
+        app:layout_constraintTop_toTopOf="@+id/line_right_1" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/line_right_1"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginEnd="-9dp"
+        android:layout_marginBottom="6dp"
+        app:cardBackgroundColor="@color/gold"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/collectPowerButton"
+        app:layout_constraintEnd_toEndOf="@+id/collectActCardView"
+        app:layout_constraintStart_toStartOf="@+id/line_up_1" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/line_up_2"
+        android:layout_width="3dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="-9dp"
+        app:cardBackgroundColor="@color/gold"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/line_right_1"
+        app:layout_constraintEnd_toEndOf="@+id/line_right_1"
+        app:layout_constraintTop_toTopOf="@+id/collectActCardView" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/line_left_1"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        app:cardBackgroundColor="@color/gold"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/line_up_2"
+        app:layout_constraintStart_toEndOf="@+id/line_up_0"
+        app:layout_constraintTop_toTopOf="@+id/line_up_2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/line_up_3"
+        android:layout_width="3dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="-9dp"
+        app:cardBackgroundColor="@color/gold"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/line_left_1"
+        app:layout_constraintStart_toStartOf="@+id/line_left_1"
+        app:layout_constraintTop_toTopOf="@+id/line_left_1" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/line_up_4"
+        android:layout_width="3dp"
+        android:layout_height="0dp"
+        app:cardBackgroundColor="@color/gold"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/line_up_3"
+        app:layout_constraintEnd_toEndOf="@+id/line_left_2"
+        app:layout_constraintTop_toTopOf="@+id/line_up_3" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/line_left_2"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        app:cardBackgroundColor="@color/gold"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/line_up_4"
+        app:layout_constraintEnd_toStartOf="@+id/line_up_0"
+        app:layout_constraintStart_toStartOf="@+id/line_down_1" />
+
+    <!-- Поворот вниз до collectBtnGuideline -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/line_down_1"
+        android:layout_width="3dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="-9dp"
+        app:cardBackgroundColor="@color/gold"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/line_right_2"
+        app:layout_constraintStart_toStartOf="@+id/collectActCardView"
+        app:layout_constraintTop_toTopOf="@id/line_left_2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/line_right_2"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        app:cardBackgroundColor="@color/gold"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/collectActStatsCardView"
+        app:layout_constraintEnd_toEndOf="@+id/collectBatteryButton"
+        app:layout_constraintStart_toStartOf="@+id/line_down_1"
+        app:layout_constraintTop_toTopOf="@+id/collectActStatsCardView" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/battery_line_up_1"
+        android:layout_width="3dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@color/gold"
+        app:cardCornerRadius="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/collectBatteryButton"
+        app:layout_constraintEnd_toEndOf="@id/collectBatteryButton"
+        app:layout_constraintStart_toStartOf="@id/collectBatteryButton"
+        app:layout_constraintTop_toTopOf="@+id/battery_line_right_1" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/battery_line_right_1"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginBottom="6dp"
+        app:cardBackgroundColor="@color/gold"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/collectPowerButton"
+        app:layout_constraintEnd_toStartOf="@+id/line_up_0"
+        app:layout_constraintStart_toStartOf="@+id/battery_line_up_1" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/battery_line_down_1"
+        android:layout_width="3dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@color/gold"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/collectPowerButton"
+        app:layout_constraintEnd_toStartOf="@+id/line_up_0"
+        app:layout_constraintTop_toTopOf="@+id/battery_line_right_1" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/battery_line_down_2"
+        android:layout_width="3dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/gold"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/battery_line_right_2"
+        app:layout_constraintEnd_toEndOf="@id/collectBatteryButton"
+        app:layout_constraintStart_toStartOf="@id/collectBatteryButton"
+        app:layout_constraintTop_toTopOf="@+id/collectBatteryButton" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/battery_line_up_2"
+        android:layout_width="3dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/gold"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/battery_line_right_2"
+        app:layout_constraintEnd_toEndOf="@id/collectNotificButton"
+        app:layout_constraintStart_toStartOf="@id/collectNotificButton"
+        app:layout_constraintTop_toTopOf="@+id/collectNotificButton" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/battery_line_right_2"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@color/gold"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/battery_line_up_2"
+        app:layout_constraintStart_toStartOf="@+id/battery_line_down_2" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/collectBatteryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/collect_button_battery"
+        android:src="@drawable/collect_battery_button"
+        app:backgroundTint="@color/black3"
+        app:elevation="3dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@+id/collectPowerButton"
+        app:layout_constraintEnd_toStartOf="@+id/collectPowerButton"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@color/spinner_font"
+        app:tint="@color/no_data" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/collectPowerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="@string/collect_button_power"
+        android:onClick="collectBtnListener"
+        android:src="@drawable/collect_pwr_btn"
+        app:backgroundTint="@color/gold_hard"
+        app:elevation="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/battery_line_right_2"
+        app:layout_constraintEnd_toStartOf="@+id/collectNotificButton"
+        app:layout_constraintStart_toEndOf="@+id/collectBatteryButton"
+        app:rippleColor="@color/gold_lite"
+        app:tint="@color/error_color" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/collectNotificButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/collect_button_notific"
+        android:src="@drawable/collect_notific_button"
+        app:backgroundTint="@color/black3"
+        app:elevation="3dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@+id/collectPowerButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/collectPowerButton"
+        app:rippleColor="@color/spinner_font"
+        app:tint="@color/no_data" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

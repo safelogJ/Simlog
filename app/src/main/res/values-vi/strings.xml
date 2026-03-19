@@ -1,0 +1,77 @@
+<resources>
+    <string name="start_promo_text">Quảng cáo</string>
+    <string name="file_read_error">LỖI ĐỌC TẬP TIN.</string>
+    <string name="no_data_to_display">KHÔNG CÓ DỮ LIỆU ĐỂ HIỂN THỊ.</string>
+    <string name="no_data_files">Không tìm thấy tệp.</string>
+    <string name="need_choose_sim">Vui lòng chọn thẻ SIM.</string>
+    <string name="no_sim">Không tìm thấy thẻ SIM.</string>
+    <string name="permission_denied">Cần quyền truy cập.</string>
+    <string name="privacy_checkbox">Tôi xác nhận rằng tôi đã đọc và đồng ý với các điều khoản của Chính sách Bảo mật.</string>
+    <string name="service_stopped">Hãy bật máy phát điện.</string>
+    <string name="notification_title">Simlog đang chạy.</string>
+    <string name="notification_text">Đừng xóa thông báo này.</string>
+    <string name="notification_channel">Dịch vụ.</string>
+    <string name="subscription_error">Thiết bị không hỗ trợ tính năng của ứng dụng.</string>
+    <string name="collecting_time">Thời gian hoạt động:</string>
+    <string name="collecting_write_lines">Tổng dữ liệu:</string>
+    <string name="collecting_errors">Lỗi:</string>
+    <string name="collecting_day">ngày</string>
+    <string name="collecting_hour">giờ</string>
+    <string name="collecting_min">phút</string>
+    <string name="collecting_sec">giây</string>
+    <string name="ad_id_text"><![CDATA[<br><br>Chúng tôi sử dụng một mạng quảng cáo để hiển thị quảng cáo.<br><br>
+Mạng quảng cáo có thể thu thập dữ liệu, bao gồm mã định danh quảng cáo của thiết bị bạn, để hiển thị quảng cáo cá nhân hóa.<br><br>
+Bạn có thể <font color = "#43A047"><b>cho phép</b></font> hoặc <font color = "#F44336"><b>tắt</b></font> cá nhân hóa quảng cáo.<br><br>
+Nếu bạn tắt cá nhân hóa, chúng tôi sẽ chỉ hiển thị quảng cáo không cá nhân hóa.<br><br>]]></string>
+
+    <string name="permit"><![CDATA[<br><br><b>Ứng dụng xử lý các loại dữ liệu sau:</b><br><br>
+<em>1. Mức độ tín hiệu mạng di động.</em><br>
+<em>2. Loại kết nối dữ liệu.</em><br>
+<em>3. Số khe của thẻ SIM đang hoạt động.</em><br>
+<em>4. Tên của thẻ SIM.</em><br><br>
+Để nhận được dữ liệu này liên quan đến thẻ SIM, ứng dụng sẽ yêu cầu quyền <b>quản lý cuộc gọi.</b><br><br>
+Để biết thêm chi tiết, vui lòng nhấp vào biểu tượng <b>"Quyền riêng tư"</b>.<br><br>
+Thêm vào đó, để hoạt động lâu dài và ổn định, ứng dụng yêu cầu quyền hiển thị thông báo liên tục.<br>
+    Nếu thông báo bị tắt trong quá trình hoạt động, ứng dụng có thể bị hệ thống dừng.<br><br>
+    Việc vô hiệu hóa kiểm soát hoạt động nền (được khuyến nghị) sẽ giúp bảo vệ ứng dụng khỏi bị dừng bởi hệ thống khi hoạt động kéo dài.<br><br>
+
+<b>Ứng dụng sử dụng các ký hiệu dữ liệu sau:</b> <br><br>
+<font color="#E040FB"><b> 5G </b></font> - có nghĩa là NR (New Radio), 5G NSA, 5G SA <br>
+<font color="#2962FF"><b> 4G </b></font> - có nghĩa là LTE, LTE (CA2), Evolved 3G (LTE) <br>
+<font color="#00C853"><b> 3G </b></font> - có nghĩa là một trong các chuẩn HSDPA, HSUPA, HSPA, EVDO_B, EHRPD, UMTS. <br>
+<font color="#E53935"><b> 2G </b></font> - có nghĩa là một trong các chuẩn EDGE, GPRS, CDMA, 1xRTT, IDEN. <br>
+<font color="#795548"><b> xG </b></font> - có nghĩa là một loại không xác định, vì không có kết nối dữ liệu.<br><br>
+<b><font color="#43A047">RSRP&nbsp;&gt;&nbsp;&nbsp;-80&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-65&nbsp;=&nbsp;&nbsp;&nbsp;5</font></b><br>
+<b><font color="#7CB342">RSRP&nbsp;&gt;&nbsp;&nbsp;-90&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-75&nbsp;=&nbsp;&nbsp;&nbsp;4</font></b><br>
+<b><font color="#FBC02D">RSRP&nbsp;&gt;&nbsp;-100&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-85&nbsp;=&nbsp;&nbsp;&nbsp;3</font></b><br>
+<b><font color="#FB8C00">RSRP&nbsp;&gt;&nbsp;-110&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-95&nbsp;=&nbsp;&nbsp;&nbsp;2</font></b><br>
+<b><font color="#D32F2F">RSRP&nbsp;&gt;&nbsp;-120&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-120&nbsp;=&nbsp;1</font></b><br><br>
+<b>Bộ định tuyến được hỗ trợ :</b><br>
+Keenetic | Netcraze<br>
+Cudy LT500 V2.0<br>
+TP-Link TL-MR150 v2<br>
+Huawei CPE B593s-22<br><br>
+<b>Ứng dụng không phải là công cụ đo lường.</b><br>
+Dữ liệu hiển thị trên các biểu đồ được tạo ra từ thông tin thu thập từ thiết bị của bạn. Và có thể khác với giá trị thực tế.<br><br>
+]]></string>
+
+    <string name="notice"><![CDATA[<br><br><b>Ứng dụng này bao gồm các thư viện mã nguồn mở và thư viện bên thứ ba:</b><br><br>
+1. <b>MPAndroidChart</b> <a href="https://github.com/PhilJay/MPAndroidChart/">https://github.com/PhilJay/MPAndroidChart/</a><br>
+   Được cấp phép dưới Apache License, Version 2.0.<br>
+   <b>Tác giả:</b> Philipp Jahoda (PhilJay)<br><br>
+2. <b>Free data Animation</b> <a href="https://lottiefiles.com/free-animation/data-V8HWwl7oWO">https://lottiefiles.com/free-animation/data-V8HWwl7oWO</a><br>
+   Được cấp phép dưới Lottie Simple License (FL 9.13.21)<br>
+   <b>Tác giả:</b> Revital Cahani <br><br>
+3. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">https://github.com/airbnb/lottie-android</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Airbnb, Inc. <br><br>
+4. <b>OkHttp</b> <a href="https://github.com/square/okhttp">https://github.com/square/okhttp</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+5. <b>Okio</b> <a href="https://github.com/square/okio">https://github.com/square/okio</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+]]></string>
+
+
+</resources>

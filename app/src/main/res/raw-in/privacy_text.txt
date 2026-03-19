@@ -1,0 +1,67 @@
+<br><br><b><a href="https://github.com/safelogJ/Simlog/blob/master/privacy/privacy_in">Kebijakan Privasi untuk Simlog</a></b><br><br>
+
+Kebijakan Privasi<br>
+Pembaruan terakhir: 02 September 2025<br><br>
+
+Kebijakan Privasi ini menjelaskan kebijakan dan prosedur Kami untuk mengumpulkan dan menggunakan informasi Anda ketika Anda menggunakan Layanan,
+ serta memberitahu Anda tentang hak privasi Anda dan bagaimana hukum melindungi Anda.<br><br>
+
+Penafsiran dan Definisi<br><br>
+Penafsiran:<br>
+Kata-kata yang huruf pertamanya dikapitalisasi memiliki arti yang ditentukan dalam ketentuan berikut.<br>
+ Definisi-definisi berikut memiliki arti yang sama terlepas dari apakah digunakan dalam bentuk tunggal atau jamak.<br><br>
+
+Definisi:<br>
+Untuk tujuan Kebijakan Privasi ini:<br><br>
+
+Aplikasi berarti Simlog, perangkat lunak yang disediakan oleh Perusahaan.<br>
+
+Perusahaan (disebut dalam Perjanjian ini sebagai "Perusahaan", "Kami", "Kami" atau "Milik Kami") adalah pengusaha perorangan Evgenii Chekmazov.<br>
+
+Negara merujuk kepada: Rusia.<br>
+Perangkat berarti setiap perangkat yang dapat mengakses Layanan, seperti komputer, ponsel, atau tablet digital.<br>
+Data Pribadi berarti segala informasi yang terkait dengan individu yang teridentifikasi atau dapat diidentifikasi.<br>
+
+Layanan merujuk pada Aplikasi.<br>
+Data Penggunaan berarti data yang dikumpulkan secara otomatis,
+ yang dihasilkan ketika Anda menggunakan Layanan, atau dari infrastruktur Layanan itu sendiri (misalnya, durasi kunjungan halaman).<br>
+Anda berarti individu yang mengakses atau menggunakan Layanan, atau perusahaan,
+ atau entitas hukum lainnya atas nama individu tersebut yang mengakses atau menggunakan Layanan, sebagaimana berlaku.<br><br>
+
+Pengumpulan dan Penggunaan Data Pribadi Anda<br>
+Jenis Data yang Dikumpulkan: Data Penggunaan<br>
+
+Data Penggunaan dikumpulkan secara otomatis ketika Anda menggunakan Layanan.<br>
+Data penggunaan mungkin termasuk informasi seperti waktu dan tanggal penggunaan aplikasi,
+ waktu yang dihabiskan di aplikasi, jumlah kartu SIM aktif di ponsel, nama kartu SIM, kekuatan sinyal kartu SIM,
+  jenis transfer data yang digunakan oleh kartu SIM.<br>
+Data yang dikumpulkan hanya digunakan di dalam aplikasi itu sendiri, termasuk dalam antarmuka pengguna.<br>
+Nomor slot dan nama kartu SIM digunakan untuk menampilkan kepada pengguna kartu SIM aktif yang dapat digunakan oleh aplikasi.<br>
+Nomor slot dan nama kartu SIM digunakan dalam nama file yang dibuat oleh aplikasi,
+ yang menyimpan riwayat perubahan kekuatan sinyal jaringan dan jenis transfer data.<br>
+Data dalam file disimpan dalam format (nomor menit, jenis transfer data, kekuatan sinyal jaringan).<br><br>
+
+Penyimpanan Data Pribadi Anda:<br>
+Perusahaan tidak menyimpan data pribadi atau data lainnya Anda.<br>
+Data penggunaan disimpan di perangkat Anda dalam folder aplikasi (/Android/data/com.safelogj.simlog/files/).<br><br>
+
+Menghapus Data yang Dikumpulkan:<br>
+Anda berhak menghapus semua file yang berisi data yang dikumpulkan di folder aplikasi (/Android/data/com.safelogj.simlog/files/).<br><br>
+
+Tautan ke Situs Lain:<br>
+Layanan Kami mungkin berisi tautan ke situs web lain yang tidak dioperasikan oleh Kami. Jika Anda mengklik tautan pihak ketiga, Anda akan diarahkan ke situs pihak ketiga tersebut.<br>
+Kami sangat menyarankan Anda untuk meninjau Kebijakan Privasi setiap situs yang Anda kunjungi.<br>
+Kami tidak memiliki kendali atas, dan tidak bertanggung jawab atas, konten, kebijakan privasi, atau praktik situs atau layanan pihak ketiga mana pun.<br><br>
+
+Perubahan pada Kebijakan Privasi Ini:<br>
+Kami dapat memperbarui Kebijakan Privasi kami dari waktu ke waktu.<br>
+Kami akan memberi tahu Anda tentang segala perubahan dengan memposting Kebijakan Privasi baru di halaman ini.<br>
+Kami akan memberi tahu Anda dengan pemberitahuan yang mencolok pada Layanan Kami sebelum perubahan mulai berlaku dan memperbarui tanggal "Pembaruan terakhir" di bagian atas Kebijakan Privasi ini.<br><br>
+
+Kami mendorong Anda untuk meninjau Kebijakan Privasi ini secara berkala untuk setiap perubahan.<br>
+Perubahan pada Kebijakan Privasi ini efektif ketika diposting di halaman ini.<br><br>
+
+Hubungi Kami:<br>
+Jika Anda memiliki pertanyaan tentang Kebijakan Privasi ini, Anda dapat menghubungi kami:<br><br>
+
+Melalui email: simlog-app@yandex.ru<br><br>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="start_promo_text">Patalastas</string>
+    <string name="file_read_error">ERROR SA PAGBASA NG FILE.</string>
+    <string name="no_data_to_display">WALANG DATA.</string>
+    <string name="no_data_files">Walang file na natagpuan.</string>
+    <string name="need_choose_sim">Pumili ng isang SIM.</string>
+    <string name="no_sim">Walang nahanap na SIM.</string>
+    <string name="permission_denied">Kinakailangang pahintulot.</string>
+    <string name="privacy_checkbox">Kinukumpirma ko na nabasa ko at sumasang-ayon ako sa mga tuntunin ng Patakaran sa Privacy.</string>
+    <string name="service_stopped">Itulak ang generator.</string>
+    <string name="notification_title">Nagtatrabaho ang Simlog.</string>
+    <string name="notification_text">Huwag alisin ang notification na ito.</string>
+    <string name="notification_channel">Serbisyo.</string>
+    <string name="subscription_error">Ang aparato ay hindi sumusuporta sa functionality ng aplikasyon.</string>
+    <string name="collecting_time">Oras ng operasyon :</string>
+    <string name="collecting_write_lines">Kabuuang data :</string>
+    <string name="collecting_errors">Mga error :</string>
+    <string name="collecting_day">g</string>
+    <string name="collecting_hour">h</string>
+    <string name="collecting_min">m</string>
+    <string name="collecting_sec">s</string>
+    <string name="ad_id_text"><![CDATA[<br><br>Gumagamit kami ng advertising network upang magpakita ng mga patalastas.<br><br>
+Ang advertising network ay maaaring mangolekta ng mga data, kasama ang advertising ID ng iyong aparato, upang magpakita ng mga personalized na patalastas.<br><br>
+Maaari mong <font color = "#43A047"><b>paganahin</b></font> o <font color = "#F44336"><b>huwag paganahin</b></font> ang personalisasyon ng mga patalastas.<br><br>
+Kung hindi mo pinagana ang personalisasyon, magpapakita kami ng mga hindi personalisadong patalastas.<br><br>]]></string>
+
+    <string name="permit"><![CDATA[<br><br><b>Ang aplikasyon ay nagpoproseso ng mga sumusunod na uri ng data:</b><br><br>
+<em>1. Antas ng signal ng mobile network.</em><br>
+<em>2. Uri ng koneksyon sa data.</em><br>
+<em>3. Numero ng slot ng aktibong SIM.</em><br>
+<em>4. Pangalan ng SIM.</em><br><br>
+Upang makuha ang mga data na ito tungkol sa SIM, hihilingin ng aplikasyon ang pahintulot na <b>pamahalaan ang mga tawag.</b><br><br>
+Para sa higit pang detalye, i-click ang icon ng <b>"Privacy"</b>.<br><br>
+Karagdagan, para sa pangmatagilid at matatag na operasyon, ang aplikasyon ay nangangailangan ng pahintulot upang magpakita ng isang permanenteng abiso.<br>
+    Kung ang abiso ay pinatay habang ang aplikasyon ay tumatakbo, maaaring ihinto ito ng sistema.<br><br>
+    Ang pag-disable ng kontrol sa background na aktibidad (inirerekomenda) ay magbibigay ng karagdagang proteksyon sa aplikasyon upang hindi ito mapahinto ng sistema sa matagal na operasyon.<br><br>
+
+<b>Ginagamit ng aplikasyon ang mga sumusunod na simbolo para sa mga uri ng data:</b> <br><br>
+<font color="#E040FB"><b> 5G </b></font> - nangangahulugang NR (New Radio), 5G NSA, 5G SA <br>
+<font color="#2962FF"><b> 4G </b></font> - nangangahulugang LTE, LTE (CA2), Evolved 3G (LTE) <br>
+<font color="#00C853"><b> 3G </b></font> - nangangahulugang isa sa mga sumusunod: HSDPA, HSUPA, HSPA, EVDO_B, EHRPD, UMTS. <br>
+<font color="#E53935"><b> 2G </b></font> - nangangahulugang isa sa mga sumusunod: EDGE, GPRS, CDMA, 1xRTT, IDEN. <br>
+<font color="#795548"><b> xG </b></font> - nangangahulugang isang hindi kilalang uri, dahil walang data transmission.<br><br>
+<b><font color="#43A047">RSRP&nbsp;&gt;&nbsp;&nbsp;-80&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-65&nbsp;=&nbsp;&nbsp;&nbsp;5</font></b><br>
+<b><font color="#7CB342">RSRP&nbsp;&gt;&nbsp;&nbsp;-90&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-75&nbsp;=&nbsp;&nbsp;&nbsp;4</font></b><br>
+<b><font color="#FBC02D">RSRP&nbsp;&gt;&nbsp;-100&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-85&nbsp;=&nbsp;&nbsp;&nbsp;3</font></b><br>
+<b><font color="#FB8C00">RSRP&nbsp;&gt;&nbsp;-110&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-95&nbsp;=&nbsp;&nbsp;&nbsp;2</font></b><br>
+<b><font color="#D32F2F">RSRP&nbsp;&gt;&nbsp;-120&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-120&nbsp;=&nbsp;1</font></b><br><br>
+<b>Mga suportadong router :</b><br>
+Keenetic | Netcraze<br>
+Cudy LT500 V2.0<br>
+TP-Link TL-MR150 v2<br>
+Huawei CPE B593s-22<br><br>
+<b>Ang aplikasyon ay hindi isang kasangkapan para sa pagsukat.</b><br>
+Ang mga datos na ipinapakita sa mga graph ay nilikha gamit ang impormasyon mula sa iyong aparato at maaaring magkaiba sa mga aktwal na halaga.<br><br>
+]]></string>
+
+    <string name="notice"><![CDATA[<br><br><b>Kasama sa aplikasyon ang mga open-source na aklatan at mga aklatan mula sa mga third-party:</b><br><br>
+1. <b>MPAndroidChart</b> <a href="https://github.com/PhilJay/MPAndroidChart/">https://github.com/PhilJay/MPAndroidChart/</a><br>
+   Lisensyang Apache, Bersyon 2.0.<br>
+   <b>May-akda:</b> Philipp Jahoda (PhilJay)<br><br>
+2. <b>Free data Animation</b> <a href="https://lottiefiles.com/free-animation/data-V8HWwl7oWO">https://lottiefiles.com/free-animation/data-V8HWwl7oWO</a><br>
+   Lisensyang Lottie Simple (FL 9.13.21)<br>
+   <b>May-akda:</b> Revital Cahani <br><br>
+3. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">https://github.com/airbnb/lottie-android</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Airbnb, Inc. <br><br>
+4. <b>OkHttp</b> <a href="https://github.com/square/okhttp">https://github.com/square/okhttp</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+5. <b>Okio</b> <a href="https://github.com/square/okio">https://github.com/square/okio</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+]]></string>
+
+
+</resources>

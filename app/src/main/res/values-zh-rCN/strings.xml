@@ -1,0 +1,78 @@
+<resources>
+    <string name="start_promo_text">广告</string>
+    <string name="file_read_error">读取文件时出错。</string>
+    <string name="no_data_to_display">没有数据。</string>
+    <string name="no_data_files">未找到文件。</string>
+    <string name="need_choose_sim">请选择SIM卡。</string>
+    <string name="no_sim">未找到SIM卡。</string>
+    <string name="permission_denied">需要权限。</string>
+    <string name="privacy_checkbox">我确认我已阅读并同意隐私政策的条款。</string>
+    <string name="service_stopped">启动发电机。</string>
+    <string name="notification_title">Simlog 正在运行。</string>
+    <string name="notification_text">请不要移除此通知。</string>
+    <string name="notification_channel">服务。</string>
+    <string name="subscription_error">设备不支持应用功能。</string>
+    <string name="collecting_time">运行时间：</string>
+    <string name="collecting_write_lines">总数据：</string>
+    <string name="collecting_errors">错误：</string>
+    <string name="collecting_day">天</string>
+    <string name="collecting_hour">小时</string>
+    <string name="collecting_min">分钟</string>
+    <string name="collecting_sec">秒</string>
+    <string name="ad_id_text"><![CDATA[<br><br>我们使用广告网络展示广告。<br><br>
+广告网络可能会收集数据，包括您的设备广告标识符，以展示个性化广告。<br><br>
+您可以 <font color = "#43A047"><b>允许</b></font> 或 <font color = "#F44336"><b>禁用</b></font> 个性化广告。<br><br>
+如果您禁用个性化广告，我们将只展示非个性化广告。<br><br>]]></string>
+
+    <string name="permit"><![CDATA[<br><br><b>该应用程序处理以下类型的数据：</b><br><br>
+<em>1. 移动网络信号强度。</em><br>
+<em>2. 数据传输类型。</em><br>
+<em>3. 活跃SIM卡的插槽编号。</em><br>
+<em>4. SIM卡名称。</em><br><br>
+为了获取与SIM卡相关的数据，应用程序将请求<b>管理通话</b>权限。<br><br>
+如需更多信息，请点击<b>“隐私”</b>图标。<br><br>
+此外，为了长期稳定运行，应用程序需要获得显示持久通知的权限。<br>
+    如果在运行期间关闭通知，应用程序可能会被系统停止。<br><br>
+    禁用后台活动控制（推荐）将进一步保护应用程序，在长时间运行时避免被系统停止。<br><br>
+
+<b>应用程序使用以下数据类型表示：</b> <br><br>
+<font color="#E040FB"><b>5G</b></font> - 表示NR (New Radio), 5G NSA, 5G SA <br>
+<font color="#2962FF"><b>4G</b></font> - 表示LTE, LTE (CA2), Evolved 3G (LTE) <br>
+<font color="#00C853"><b>3G</b></font> - 表示HSDPA, HSUPA, HSPA, EVDO_B, EHRPD, UMTS等之一。 <br>
+<font color="#E53935"><b>2G</b></font> - 表示EDGE, GPRS, CDMA, 1xRTT, IDEN等之一。 <br>
+<font color="#795548"><b>xG</b></font> - 表示未知类型，因为没有数据传输。<br><br>
+<b><font color="#43A047">RSRP&nbsp;&gt;&nbsp;&nbsp;-80&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-65&nbsp;=&nbsp;&nbsp;&nbsp;5</font></b><br>
+<b><font color="#7CB342">RSRP&nbsp;&gt;&nbsp;&nbsp;-90&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-75&nbsp;=&nbsp;&nbsp;&nbsp;4</font></b><br>
+<b><font color="#FBC02D">RSRP&nbsp;&gt;&nbsp;-100&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-85&nbsp;=&nbsp;&nbsp;&nbsp;3</font></b><br>
+<b><font color="#FB8C00">RSRP&nbsp;&gt;&nbsp;-110&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-95&nbsp;=&nbsp;&nbsp;&nbsp;2</font></b><br>
+<b><font color="#D32F2F">RSRP&nbsp;&gt;&nbsp;-120&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-120&nbsp;=&nbsp;1</font></b><br><br>
+<b>支持的路由器：</b><br>
+Keenetic | Netcraze<br>
+Cudy LT500 V2.0<br>
+TP-Link TL-MR150 v2<br>
+Huawei CPE B593s-22<br><br>
+<b>本应用程序不是测量工具。</b><br>
+图表中显示的数据是根据设备信息生成的，并可能与实际数据有所不同。<br><br>
+]]></string>
+
+    <string name="notice"><![CDATA[<br><br><b>此应用程序包含开源库和第三方库：</b><br><br>
+1. <b>MPAndroidChart</b> <a href="https://github.com/PhilJay/MPAndroidChart/">https://github.com/PhilJay/MPAndroidChart/</a><br>
+   根据Apache许可证2.0版本授权<br>
+   <b>作者：</b>Philipp Jahoda (PhilJay)<br><br>
+2. <b>Free data Animation</b> <a href="https://lottiefiles.com/free-animation/data-V8HWwl7oWO">https://lottiefiles.com/free-animation/data-V8HWwl7oWO</a><br>
+   根据Lottie Simple许可证(FL 9.13.21)授权<br>
+   <b>作者：</b>Revital Cahani <br><br>
+3. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">https://github.com/airbnb/lottie-android</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Airbnb, Inc. <br><br>
+4. <b>OkHttp</b> <a href="https://github.com/square/okhttp">https://github.com/square/okhttp</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+5. <b>Okio</b> <a href="https://github.com/square/okio">https://github.com/square/okio</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+
+]]></string>
+
+
+</resources>

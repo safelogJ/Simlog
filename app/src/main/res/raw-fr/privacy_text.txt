@@ -1,0 +1,76 @@
+<br><br><b><a href="https://github.com/safelogJ/Simlog/blob/master/privacy/privacy_fr">Politique de confidentialité pour Simlog</a></b><br><br>
+
+Politique de confidentialité<br>
+Dernière mise à jour : 05 février 2026.<br><br>
+
+Cette politique de confidentialité décrit nos politiques et procédures de collecte
+et d'utilisation de vos informations lorsque vous utilisez le Service,
+et vous informe de vos droits à la vie privée et de la manière dont la loi vous protège.<br><br>
+
+Interprétation et définitions :<br>
+Interprétation :<br>
+Les mots avec la première lettre en majuscule ont les significations définies dans les termes suivants.<br>
+Les définitions suivantes ont le même sens qu'elles soient utilisées au singulier ou au pluriel.<br><br>
+
+Définitions :<br>
+Aux fins de cette politique de confidentialité :<br><br>
+
+Application signifie Simlog, le logiciel fourni par l'Entreprise.<br>
+L'Entreprise (désignée dans cet accord par « Entreprise », « Nous », « Notre » ou « Nos ») est l'entrepreneur individuel Evgenii Chekmazov.<br>
+Pays fait référence à : Russie<br>
+Dispositif signifie tout appareil permettant d'accéder au Service,
+comme un ordinateur, un téléphone mobile ou une tablette numérique.<br>
+Données personnelles désignent toute information relative à une personne identifiée ou identifiable.<br>
+Service fait référence à l'application.<br>
+Données d'utilisation désignent les données collectées automatiquement,
+soit générées lorsque vous utilisez le Service,
+soit à partir de l'infrastructure du Service elle-même (par exemple, la durée d'une visite sur une page).<br>
+Vous désigne la personne accédant ou utilisant le Service,
+ou l'entreprise ou toute autre entité juridique au nom de laquelle cette personne accède ou utilise le Service,
+le cas échéant.<br><br>
+
+Collecte et utilisation de vos données personnelles :<br>
+Types de données collectées : Données d'utilisation<br><br>
+
+Les données d'utilisation sont collectées automatiquement lorsque vous utilisez le Service.<br>
+Les données d'utilisation peuvent inclure des informations telles que l'heure et la date d'utilisation de l'application, le temps passé dans l'application,
+le nombre de cartes SIM actives dans le téléphone,
+le nom de la carte SIM, la force du signal de la carte SIM,
+le type de transfert de données utilisé par la carte SIM.<br>
+Les données collectées ne sont utilisées que dans l'application elle-même,
+y compris dans l'interface utilisateur.<br>
+Le numéro de slot et le nom de la carte SIM sont utilisés pour afficher à l'utilisateur les cartes SIM actives avec lesquelles l'application peut fonctionner.<br>
+Le numéro de slot et le nom de la carte SIM sont utilisés dans le nom des fichiers créés par l'application,
+qui stockent l'historique des modifications de la force du signal réseau et du type de transfert de données.<br>
+Les données dans les fichiers sont stockées au format (numéro de minute, type de transfert de données, force du signal réseau).<br><br>
+
+Stockage de vos données personnelles :<br>
+L'Entreprise ne stocke aucune de vos données personnelles ou autres données.<br>
+Les données d'utilisation sont stockées sur votre appareil dans le dossier de l'application (/Android/data/com.safelogj.simlog/files/).<br>
+Les données des routeurs enregistrés (IP, login, mot de passe) sont stockées dans le dossier système interne de l’application de manière chiffrée.<br><br>
+
+Suppression des données collectées :<br>
+Vous avez le droit de supprimer tous les fichiers contenant des données collectées dans le dossier de l'application (/Android/data/com.safelogj.simlog/files/).<br>
+Vous avez le droit de supprimer les données des routeurs enregistrés via l’interface de l’application. Pour ce faire, sélectionnez le routeur à supprimer, saisissez la commande remove dans le champ de login et appuyez sur le bouton (+).<br><br>
+
+Liens vers d'autres sites :<br>
+Notre Service peut contenir des liens vers d'autres sites web
+qui ne sont pas exploités par Nous. Si vous cliquez sur un lien tiers,
+vous serez redirigé vers le site de ce tiers.<br>
+Nous vous conseillons vivement de lire la politique de confidentialité de chaque site que vous visitez.<br>
+Nous n'avons aucun contrôle sur, et n'assumons aucune responsabilité concernant, le contenu,
+les politiques de confidentialité ou les pratiques des sites ou services tiers.<br><br>
+
+Modifications de cette politique de confidentialité :<br>
+Nous pouvons mettre à jour notre politique de confidentialité de temps à autre.<br>
+Nous vous informerons de tout changement en publiant la nouvelle politique de confidentialité sur cette page.<br>
+Nous vous informerons par un avis visible sur notre Service avant que
+les modifications n'entrent en vigueur et mettrons à jour la date de « Dernière mise à jour » en haut de cette politique de confidentialité.<br><br>
+
+Nous vous encourageons à consulter périodiquement cette politique de confidentialité pour prendre connaissance des changements.<br>
+Les modifications de cette politique de confidentialité prennent effet lorsqu'elles sont publiées sur cette page.<br><br>
+
+Contactez-nous :<br>
+Si vous avez des questions concernant cette politique de confidentialité, vous pouvez nous contacter :<br><br>
+
+Par e-mail : simlog-app@yandex.ru<br><br>

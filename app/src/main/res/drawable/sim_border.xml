@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/spinner_font" />
+    <stroke
+        android:width="0.6dp"
+        android:color="@color/spinner_font_hard" />
+    <corners android:radius="2dp" />
+</shape>

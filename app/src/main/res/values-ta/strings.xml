@@ -1,0 +1,78 @@
+<resources>
+    <string name="start_promo_text">விளம்பரம்</string>
+    <string name="file_read_error">படிகட்டலுக்கு பிழை.</string>
+    <string name="no_data_to_display">காண்பிக்க தரவு இல்லை.</string>
+    <string name="no_data_files">கோப்புகள் எதுவும் இல்லை.</string>
+    <string name="need_choose_sim">SIM கார்டை தேர்வு செய்யவும்.</string>
+    <string name="no_sim">SIM கார்டுகள் கிடைக்கவில்லை.</string>
+    <string name="permission_denied">அதிகாரத்திற்கான அனுமதி தேவை.</string>
+    <string name="privacy_checkbox">நான் தனியுரிமை கொள்கையின் நிபந்தனைகளைப் படித்துவிட்டு அவற்றுக்கு ஒத்துழைக்கின்றேன் என்று நான் உறுதிப்படுத்துகிறேன்.</string>
+    <string name="service_stopped">ஜெனரேட்டரை அழுத்தவும்.</string>
+    <string name="notification_title">சிம்லாக் இயக்கத்தில் உள்ளது.</string>
+    <string name="notification_text">இந்த அறிவிப்பை அகற்றாதீர்கள்.</string>
+    <string name="notification_channel">சேவை.</string>
+    <string name="subscription_error">இந்த சாதனம் பயன்பாட்டின் செயல்பாட்டை ஆதரிக்காது.</string>
+    <string name="collecting_time">செயல்பாட்டின் நேரம் :</string>
+    <string name="collecting_write_lines">மொத்த தரவு :</string>
+    <string name="collecting_errors">பிழைகள் :</string>
+    <string name="collecting_day">நாள்</string>
+    <string name="collecting_hour">மணி</string>
+    <string name="collecting_min">நிமி</string>
+    <string name="collecting_sec">வினாடி</string>
+    <string name="ad_id_text"><![CDATA[<br><br>நாங்கள் விளம்பரங்களை காட்டுவதற்காக ஒரு விளம்பர வலைப்பின்னலை பயன்படுத்துகிறோம்.<br><br>
+விளம்பர வலைப்பின்னல் உங்களின் சாதன விளம்பர ஐடி ஆகியவற்றை சேகரித்து, தனிப்பயனாக்கப்பட்ட விளம்பரங்களை காட்டலாம்.<br><br>
+நீங்கள் <font color = "#43A047"><b>தனிப்பயனாக்க</b></font> அல்லது <font color = "#F44336"><b>நிறுத்த</b></font> முடியும்.<br><br>
+நீங்கள் தனிப்பயனாக்கத்தை நிறுத்தினால், நாங்கள் அதற்கு பதிலாக பொதுவான விளம்பரங்களை காட்டுவோம்.<br><br>]]></string>
+
+    <string name="permit"><![CDATA[<br><br><b>பயன்பாடு பின்வரும் தரவு வகைகளை செயலாக்குகிறது:</b><br><br>
+<em>1. மொபைல் நெட்வொர்க் சிக்னல் அளவு.</em><br>
+<em>2. தரவு பரிமாற்றம் வகை.</em><br>
+<em>3. செயல்பாட்டில் உள்ள SIM கார்டின் ஸ்லாட் எண்.</em><br>
+<em>4. SIM கார்டின் பெயர்.</em><br><br>
+இந்த SIM தரவுகளை பெற, பயன்பாடு <b>பேரிடை கையாளுதல்</b> என்ற அனுமதி கேட்கும்.<br><br>
+மேலும் விவரங்களை பார்க்க "தனியுரிமை" ஐக்கானை அழுத்தவும்.<br><br>
+கூடுதல் நேரம் மற்றும் நிலையான செயல்பாட்டிற்கான, பயன்பாட்டிற்கு ஓர் நிலையான அறிவிப்பை காட்டு உரிமை தேவையாகிறது.<br>
+    செயல்பாட்டின் போது அறிவிப்பு அணைக்கப்பட்டால், பயன்பாடு முறைமை மூலம் நிறுத்தப்படக்கூடும்.<br><br>
+    பின்தொடர்ந்து செயல்பாட்டு கட்டுப்பாட்டை முடக்குவது (பரிந்துரைக்கப்படுகிறது) நீண்ட நேரம் செயல்பட்டால் பயன்பாட்டை முறைமை நிறுத்தாமல் பாதுகாக்க உதவும்.<br><br>
+
+<b>பயன்பாட்டில் பின்வரும் தரவு வகைகள் பயன்படுத்தப்படுகின்றன:</b> <br><br>
+<font color="#E040FB"><b> 5G </b></font> - NR (New Radio), 5G NSA, 5G SA என்று பொருள்படும் <br>
+<font color="#2962FF"><b> 4G </b></font> - LTE, LTE (CA2), Evolved 3G (LTE) என்று பொருள்படும் <br>
+<font color="#00C853"><b> 3G </b></font> - HSDPA, HSUPA, HSPA, EVDO_B, EHRPD, UMTS என்றவற்றில் ஒன்று.<br>
+<font color="#E53935"><b> 2G </b></font> - EDGE, GPRS, CDMA, 1xRTT, IDEN என்றவற்றில் ஒன்று.<br>
+<font color="#795548"><b> xG </b></font> - தகவலின் பரிமாற்றம் இல்லாததால், அது தெரியாத வகையாகும்.<br><br>
+<b><font color="#43A047">RSRP&nbsp;&gt;&nbsp;&nbsp;-80&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-65&nbsp;=&nbsp;&nbsp;&nbsp;5</font></b><br>
+<b><font color="#7CB342">RSRP&nbsp;&gt;&nbsp;&nbsp;-90&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-75&nbsp;=&nbsp;&nbsp;&nbsp;4</font></b><br>
+<b><font color="#FBC02D">RSRP&nbsp;&gt;&nbsp;-100&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-85&nbsp;=&nbsp;&nbsp;&nbsp;3</font></b><br>
+<b><font color="#FB8C00">RSRP&nbsp;&gt;&nbsp;-110&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-95&nbsp;=&nbsp;&nbsp;&nbsp;2</font></b><br>
+<b><font color="#D32F2F">RSRP&nbsp;&gt;&nbsp;-120&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-120&nbsp;=&nbsp;1</font></b><br><br>
+<b>ஆதரிக்கப்படும் ரவுட்டர்கள் :</b><br>
+Keenetic | Netcraze<br>
+Cudy LT500 V2.0<br>
+TP-Link TL-MR150 v2<br>
+Huawei CPE B593s-22<br><br>
+<b>இந்த பயன்பாடு ஒரு அளவீட்டு சாதனம் அல்ல.</b><br>
+வரைபடங்களில் காட்டப்படும் தரவு உங்கள் சாதனத்திலிருந்து கிடைத்த தகவல்களின் அடிப்படையில் உருவாக்கப்படுகிறது. அது உண்மையான மதிப்புகளிலிருந்து மாறுபடக்கூடும்.<br><br>
+
+]]></string>
+
+    <string name="notice"><![CDATA[<br><br><b>இந்த பயன்பாட்டில் திறந்த ஆதாரங்களைக் கொண்ட மற்றும் மூன்றாம் தரப்பு நூலகங்கள் அடங்கியுள்ளன:</b><br><br>
+1. <b>MPAndroidChart</b> <a href="https://github.com/PhilJay/MPAndroidChart/">https://github.com/PhilJay/MPAndroidChart/</a><br>
+   Apache License, Version 2.0ன் கீழ் உரிமம் பெற்றது.<br>
+   <b>ஆசிரியர்:</b> Philipp Jahoda (PhilJay)<br><br>
+2. <b>Free data Animation</b> <a href="https://lottiefiles.com/free-animation/data-V8HWwl7oWO">https://lottiefiles.com/free-animation/data-V8HWwl7oWO</a><br>
+   Lottie எளிய உரிமம் (FL 9.13.21) கீழ் உரிமம் பெற்றது<br>
+   <b>ஆசிரியர்:</b> Revital Cahani <br><br>
+3. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">https://github.com/airbnb/lottie-android</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Airbnb, Inc. <br><br>
+4. <b>OkHttp</b> <a href="https://github.com/square/okhttp">https://github.com/square/okhttp</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+5. <b>Okio</b> <a href="https://github.com/square/okio">https://github.com/square/okio</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+]]></string>
+
+
+</resources>

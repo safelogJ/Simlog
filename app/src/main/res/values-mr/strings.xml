@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="start_promo_text">जाहिरात</string>
+    <string name="file_read_error">फाइल वाचण्यात त्रुटी.</string>
+    <string name="no_data_to_display">माहिती उपलब्ध नाही.</string>
+    <string name="no_data_files">फाइल्स सापडल्या नाहीत.</string>
+    <string name="need_choose_sim">सिम-कार्ड निवडा.</string>
+    <string name="no_sim">सिम-कार्ड सापडले नाहीत.</string>
+    <string name="permission_denied">परवानगी आवश्यक आहे.</string>
+    <string name="privacy_checkbox">मी गोपनीयता धोरणाची अट वाचली आहे आणि सहमत आहे.</string>
+    <string name="service_stopped">जनरेटर सुरू करा.</string>
+    <string name="notification_title">Simlog चालू आहे.</string>
+    <string name="notification_text">हे सूचित करणे काढू नका.</string>
+    <string name="notification_channel">सेवा.</string>
+    <string name="subscription_error">हे डिव्हाइस ॲपची कार्यक्षमता समर्थित करत नाही.</string>
+    <string name="collecting_time">कार्यरत वेळ :</string>
+    <string name="collecting_write_lines">एकूण डेटा :</string>
+    <string name="collecting_errors">त्रुटी :</string>
+    <string name="collecting_day">दि</string>
+    <string name="collecting_hour">ता</string>
+    <string name="collecting_min">मि</string>
+    <string name="collecting_sec">से</string>
+    <string name="ad_id_text"><![CDATA[<br><br>आम्ही जाहिराती दाखवण्यासाठी जाहिरात नेटवर्क वापरतो.<br><br>
+जाहिरात नेटवर्क तुमच्या डिव्हाइसचा जाहिरात आयडेंटिफायर यासह वैयक्तिकृत जाहिरातींसाठी डेटा गोळा करू शकते.<br><br>
+तुम्ही <font color = "#43A047"><b>परवानगी देऊ</b></font> किंवा <font color = "#F44336"><b>अकार्यान्वित करू</b></font> शकता.<br><br>
+जर तुम्ही वैयक्तिकरण अकार्यान्वित केले, तर आम्ही केवळ गैर-वैयक्तिकृत जाहिराती दाखवू.<br><br>]]></string>
+
+    <string name="permit"><![CDATA[<br><br><b>ॲप खालील प्रकारच्या डेटावर प्रक्रिया करते:</b><br><br>
+<em>1. मोबाइल नेटवर्क सिग्नल पातळी.</em><br>
+<em>2. डेटा ट्रान्सफर प्रकार.</em><br>
+<em>3. सक्रिय SIM स्लॉट नंबर.</em><br>
+<em>4. SIM कार्डचे नाव.</em><br><br>
+ही सिम-संबंधित माहिती मिळवण्यासाठी, ॲपला<b> कॉल व्यवस्थापन</b> परवानगी लागेल.<br><br>
+अधिक माहिती मिळवण्यासाठी <b>‘गोपनीयता’</b> चिन्हावर क्लिक करा.<br><br>
+दीर्घ आणि स्थिर कार्यासाठी ॲपला स्थायी सूचना दर्शविण्याची परवानगी आवश्यक आहे.<br>
+जर सूचना कार्यादरम्यान बंद झाली, तर प्रणाली ॲप थांबवू शकते.<br><br>
+पार्श्वभूमी क्रियाकलाप नियंत्रणे अकार्यान्वित केल्यास (शिफारसीय), ॲपला प्रणालीकडून थांबवण्यापासून अधिक सुरक्षित केले जाऊ शकते.<br><br>
+
+<b>ॲपमध्ये खालील डेटा प्रकार दर्शवले जातात:</b> <br><br>
+<font color="#E040FB"><b> 5G </b></font> - NR (New Radio), 5G NSA, 5G SA दर्शवतो<br>
+<font color="#2962FF"><b> 4G </b></font> - LTE, LTE (CA2), Evolved 3G (LTE) दर्शवतो<br>
+<font color="#00C853"><b> 3G </b></font> - HSDPA, HSUPA, HSPA, EVDO_B, EHRPD, UMTS पैकी एक दर्शवतो.<br>
+<font color="#E53935"><b> 2G </b></font> - EDGE, GPRS, CDMA, 1xRTT, IDEN पैकी एक दर्शवतो.<br>
+<font color="#795548"><b> xG </b></font> - डेटा ट्रान्सफर नाही म्हणून अज्ञात प्रकार.<br><br>
+<b><font color="#43A047">RSRP&nbsp;&gt;&nbsp;&nbsp;-80&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-65&nbsp;=&nbsp;&nbsp;&nbsp;5</font></b><br>
+<b><font color="#7CB342">RSRP&nbsp;&gt;&nbsp;&nbsp;-90&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-75&nbsp;=&nbsp;&nbsp;&nbsp;4</font></b><br>
+<b><font color="#FBC02D">RSRP&nbsp;&gt;&nbsp;-100&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-85&nbsp;=&nbsp;&nbsp;&nbsp;3</font></b><br>
+<b><font color="#FB8C00">RSRP&nbsp;&gt;&nbsp;-110&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-95&nbsp;=&nbsp;&nbsp;&nbsp;2</font></b><br>
+<b><font color="#D32F2F">RSRP&nbsp;&gt;&nbsp;-120&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-120&nbsp;=&nbsp;1</font></b><br><br>
+<b>समर्थित राऊटर्स :</b><br>
+Keenetic | Netcraze<br>
+Cudy LT500 V2.0<br>
+TP-Link TL-MR150 v2<br>
+Huawei CPE B593s-22<br><br>
+<b>हे ॲप मापन साधन नाही.</b><br>
+चार्टवर दर्शवलेले डेटा डिव्हाइसकडून मिळालेल्या माहितीच्या आधारे व्युत्पन्न केलेले आहेत आणि प्रत्यक्ष डेटा वेगळा असू शकतो.<br><br>
+]]></string>
+
+    <string name="notice"><![CDATA[<br><br><b>या ॲपमध्ये ओपन-सोर्स आणि थर्ड-पार्टी लायब्ररींचा समावेश आहे:</b><br><br>
+1. <b>MPAndroidChart</b> <a href="https://github.com/PhilJay/MPAndroidChart/">https://github.com/PhilJay/MPAndroidChart/</a><br>
+   Apache License, Version 2.0 अंतर्गत परवाना.<br>
+   <b>लेखक:</b> Philipp Jahoda (PhilJay)<br><br>
+2. <b>Free data Animation</b> <a href="https://lottiefiles.com/free-animation/data-V8HWwl7oWO">https://lottiefiles.com/free-animation/data-V8HWwl7oWO</a><br>
+   Lottie Simple License (FL 9.13.21) अंतर्गत परवाना<br>
+   <b>लेखक:</b> Revital Cahani <br><br>
+3. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">https://github.com/airbnb/lottie-android</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Airbnb, Inc. <br><br>
+4. <b>OkHttp</b> <a href="https://github.com/square/okhttp">https://github.com/square/okhttp</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+5. <b>Okio</b> <a href="https://github.com/square/okio">https://github.com/square/okio</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+]]></string>
+
+
+</resources>

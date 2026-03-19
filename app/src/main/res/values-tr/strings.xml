@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="start_promo_text">Reklam</string>
+    <string name="file_read_error">DOSYA OKUMA HATASI.</string>
+    <string name="no_data_to_display">GÖSTERİLECEK VERİ YOK.</string>
+    <string name="no_data_files">Dosya bulunamadı.</string>
+    <string name="need_choose_sim">Bir SIM kartı seçin.</string>
+    <string name="no_sim">SIM kartı bulunamadı.</string>
+    <string name="permission_denied">İzin gereklidir.</string>
+    <string name="privacy_checkbox">Gizlilik Politikası\'nın şartlarını okuduğumu ve kabul ettiğimi onaylıyorum.</string>
+    <string name="service_stopped">Jeneratörü çalıştırın.</string>
+    <string name="notification_title">Simlog çalışıyor.</string>
+    <string name="notification_text">Bu bildirimi kaldırmayın.</string>
+    <string name="notification_channel">Hizmet.</string>
+    <string name="subscription_error">Cihaz uygulamanın işlevselliğini desteklemiyor.</string>
+    <string name="collecting_time">Çalışma süresi :</string>
+    <string name="collecting_write_lines">Toplam veri :</string>
+    <string name="collecting_errors">Hatalar :</string>
+    <string name="collecting_day">g</string>
+    <string name="collecting_hour">s</string>
+    <string name="collecting_min">d</string>
+    <string name="collecting_sec">sn</string>
+    <string name="ad_id_text"><![CDATA[<br><br>Reklam göstermek için reklam ağı kullanıyoruz.<br><br>
+Reklam ağı, kişiselleştirilmiş reklamlar göstermek için cihazınızın reklam kimliğini içeren veriler toplayabilir.<br><br>
+Reklam kişiselleştirmesini <font color = "#43A047"><b>etkinleştirebilirsiniz</b></font> veya <font color = "#F44336"><b>devre dışı bırakabilirsiniz</b></font>.<br><br>
+Kişiselleştirmeyi devre dışı bırakırsanız, yalnızca kişiselleştirilmemiş reklamlar göstereceğiz.<br><br>]]></string>
+
+    <string name="permit"><![CDATA[<br><br><b>Uygulama aşağıdaki veri türlerini işler:</b><br><br>
+<em>1. Mobil ağ sinyal seviyesi.</em><br>
+<em>2. Veri iletim türü.</em><br>
+<em>3. Etkin SIM kartının yuva numarası.</em><br>
+<em>4. SIM kartın adı.</em><br><br>
+Bu SIM ile ilgili verileri almak için uygulama, <b>arama yönetimi</b> izni isteyecektir.<br><br>
+Daha fazla bilgi için <b>"Gizlilik"</b> simgesine tıklayın.<br><br>
+Ayrıca, uzun süreli ve stabil çalışma için uygulamanın sürekli bir bildirim gösterme iznine ihtiyacı vardır.<br>
+    Bildirim çalışırken kapatılırsa, uygulama sistem tarafından durdurulabilir.<br><br>
+    Arka plan etkinliği kontrolünün devre dışı bırakılması (önerilir) uygulamanın uzun süreli çalışırken sistem tarafından durdurulmasını daha fazla engelleyecektir.<br><br>
+
+<b>Uygulama, aşağıdaki veri türlerini tanımlamak için şu sembolleri kullanır:</b> <br><br>
+<font color="#E040FB"><b> 5G </b></font> - NR (New Radio), 5G NSA, 5G SA anlamına gelir <br>
+<font color="#2962FF"><b> 4G </b></font> - LTE, LTE (CA2), Evolved 3G (LTE) anlamına gelir <br>
+<font color="#00C853"><b> 3G </b></font> - HSDPA, HSUPA, HSPA, EVDO_B, EHRPD, UMTS anlamına gelir. <br>
+<font color="#E53935"><b> 2G </b></font> - EDGE, GPRS, CDMA, 1xRTT, IDEN anlamına gelir. <br>
+<font color="#795548"><b> xG </b></font> - Veri iletimi olmadığı için bilinmeyen bir tür anlamına gelir.<br><br>
+<b><font color="#43A047">RSRP&nbsp;&gt;&nbsp;&nbsp;-80&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-65&nbsp;=&nbsp;&nbsp;&nbsp;5</font></b><br>
+<b><font color="#7CB342">RSRP&nbsp;&gt;&nbsp;&nbsp;-90&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-75&nbsp;=&nbsp;&nbsp;&nbsp;4</font></b><br>
+<b><font color="#FBC02D">RSRP&nbsp;&gt;&nbsp;-100&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-85&nbsp;=&nbsp;&nbsp;&nbsp;3</font></b><br>
+<b><font color="#FB8C00">RSRP&nbsp;&gt;&nbsp;-110&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-95&nbsp;=&nbsp;&nbsp;&nbsp;2</font></b><br>
+<b><font color="#D32F2F">RSRP&nbsp;&gt;&nbsp;-120&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-120&nbsp;=&nbsp;1</font></b><br><br>
+<b>Desteklenen yönlendiriciler :</b><br>
+Keenetic | Netcraze<br>
+Cudy LT500 V2.0<br>
+TP-Link TL-MR150 v2<br>
+Huawei CPE B593s-22<br><br>
+<b>Uygulama bir ölçüm aracı değildir.</b><br>
+Grafiklerde gösterilen veriler, cihazınızdan alınan bilgilerle oluşturulmuş olup gerçek değerlerden farklı olabilir.<br><br>
+]]></string>
+
+    <string name="notice"><![CDATA[<br><br><b>Bu uygulama açık kaynaklı kütüphaneler ve üçüncü taraf kütüphaneler içerir:</b><br><br>
+1. <b>MPAndroidChart</b> <a href="https://github.com/PhilJay/MPAndroidChart/">https://github.com/PhilJay/MPAndroidChart/</a><br>
+   Apache Lisansı, Sürüm 2.0 altında lisanslıdır.<br>
+   <b>Yazar:</b> Philipp Jahoda (PhilJay)<br><br>
+2. <b>Free data Animation</b> <a href="https://lottiefiles.com/free-animation/data-V8HWwl7oWO">https://lottiefiles.com/free-animation/data-V8HWwl7oWO</a><br>
+   Lottie Simple Lisansı (FL 9.13.21) altında lisanslıdır.<br>
+   <b>Yazar:</b> Revital Cahani <br><br>
+3. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">https://github.com/airbnb/lottie-android</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Airbnb, Inc. <br><br>
+4. <b>OkHttp</b> <a href="https://github.com/square/okhttp">https://github.com/square/okhttp</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+5. <b>Okio</b> <a href="https://github.com/square/okio">https://github.com/square/okio</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+]]></string>
+
+
+</resources>

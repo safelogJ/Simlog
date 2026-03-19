@@ -1,0 +1,79 @@
+<resources>
+    <string name="start_promo_text">Publicité</string>
+    <string name="file_read_error">ERREUR DE LECTURE DU FICHIER.</string>
+    <string name="no_data_to_display">AUCUNE DONNÉE À AFFICHER.</string>
+    <string name="no_data_files">Aucun fichier trouvé.</string>
+    <string name="need_choose_sim">Veuillez choisir une carte SIM.</string>
+    <string name="no_sim">Aucune carte SIM trouvée.</string>
+    <string name="permission_denied">Autorisation requise.</string>
+    <string name="privacy_checkbox">Je confirme que j\'ai lu et que j\'accepte les termes de la Politique de Confidentialité.</string>
+    <string name="service_stopped">Appuyez sur le générateur.</string>
+    <string name="notification_title">Simlog est en cours d\'exécution.</string>
+    <string name="notification_text">Ne supprimez pas cette notification.</string>
+    <string name="notification_channel">Service.</string>
+    <string name="subscription_error">L\'appareil ne prend pas en charge les fonctionnalités de l\'application.</string>
+    <string name="collecting_time">Temps de fonctionnement :</string>
+    <string name="collecting_write_lines">Total des données :</string>
+    <string name="collecting_errors">Erreurs :</string>
+    <string name="collecting_day">j</string>
+    <string name="collecting_hour">h</string>
+    <string name="collecting_min">m</string>
+    <string name="collecting_sec">s</string>
+    <string name="ad_id_text"><![CDATA[<br><br>Nous utilisons un réseau publicitaire pour afficher des annonces.<br><br>
+Le réseau publicitaire peut collecter des données, y compris l\'identifiant publicitaire de votre appareil, afin d\'afficher des publicités personnalisées.<br><br>
+Vous pouvez <font color = "#43A047"><b>activer</b></font> ou <font color = "#F44336"><b>désactiver</b></font> la personnalisation des publicités.<br><br>
+Si vous désactivez la personnalisation, nous n\'afficherons que des publicités non personnalisées.<br><br>]]></string>
+
+    <string name="permit"><![CDATA[<br><br><b>L\'application traite les types de données suivants :</b><br><br>
+<em>1. Niveau du signal du réseau mobile.</em><br>
+<em>2. Type de transmission de données.</em><br>
+<em>3. Numéro du slot de la carte SIM active.</em><br>
+<em>4. Nom de la carte SIM.</em><br><br>
+Pour obtenir ces données relatives à la carte SIM, l\'application demandera l\'autorisation de <b>gérer les appels.</b><br><br>
+Pour plus d\'informations, cliquez sur l\'icône <b>« Confidentialité ».</b><br><br>
+De plus, pour un fonctionnement à long terme et stable, l\'application nécessite l\'autorisation d\'afficher une notification persistante.<br>
+    Si la notification est désactivée pendant le fonctionnement, l\'application peut être arrêtée par le système.<br><br>
+    Désactiver le contrôle de l\'activité en arrière-plan (recommandé) protégera davantage l\'application contre l\'arrêt par le système lors d\'un fonctionnement prolongé.<br><br>
+
+<b>Les types de données utilisés dans l\'application :</b> <br><br>
+<font color="#E040FB"><b> 5G </b></font> - signifie NR (New Radio), 5G NSA, 5G SA <br>
+<font color="#2962FF"><b> 4G </b></font> - signifie LTE, LTE (CA2), Evolved 3G (LTE) <br>
+<font color="#00C853"><b> 3G </b></font> - signifie l\'un des HSDPA, HSUPA, HSPA, EVDO_B, EHRPD, UMTS. <br>
+<font color="#E53935"><b> 2G </b></font> - signifie l\'un des EDGE, GPRS, CDMA, 1xRTT, IDEN. <br>
+<font color="#795548"><b> xG </b></font> - signifie un type inconnu, car il n\'y a pas de transmission de données.<br><br>
+<b><font color="#43A047">RSRP&nbsp;&gt;&nbsp;&nbsp;-80&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-65&nbsp;=&nbsp;&nbsp;&nbsp;5</font></b><br>
+<b><font color="#7CB342">RSRP&nbsp;&gt;&nbsp;&nbsp;-90&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-75&nbsp;=&nbsp;&nbsp;&nbsp;4</font></b><br>
+<b><font color="#FBC02D">RSRP&nbsp;&gt;&nbsp;-100&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-85&nbsp;=&nbsp;&nbsp;&nbsp;3</font></b><br>
+<b><font color="#FB8C00">RSRP&nbsp;&gt;&nbsp;-110&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-95&nbsp;=&nbsp;&nbsp;&nbsp;2</font></b><br>
+<b><font color="#D32F2F">RSRP&nbsp;&gt;&nbsp;-120&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-120&nbsp;=&nbsp;1</font></b><br><br>
+<b>Routeurs pris en charge :</b><br>
+Keenetic | Netcraze<br>
+Cudy LT500 V2.0<br>
+TP-Link TL-MR150 v2<br>
+Huawei CPE B593s-22<br><br>
+<b>L\'application n\'est pas un outil de mesure.</b><br>
+Les données affichées sur les graphiques sont générées à partir des informations obtenues de votre appareil. Elles peuvent différer des données réelles.<br><br>
+
+]]></string>
+
+    <string name="notice"><![CDATA[<br><br><b>Cette application inclut des bibliothèques open source et des bibliothèques tierces :</b><br><br>
+1. <b>MPAndroidChart</b> <a href="https://github.com/PhilJay/MPAndroidChart/">https://github.com/PhilJay/MPAndroidChart/</a><br>
+   Licencié sous la licence Apache, Version 2.0.<br>
+   <b>Auteur :</b> Philipp Jahoda (PhilJay)<br><br>
+2. <b>Free data Animation</b> <a href="https://lottiefiles.com/free-animation/data-V8HWwl7oWO">https://lottiefiles.com/free-animation/data-V8HWwl7oWO</a><br>
+   Licencié sous la licence Lottie Simple (FL 9.13.21)<br>
+   <b>Auteur :</b> Revital Cahani <br><br>
+3. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">https://github.com/airbnb/lottie-android</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Airbnb, Inc. <br><br>
+4. <b>OkHttp</b> <a href="https://github.com/square/okhttp">https://github.com/square/okhttp</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+5. <b>Okio</b> <a href="https://github.com/square/okio">https://github.com/square/okio</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+
+]]></string>
+
+
+</resources>

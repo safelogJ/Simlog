@@ -1,0 +1,76 @@
+<br><br><b><a href="https://github.com/safelogJ/Simlog/blob/master/privacy/privacy_vi">Chính Sách Quyền Riêng Tư cho Simlog</a></b><br><br>
+
+Chính Sách Quyền Riêng Tư<br>
+Cập nhật lần cuối: 05 tháng 2, 2026.<br><br>
+
+Chính sách quyền riêng tư này mô tả các chính sách và thủ tục của chúng tôi trong việc thu thập
+và sử dụng thông tin của bạn khi bạn sử dụng Dịch Vụ,
+và cho bạn biết về quyền riêng tư của bạn và cách thức pháp luật bảo vệ bạn.<br><br>
+
+Giải thích và Định nghĩa:<br>
+Giải thích:<br>
+Các từ viết hoa có nghĩa được định nghĩa trong các điều khoản sau.<br>
+Các định nghĩa sau có cùng ý nghĩa bất kể chúng được sử dụng ở dạng số ít hay số nhiều.<br><br>
+
+Định nghĩa:<br>
+Cho mục đích của Chính Sách Quyền Riêng Tư này:<br><br>
+
+Ứng dụng có nghĩa là Simlog, phần mềm được cung cấp bởi Công ty.<br>
+Công ty (được gọi là “Công ty”, “Chúng tôi”, “Chúng Tôi” hoặc “Của Chúng Tôi” trong Thỏa Thuận này) là một doanh nhân cá nhân, Evgenii Chekmazov.<br>
+Quốc gia đề cập đến: Nga<br>
+Thiết bị có nghĩa là bất kỳ thiết bị nào có thể truy cập Dịch Vụ,
+như máy tính, điện thoại di động hoặc máy tính bảng kỹ thuật số.<br>
+Dữ liệu Cá nhân có nghĩa là bất kỳ thông tin nào liên quan đến một cá nhân đã được xác định hoặc có thể xác định được.<br>
+Dịch Vụ đề cập đến Ứng dụng.<br>
+Dữ liệu Sử Dụng có nghĩa là dữ liệu được thu thập tự động,
+hoặc được tạo ra khi bạn sử dụng Dịch Vụ,
+hoặc từ hạ tầng của Dịch Vụ (ví dụ: thời gian thăm trang).<br>
+“Bạn” có nghĩa là cá nhân truy cập hoặc sử dụng Dịch Vụ,
+hoặc công ty hoặc tổ chức pháp lý khác thay mặt cá nhân đó truy cập hoặc sử dụng Dịch Vụ,
+tùy theo trường hợp.<br><br>
+
+Thu thập và Sử dụng Dữ liệu Cá nhân của Bạn:<br>
+Các Loại Dữ liệu Được Thu thập: Dữ liệu Sử Dụng<br><br>
+
+Dữ liệu Sử Dụng được thu thập tự động khi bạn sử dụng Dịch Vụ.<br>
+Dữ liệu Sử Dụng có thể bao gồm thông tin như thời gian và ngày sử dụng ứng dụng, thời gian sử dụng ứng dụng,
+số lượng SIM card hoạt động trong điện thoại,
+tên của SIM card, độ mạnh tín hiệu của SIM card,
+loại truyền tải dữ liệu mà SIM card sử dụng.<br>
+Dữ liệu thu thập được chỉ được sử dụng trong chính ứng dụng,
+bao gồm giao diện người dùng.<br>
+Số khe và tên SIM card được sử dụng để hiển thị cho người dùng các SIM card hoạt động mà ứng dụng có thể làm việc với.<br>
+Số khe và tên SIM card được sử dụng trong tên của các tệp được tạo ra bởi ứng dụng,
+lưu trữ lịch sử thay đổi độ mạnh tín hiệu mạng và loại truyền tải dữ liệu.<br>
+Dữ liệu trong các tệp được lưu trữ theo định dạng (số phút, loại truyền tải dữ liệu, độ mạnh tín hiệu mạng).<br><br>
+
+Lưu trữ Dữ liệu Cá nhân của Bạn:<br>
+Công ty không lưu trữ dữ liệu cá nhân hoặc các dữ liệu khác của bạn.<br>
+Dữ liệu sử dụng được lưu trữ trên thiết bị của bạn trong thư mục ứng dụng (/Android/data/com.safelogj.simlog/files/).<br>
+Dữ liệu về các router đã lưu (IP, đăng nhập, mật khẩu) được lưu trữ trong thư mục hệ thống nội bộ của ứng dụng dưới dạng mã hóa.<br><br>
+
+Xóa Dữ liệu Được Thu thập:<br>
+Bạn có quyền xóa tất cả các tệp chứa dữ liệu thu thập được trong thư mục ứng dụng (/Android/data/com.safelogj.simlog/files/).<br>
+Bạn có quyền xóa dữ liệu về các router đã lưu thông qua giao diện ứng dụng. Để làm điều này, chọn router cần xóa, nhập lệnh remove vào trường đăng nhập và nhấn nút (+).<br><br>
+
+Liên kết đến Các Trang Web Khác:<br>
+Dịch Vụ của chúng tôi có thể chứa các liên kết đến các trang web khác
+không được vận hành bởi chúng tôi. Nếu bạn nhấp vào một liên kết của bên thứ ba,
+bạn sẽ được chuyển hướng đến trang của bên thứ ba đó.<br>
+Chúng tôi khuyến nghị bạn xem lại Chính Sách Quyền Riêng Tư của mỗi trang web bạn truy cập.<br>
+Chúng tôi không kiểm soát và không chịu trách nhiệm đối với nội dung,
+chính sách quyền riêng tư hoặc các thực tiễn của các trang web hoặc dịch vụ của bên thứ ba.<br><br>
+
+Thay đổi Chính Sách Quyền Riêng Tư này:<br>
+Chúng tôi có thể cập nhật Chính Sách Quyền Riêng Tư của mình từ thời gian này qua thời gian.<br>
+Chúng tôi sẽ thông báo cho bạn về bất kỳ thay đổi nào bằng cách đăng tải Chính Sách Quyền Riêng Tư mới trên trang này.<br>
+Chúng tôi sẽ thông báo cho bạn bằng một thông báo rõ ràng trên Dịch Vụ của chúng tôi trước khi
+các thay đổi có hiệu lực và cập nhật ngày "Cập nhật lần cuối" ở đầu Chính Sách Quyền Riêng Tư này.<br><br>
+
+Chúng tôi khuyến khích bạn thường xuyên xem lại Chính Sách Quyền Riêng Tư này để biết những thay đổi.<br>
+Các thay đổi đối với Chính Sách Quyền Riêng Tư này có hiệu lực khi chúng được đăng trên trang này.<br><br>
+
+Liên hệ với chúng tôi:<br>
+Nếu bạn có bất kỳ câu hỏi nào về Chính Sách Quyền Riêng Tư này, bạn có thể liên hệ với chúng tôi:<br><br>
+
+Qua email: simlog-app@yandex.ru<br><br>

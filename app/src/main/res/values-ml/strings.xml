@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="start_promo_text">പരസ്യം</string>
+    <string name="file_read_error">ഫയൽ വായിക്കുമ്പോൾ പിശക്.</string>
+    <string name="no_data_to_display">ഡാറ്റ ഇല്ല.</string>
+    <string name="no_data_files">ഫയലുകൾ കണ്ടെത്തിയില്ല.</string>
+    <string name="need_choose_sim">ദയവായി ഒരു സിം കാർഡ് തിരഞ്ഞെടുക്കുക.</string>
+    <string name="no_sim">SIM കാർഡുകൾ കണ്ടെത്തിയില്ല.</string>
+    <string name="permission_denied">അനുമതി ആവശ്യമാണ്.</string>
+    <string name="privacy_checkbox">സ്വകാര്യതാ നയത്തിലെ വ്യവസ്ഥകൾ ഞാൻ വായിച്ചും സമ്മതിച്ചുമാണെന്ന് ഞാൻ സ്ഥിരീകരിക്കുന്നു.</string>
+    <string name="service_stopped">ജനറേറ്റർ പ്രവർത്തിപ്പിക്കുക.</string>
+    <string name="notification_title">Simlog പ്രവർത്തിക്കുന്നു.</string>
+    <string name="notification_text">ഈ അറിയിപ്പ് നീക്കം ചെയ്യരുത്.</string>
+    <string name="notification_channel">സേവനം.</string>
+    <string name="subscription_error">ഈ ഉപകരണം ആപ്പിന്റെ സവിശേഷതകൾ പിന്തുണക്കുന്നില്ല.</string>
+    <string name="collecting_time">പ്രവർത്തന സമയം :</string>
+    <string name="collecting_write_lines">മൊത്തം ഡാറ്റ :</string>
+    <string name="collecting_errors">പിശകുകൾ :</string>
+    <string name="collecting_day">ദി</string>
+    <string name="collecting_hour">മ</string>
+    <string name="collecting_min">മിനി</string>
+    <string name="collecting_sec">സെ</string>
+    <string name="ad_id_text"><![CDATA[<br><br>പരസ്യങ്ങൾ കാണിക്കാൻ ഞങ്ങൾ ഒരു പരസ്യ നെറ്റ്‌വർക്ക് ഉപയോഗിക്കുന്നു.<br><br>
+പരസ്യ നെറ്റ്‌വർക്ക് നിങ്ങളുടെ ഉപകരണത്തിലെ പരസ്യ ഐഡന്റിഫയറും ഉൾപ്പെടെയുള്ള ഡാറ്റ ശേഖരിച്ച് വ്യക്തിഗത പരസ്യങ്ങൾ കാണിച്ചേക്കാം.<br><br>
+നിങ്ങൾ <font color = "#43A047"><b>അനുവദിക്കാം</b></font> അല്ലെങ്കിൽ <font color = "#F44336"><b>അപ്രാപ്തമാക്കാം</b></font> വ്യക്തിഗത പരസ്യങ്ങൾ.<br><br>
+നിങ്ങൾ വ്യക്തിഗതത്വം അപ്രാപ്തമാക്കിയാൽ, ഞങ്ങൾ വ്യക്തിഗതമല്ലാത്ത പരസ്യങ്ങൾ മാത്രം കാണിക്കും.<br><br>]]></string>
+
+    <string name="permit"><![CDATA[<br><br><b>ആപ്പ് ഈ തരം ഡാറ്റ പ്രോസസ്സ് ചെയ്യുന്നു:</b><br><br>
+<em>1. മൊബൈൽ നെറ്റ്‌വർക്കിന്റെ സിഗ്നൽ നില.</em><br>
+<em>2. ഡാറ്റ ട്രാൻസ്ഫറിന്റെ തരം.</em><br>
+<em>3. സജീവമായ സിം സ്ലോട്ടിന്റെ നമ്പർ.</em><br>
+<em>4. സിം കാർഡിന്റെ പേര്.</em><br><br>
+ഈ സിം ബന്ധപ്പെട്ട വിവരങ്ങൾ നേടാൻ, ആപ്പിന്<b> കോളുകൾ നിയന്ത്രിക്കാൻ</b> അനുമതി ആവശ്യമാണ്.<br><br>
+കൂടുതൽ വിവരങ്ങൾ ലഭിക്കാൻ <b>“സ്വകാര്യത”</b> ഐക്കൺ ക്ലിക്ക് ചെയ്യുക.<br><br>
+ആപ്പിന്റെ സ്ഥിരതയും ദൈർഘ്യവും ഉറപ്പാക്കാൻ സ്ഥിരമായ അറിയിപ്പിനായി അനുമതി ആവശ്യമാണ്.<br>
+പ്രവർത്തന സമയത്ത് അറിയിപ്പ് അപ്രാപ്തമാക്കിയാൽ, ആപ്പ് സിസ്റ്റം നിർത്താം.<br><br>
+ബാക്ക്‌ഗ്രൗണ്ട് പ്രവർത്തനം നിയന്ത്രിക്കുന്നത് അപ്രാപ്തമാക്കുന്നത് (ശുപാർശ ചെയ്യുന്നു) ആപ്പിനെ കൂടുതൽ സുരക്ഷിതമാക്കും.<br><br>
+
+<b>ആപ്പിൽ ഈ ഡാറ്റ തരം ചിഹ്നങ്ങൾ ഉപയോഗിക്കുന്നു:</b> <br><br>
+<font color="#E040FB"><b> 5G </b></font> - NR (New Radio), 5G NSA, 5G SA <br>
+<font color="#2962FF"><b> 4G </b></font> - LTE, LTE (CA2), Evolved 3G (LTE) <br>
+<font color="#00C853"><b> 3G </b></font> - HSDPA, HSUPA, HSPA, EVDO_B, EHRPD, UMTS.<br>
+<font color="#E53935"><b> 2G </b></font> - EDGE, GPRS, CDMA, 1xRTT, IDEN.<br>
+<font color="#795548"><b> xG </b></font> - ഡാറ്റ കൈമാറ്റമില്ലാത്തതിനാൽ അറിയാത്ത തരം.<br><br>
+<b><font color="#43A047">RSRP&nbsp;&gt;&nbsp;&nbsp;-80&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-65&nbsp;=&nbsp;&nbsp;&nbsp;5</font></b><br>
+<b><font color="#7CB342">RSRP&nbsp;&gt;&nbsp;&nbsp;-90&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-75&nbsp;=&nbsp;&nbsp;&nbsp;4</font></b><br>
+<b><font color="#FBC02D">RSRP&nbsp;&gt;&nbsp;-100&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-85&nbsp;=&nbsp;&nbsp;&nbsp;3</font></b><br>
+<b><font color="#FB8C00">RSRP&nbsp;&gt;&nbsp;-110&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-95&nbsp;=&nbsp;&nbsp;&nbsp;2</font></b><br>
+<b><font color="#D32F2F">RSRP&nbsp;&gt;&nbsp;-120&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-120&nbsp;=&nbsp;1</font></b><br><br>
+<b>പിന്തുണയ്ക്കുന്ന റൂട്ടറുകൾ :</b><br>
+Keenetic | Netcraze<br>
+Cudy LT500 V2.0<br>
+TP-Link TL-MR150 v2<br>
+Huawei CPE B593s-22<br><br>
+<b>ഈ ആപ്പ് അളക്കുന്ന ഉപകരണമല്ല.</b><br>
+ഗ്രാഫിൽ കാണിക്കുന്ന ഡാറ്റ ഉപകരണത്തിൽ നിന്ന് ലഭിച്ച വിവരങ്ങളുടെ അടിസ്ഥാനത്തിൽ ജനറേറ്റ് ചെയ്‌തിരിക്കുന്നു. യാഥാർത്ഥ്യത്തിൽ വ്യത്യസ്തമാകാം.<br><br>
+]]></string>
+
+    <string name="notice"><![CDATA[<br><br><b>ഈ ആപ്പിൽ ഓപ്പൺ സോഴ്‌സ് ലൈബ്രറികളും മൂന്നാം കക്ഷി ലൈബ്രറികളും ഉൾപ്പെട്ടിരിക്കുന്നു:</b><br><br>
+1. <b>MPAndroidChart</b> <a href="https://github.com/PhilJay/MPAndroidChart/">https://github.com/PhilJay/MPAndroidChart/</a><br>
+   Apache License, Version 2.0 പ്രകാരം ലൈസൻസുചെയ്തിരിക്കുന്നു.<br>
+   <b>രചയിതാവ്:</b> Philipp Jahoda (PhilJay)<br><br>
+2. <b>Free data Animation</b> <a href="https://lottiefiles.com/free-animation/data-V8HWwl7oWO">https://lottiefiles.com/free-animation/data-V8HWwl7oWO</a><br>
+   Lottie Simple License (FL 9.13.21) പ്രകാരം ലൈസൻസുചെയ്തിരിക്കുന്നു.<br>
+   <b>രചയിതാവ്:</b> Revital Cahani <br><br>
+3. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">https://github.com/airbnb/lottie-android</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Airbnb, Inc. <br><br>
+4. <b>OkHttp</b> <a href="https://github.com/square/okhttp">https://github.com/square/okhttp</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+5. <b>Okio</b> <a href="https://github.com/square/okio">https://github.com/square/okio</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+]]></string>
+
+
+
+</resources>

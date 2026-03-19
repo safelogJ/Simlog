@@ -1,0 +1,76 @@
+<br><br><b><a href="https://github.com/safelogJ/Simlog/blob/master/privacy/privacy_tl">Patakaran sa Privacy para sa Simlog</a></b><br><br>
+
+Patakaran sa Privacy<br>
+Huling update: Pebrero 05, 2026.<br><br>
+
+Ang Patakaran sa Privacy na ito ay naglalarawan ng aming mga patakaran at pamamaraan sa pangangalap
+at paggamit ng iyong impormasyon kapag ginagamit mo ang Serbisyo,
+at ipinaalam sa iyo ang iyong mga karapatan sa privacy at kung paano ka pinoprotektahan ng batas.<br><br>
+
+Pagpapakahulugan at mga Depinisyon:<br>
+Pagpapakahulugan:<br>
+Ang mga salitang may malaking titik sa unahan ay may mga kahulugang tinukoy sa mga sumusunod na termino.<br>
+Ang mga sumusunod na depinisyon ay may parehong kahulugan kahit na ginagamit ang mga ito sa isahan o maramihan.<br><br>
+
+Mga Depinisyon:<br>
+Para sa mga layunin ng Patakaran sa Privacy na ito:<br><br>
+
+Ang Aplikasyon ay nangangahulugang ang Simlog, ang software na ibinibigay ng Kumpanya.<br>
+Ang Kumpanya (tinukoy sa Kasunduan na ito bilang "Kumpanya", "Kami", "Aming" o "Namin") ay isang indibidwal na negosyante na si Evgenii Chekmazov.<br>
+Ang Bansa ay tumutukoy sa: Russia<br>
+Ang Device ay nangangahulugang anumang aparato na maaaring ma-access ang Serbisyo,
+tulad ng isang computer, mobile phone o digital na tablet.<br>
+Ang Personal na Data ay nangangahulugang anumang impormasyon na may kaugnayan sa isang naitukoy o matutukoy na indibidwal.<br>
+Ang Serbisyo ay tumutukoy sa Aplikasyon.<br>
+Ang Data ng Paggamit ay nangangahulugang mga datos na kinokolekta nang awtomatiko,
+maaaring magmula sa iyong paggamit ng Serbisyo,
+o mula sa imprastruktura ng Serbisyo mismo (halimbawa, haba ng oras ng pagbisita sa isang pahina).<br>
+Ang "Ikaw" ay tumutukoy sa indibidwal na nag-a-access o gumagamit ng Serbisyo,
+o ang kumpanya, o ibang legal na entidad na kumakatawan sa pamamagitan ng indibidwal na nag-a-access o gumagamit ng Serbisyo,
+ayon sa kung ano ang naaangkop.<br><br>
+
+Pagkolekta at Paggamit ng Iyong Personal na Data:<br>
+Mga Uri ng Datos na Kinokolekta: Data ng Paggamit<br><br>
+
+Ang Data ng Paggamit ay kinokolekta nang awtomatiko kapag ginagamit mo ang Serbisyo.<br>
+Maaaring kabilang sa mga data ng paggamit ang impormasyon tulad ng oras at petsa ng paggamit ng aplikasyon, oras na ginugol sa aplikasyon,
+ang bilang ng mga aktibong SIM card sa telepono,
+ang pangalan ng SIM card, ang lakas ng signal ng SIM card,
+ang uri ng data transfer na ginagamit ng SIM card.<br>
+Ang mga nakolektang data ay ginagamit lamang sa loob ng aplikasyon,
+kabilang sa user interface.<br>
+Ang slot number at pangalan ng SIM card ay ginagamit upang ipakita sa gumagamit ang mga aktibong SIM card na maaaring gumana ng aplikasyon.<br>
+Ang slot number at pangalan ng SIM card ay ginagamit sa pangalan ng mga file na nilikha ng aplikasyon,
+na nag-iimbak ng kasaysayan ng pagbabago sa lakas ng signal ng network at uri ng data transfer.<br>
+Ang mga data sa mga file ay iniimbak sa format na (numero ng minuto, uri ng data transfer, lakas ng signal ng network).<br><br>
+
+Pag-iimbak ng Iyong Personal na Data:<br>
+Ang Kumpanya ay hindi nag-iimbak ng iyong personal o ibang mga data.<br>
+Ang Data ng Paggamit ay iniimbak sa iyong device sa folder ng aplikasyon (/Android/data/com.safelogj.simlog/files/).<br>
+Ang data tungkol sa mga nai-save na router (IP, login, password) ay naka-imbak sa internal system folder ng app sa encrypted na anyo.<br><br>
+
+Pagbura ng Nakolektang Data:<br>
+May karapatan kang tanggalin ang lahat ng mga file na may nakolektang data sa folder ng aplikasyon (/Android/data/com.safelogj.simlog/files/).<br>
+May karapatan kang tanggalin ang data ng mga nai-save na router sa pamamagitan ng interface ng app. Upang gawin ito, piliin ang router na tatanggalin, ilagay ang utos na remove sa login field, at pindutin ang (+) button.<br><br>
+
+Mga Link sa Ibang Mga Site:<br>
+Ang aming Serbisyo ay maaaring maglaman ng mga link sa ibang mga website
+na hindi pinapatakbo ng Kami. Kung ikaw ay mag-click sa link ng isang third-party,
+ikaw ay ire-redirect sa site ng third party na iyon.<br>
+Malaki ang aming rekomendasyon na suriin ang Patakaran sa Privacy ng bawat site na iyong binibisita.<br>
+Wala kaming kontrol at hindi kami mananagot para sa nilalaman,
+mga patakaran sa privacy, o mga kasanayan ng anumang third-party na site o serbisyo.<br><br>
+
+Mga Pagbabago sa Patakaran sa Privacy na ito:<br>
+Maaaring i-update namin ang aming Patakaran sa Privacy mula sa oras-oras.<br>
+Ipapaalam namin sa iyo ang anumang mga pagbabago sa pamamagitan ng pag-post ng bagong Patakaran sa Privacy sa pahinang ito.<br>
+Ipapaalam namin sa iyo gamit ang isang kapansin-pansing abiso sa aming Serbisyo bago pa man
+maging epektibo ang mga pagbabago at i-update ang "Huling Update" na petsa sa itaas ng Patakaran sa Privacy na ito.<br><br>
+
+Hinihikayat ka naming regular na suriin ang Patakaran sa Privacy na ito para sa mga pagbabago.<br>
+Ang mga pagbabago sa Patakaran sa Privacy na ito ay magiging epektibo kapag na-post na ito sa pahinang ito.<br><br>
+
+Makipag-ugnay sa Amin:<br>
+Kung mayroon kang anumang mga tanong tungkol sa Patakaran sa Privacy na ito, maaari mo kaming makipag-ugnay:<br><br>
+
+Sa pamamagitan ng email: simlog-app@yandex.ru<br><br>

@@ -1,0 +1,76 @@
+<br><br><b><a href="https://github.com/safelogJ/Simlog/blob/master/privacy/privacy_de">Datenschutzerklärung für Simlog</a></b><br><br>
+
+Datenschutzerklärung<br>
+Letzte Aktualisierung: 02. September 2025<br><br>
+
+Diese Datenschutzerklärung beschreibt unsere Richtlinien und Verfahren zur Erhebung
+und Nutzung Ihrer Informationen, wenn Sie den Dienst nutzen,
+und informiert Sie über Ihre Datenschutzrechte und wie das Gesetz Sie schützt.<br><br>
+
+Interpretation und Definitionen:<br>
+Interpretation:<br>
+Wörter mit einem großgeschriebenen Anfangsbuchstaben haben die in den folgenden Begriffen definierten Bedeutungen.<br>
+Die folgenden Definitionen haben die gleiche Bedeutung, unabhängig davon, ob sie im Singular oder Plural verwendet werden.<br><br>
+
+Definitionen:<br>
+Für die Zwecke dieser Datenschutzerklärung:<br><br>
+
+Anwendung bedeutet Simlog, die von der Firma bereitgestellte Software.<br>
+Die Firma (in dieser Vereinbarung als „Firma“, „Wir“, „Uns“ oder „Unser“ bezeichnet) ist der Einzelunternehmer Evgenii Chekmazov.<br>
+Land bezieht sich auf: Russland<br>
+Gerät bedeutet jedes Gerät, das auf den Dienst zugreifen kann,
+wie ein Computer, ein Mobiltelefon oder ein digitales Tablet.<br>
+Personenbezogene Daten bedeuten alle Informationen, die sich auf eine identifizierte oder identifizierbare Person beziehen.<br>
+Dienst bedeutet die Anwendung.<br>
+Nutzungsdaten bedeuten Daten, die automatisch gesammelt werden,
+entweder erzeugt, wenn Sie den Dienst nutzen,
+oder von der Infrastruktur des Dienstes selbst (z. B. die Dauer eines Seitenbesuchs).<br>
+Sie bedeutet die Person, die auf den Dienst zugreift oder den Dienst nutzt,
+oder das Unternehmen oder eine andere juristische Person, im Namen derer diese Person auf den Dienst zugreift oder ihn nutzt,
+je nach Fall.<br><br>
+
+Erhebung und Nutzung Ihrer personenbezogenen Daten:<br>
+Arten der gesammelten Daten: Nutzungsdaten<br><br>
+
+Nutzungsdaten werden automatisch gesammelt, wenn Sie den Dienst nutzen.<br>
+Nutzungsdaten können Informationen wie die Uhrzeit und das Datum der Nutzung der Anwendung, die Zeit, die in der Anwendung verbracht wurde,
+die Anzahl der aktiven SIM-Karten im Telefon,
+den Namen der SIM-Karte, die Signalstärke der SIM-Karte,
+die Art der Datenübertragung, die von der SIM-Karte verwendet wird, umfassen.<br>
+Die gesammelten Daten werden nur in der Anwendung selbst verwendet,
+einschließlich der Benutzeroberfläche.<br>
+Die Slotnummer und der Name der SIM-Karte werden verwendet, um dem Benutzer die aktiven SIM-Karten anzuzeigen, mit denen die Anwendung arbeiten kann.<br>
+Die Slotnummer und der Name der SIM-Karte werden im Namen der von der Anwendung erstellten Dateien verwendet,
+die die Historie der Änderungen der Signalstärke des Netzwerks und der Art der Datenübertragung speichern.<br>
+Die Daten in den Dateien werden im Format (Minutennummer, Datentransfertyp, Netzwerksignalstärke) gespeichert.<br><br>
+
+Speicherung Ihrer personenbezogenen Daten:<br>
+Die Firma speichert keine Ihrer personenbezogenen oder anderen Daten.<br>
+Nutzungsdaten werden auf Ihrem Gerät im Anwendungsverzeichnis (/Android/data/com.safelogj.simlog/files/) gespeichert.<br>
+Daten zu gespeicherten Routern (IP, Login, Passwort) werden im internen Systemordner der Anwendung verschlüsselt gespeichert.<br><br>
+
+Löschen der gesammelten Daten:<br>
+Sie haben das Recht, alle Dateien mit gesammelten Daten im Anwendungsverzeichnis (/Android/data/com.safelogj.simlog/files/) zu löschen.<br>
+Sie haben das Recht, Daten zu gespeicherten Routern über die Benutzeroberfläche der Anwendung zu löschen. Wählen Sie dazu den zu löschenden Router aus, geben Sie im Login-Feld den Befehl remove ein und drücken Sie die (+)-Taste.<br><br>
+
+Links zu anderen Seiten:<br>
+Unser Dienst kann Links zu anderen Websites enthalten,
+die nicht von uns betrieben werden. Wenn Sie auf einen Link von Dritten klicken,
+werden Sie auf die Website des Drittanbieters weitergeleitet.<br>
+Wir empfehlen Ihnen dringend, die Datenschutzerklärung jeder Seite, die Sie besuchen, zu überprüfen.<br>
+Wir haben keine Kontrolle über und übernehmen keine Verantwortung für den Inhalt,
+die Datenschutzerklärungen oder die Praktiken von Websites oder Diensten Dritter.<br><br>
+
+Änderungen dieser Datenschutzerklärung:<br>
+Wir können unsere Datenschutzerklärung von Zeit zu Zeit aktualisieren.<br>
+Wir werden Sie über Änderungen informieren, indem wir die neue Datenschutzerklärung auf dieser Seite veröffentlichen.<br>
+Wir werden Sie mit einer deutlichen Mitteilung auf unserem Dienst benachrichtigen, bevor
+die Änderungen wirksam werden, und das Datum der „Letzten Aktualisierung“ oben in dieser Datenschutzerklärung aktualisieren.<br><br>
+
+Wir empfehlen Ihnen, diese Datenschutzerklärung regelmäßig auf Änderungen zu überprüfen.<br>
+Änderungen dieser Datenschutzerklärung treten in Kraft, wenn sie auf dieser Seite veröffentlicht werden.<br><br>
+
+Kontaktieren Sie uns:<br>
+Wenn Sie Fragen zu dieser Datenschutzerklärung haben, können Sie uns kontaktieren:<br><br>
+
+Per E-Mail: simlog-app@yandex.ru<br><br>

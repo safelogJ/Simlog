@@ -1,0 +1,78 @@
+<resources>
+    <string name="start_promo_text">विज्ञापन</string>
+    <string name="file_read_error">फाइल पढ़ने में त्रुटि।</string>
+    <string name="no_data_to_display">कोई डेटा नहीं है।</string>
+    <string name="no_data_files">कोई फाइल नहीं मिली।</string>
+    <string name="need_choose_sim">कृपया सिम कार्ड चुनें।</string>
+    <string name="no_sim">सिम कार्ड नहीं मिले।</string>
+    <string name="permission_denied">अनुमति आवश्यक है।</string>
+    <string name="privacy_checkbox">मैं पुष्टि करता हूँ कि मैंने गोपनीयता नीति की शर्तों को पढ़ लिया है और सहमत हूँ।</string>
+    <string name="service_stopped">जनरेटर चालू करें।</string>
+    <string name="notification_title">सिमलॉग चल रहा है।</string>
+    <string name="notification_text">इस सूचना को न हटाएं।</string>
+    <string name="notification_channel">सेवा।</string>
+    <string name="subscription_error">उपकरण एप्लिकेशन की कार्यक्षमता का समर्थन नहीं करता है।</string>
+    <string name="collecting_time">कार्यकाल :</string>
+    <string name="collecting_write_lines">कुल डेटा :</string>
+    <string name="collecting_errors">त्रुटियाँ :</string>
+    <string name="collecting_day">दिन</string>
+    <string name="collecting_hour">घंटा</string>
+    <string name="collecting_min">मिनट</string>
+    <string name="collecting_sec">सेकंड</string>
+    <string name="ad_id_text"><![CDATA[<br><br>हम विज्ञापन प्रदर्शित करने के लिए एक विज्ञापन नेटवर्क का उपयोग करते हैं।<br><br>
+विज्ञापन नेटवर्क आपके डिवाइस का विज्ञापन पहचानकर्ता सहित डेटा एकत्र कर सकता है, ताकि व्यक्तिगत विज्ञापन दिखाए जा सकें।<br><br>
+आप <font color = "#43A047"><b>अनुमति</b></font> दे सकते हैं या <font color = "#F44336"><b>निष्क्रिय</b></font> कर सकते हैं विज्ञापनों की व्यक्तिगतकरण।<br><br>
+यदि आप व्यक्तिगतकरण को निष्क्रिय करते हैं, तो हम केवल गैर-व्यक्तिगत विज्ञापन दिखाएंगे।<br><br>]]></string>
+
+    <string name="permit"><![CDATA[<br><br><b>एप्लिकेशन निम्नलिखित प्रकार के डेटा को संसाधित करता है:</b><br><br>
+<em>1. मोबाइल नेटवर्क सिग्नल स्तर।</em><br>
+<em>2. डेटा ट्रांसमिशन प्रकार।</em><br>
+<em>3. सक्रिय सिम कार्ड का स्लॉट नंबर।</em><br>
+<em>4. सिम कार्ड का नाम।</em><br><br>
+इन डेटा को प्राप्त करने के लिए, एप्लिकेशन को <b>कॉल प्रबंधन</b> की अनुमति की आवश्यकता होगी।<br><br>
+अधिक जानकारी के लिए <b>"गोपनीयता"</b> आइकन पर क्लिक करें।<br><br>
+इसके अलावा, दीर्घकालिक और स्थिर संचालन के लिए, ऐप को स्थायी सूचना दिखाने की अनुमति की आवश्यकता होती है।<br>
+    यदि सूचना संचालन के दौरान बंद कर दी जाती है, तो ऐप को सिस्टम द्वारा बंद किया जा सकता है।<br><br>
+    पृष्ठभूमि गतिविधि नियंत्रण को निष्क्रिय करना (सिफारिश की जाती है) ऐप को दीर्घकालिक संचालन के दौरान सिस्टम द्वारा बंद किए जाने से अतिरिक्त सुरक्षा प्रदान करेगा।<br><br>
+
+<b>एप्लिकेशन में उपयोग किए गए डेटा प्रकारों का संकेत:</b> <br><br>
+<font color="#E040FB"><b>5G</b></font> - इसका मतलब NR (New Radio), 5G NSA, 5G SA <br>
+<font color="#2962FF"><b>4G</b></font> - इसका मतलब LTE, LTE (CA2), Evolved 3G (LTE) <br>
+<font color="#00C853"><b>3G</b></font> - इसका मतलब HSDPA, HSUPA, HSPA, EVDO_B, EHRPD, UMTS में से कोई एक। <br>
+<font color="#E53935"><b>2G</b></font> - इसका मतलब EDGE, GPRS, CDMA, 1xRTT, IDEN में से कोई एक। <br>
+<font color="#795548"><b>xG</b></font> - इसका मतलब अज्ञात प्रकार, क्योंकि कोई डेटा ट्रांसमिशन नहीं है।<br><br>
+<b><font color="#43A047">RSRP&nbsp;&gt;&nbsp;&nbsp;-80&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-65&nbsp;=&nbsp;&nbsp;&nbsp;5</font></b><br>
+<b><font color="#7CB342">RSRP&nbsp;&gt;&nbsp;&nbsp;-90&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-75&nbsp;=&nbsp;&nbsp;&nbsp;4</font></b><br>
+<b><font color="#FBC02D">RSRP&nbsp;&gt;&nbsp;-100&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-85&nbsp;=&nbsp;&nbsp;&nbsp;3</font></b><br>
+<b><font color="#FB8C00">RSRP&nbsp;&gt;&nbsp;-110&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-95&nbsp;=&nbsp;&nbsp;&nbsp;2</font></b><br>
+<b><font color="#D32F2F">RSRP&nbsp;&gt;&nbsp;-120&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-120&nbsp;=&nbsp;1</font></b><br><br>
+<b>समर्थित राउटर :</b><br>
+Keenetic | Netcraze<br>
+Cudy LT500 V2.0<br>
+TP-Link TL-MR150 v2<br>
+Huawei CPE B593s-22<br><br>
+<b>यह एप्लिकेशन एक मापने का उपकरण नहीं है।</b><br>
+ग्राफ़ पर दिखाए गए डेटा आपके डिवाइस से प्राप्त जानकारी को ध्यान में रखते हुए जनरेट किए गए हैं और वास्तविक से भिन्न हो सकते हैं।<br><br>
+]]></string>
+
+    <string name="notice"><![CDATA[<br><br><b>इस एप्लिकेशन में ओपन-सोर्स और तीसरे पक्ष की लाइब्रेरी शामिल हैं:</b><br><br>
+1. <b>MPAndroidChart</b> <a href="https://github.com/PhilJay/MPAndroidChart/">https://github.com/PhilJay/MPAndroidChart/</a><br>
+   एपीची लाइसेंस के तहत लाइसेंस प्राप्त, संस्करण 2.0।<br>
+   <b>लेखक:</b> फिलिप जाहोदा (PhilJay)<br><br>
+2. <b>Free data Animation</b> <a href="https://lottiefiles.com/free-animation/data-V8HWwl7oWO">https://lottiefiles.com/free-animation/data-V8HWwl7oWO</a><br>
+   लोट्टी सिंपल लाइसेंस (FL 9.13.21) के तहत लाइसेंस प्राप्त<br>
+   <b>लेखक:</b> रिवितल चानी <br><br>
+3. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">https://github.com/airbnb/lottie-android</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Airbnb, Inc. <br><br>
+4. <b>OkHttp</b> <a href="https://github.com/square/okhttp">https://github.com/square/okhttp</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+5. <b>Okio</b> <a href="https://github.com/square/okio">https://github.com/square/okio</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+
+]]></string>
+
+
+</resources>

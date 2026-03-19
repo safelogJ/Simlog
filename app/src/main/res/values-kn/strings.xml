@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="start_promo_text">ಜಾಹಿರಾತು</string>
+    <string name="file_read_error">ಫೈಲ್ ಓದುವಾಗ ದೋಷ.</string>
+    <string name="no_data_to_display">ಡೇಟಾ ಲಭ್ಯವಿಲ್ಲ.</string>
+    <string name="no_data_files">ಫೈಲ್‌ಗಳು ಕಂಡುಬಂದಿಲ್ಲ.</string>
+    <string name="need_choose_sim">ದಯವಿಟ್ಟು ಸಿಮ್ ಕಾರ್ಡ್ ಆಯ್ಕೆಮಾಡಿ.</string>
+    <string name="no_sim">ಯಾವುದೇ ಸಿಮ್ ಕಾರ್ಡ್‌ಗಳು ಕಂಡುಬಂದಿಲ್ಲ.</string>
+    <string name="permission_denied">ಅನುಮತಿ ಅಗತ್ಯವಿದೆ.</string>
+    <string name="privacy_checkbox">ನಾನು ಗೌಪ್ಯತಾ ನೀತಿಯ ಶರತ್ತುಗಳನ್ನು ಓದಿದ್ದೇನೆ ಮತ್ತು ಒಪ್ಪುತ್ತೇನೆ ಎಂದು ಖಚಿತಪಡಿಸುತ್ತೇನೆ.</string>
+    <string name="service_stopped">ಜನರೇಟರ್ ಅನ್ನು ಪ್ರಾರಂಭಿಸಿ.</string>
+    <string name="notification_title">Simlog ಚಲಿಸುತ್ತಿದೆ.</string>
+    <string name="notification_text">ಈ ಅಧಿಸೂಚನೆಯನ್ನು ತೆಗೆದುಹಾಕಬೇಡಿ.</string>
+    <string name="notification_channel">ಸೇವೆ.</string>
+    <string name="subscription_error">ಈ ಸಾಧನವು ಆಪ್‌ನ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ.</string>
+    <string name="collecting_time">ಕೆಲಸದ ಸಮಯ :</string>
+    <string name="collecting_write_lines">ಒಟ್ಟು ಡೇಟಾ :</string>
+    <string name="collecting_errors">ದೋಷಗಳು :</string>
+    <string name="collecting_day">ದ</string>
+    <string name="collecting_hour">ಗಂ</string>
+    <string name="collecting_min">ನಿಮಿ</string>
+    <string name="collecting_sec">ಸೆ</string>
+    <string name="ad_id_text"><![CDATA[<br><br>ಜಾಹಿರಾತುಗಳನ್ನು ತೋರಿಸಲು ನಾವು ಜಾಹಿರಾತು ಜಾಲತಾಣವನ್ನು ಬಳಸುತ್ತೇವೆ.<br><br>
+ಜಾಹಿರಾತು ಜಾಲತಾಣವು ವೈಯಕ್ತಿಕ ಜಾಹಿರಾತುಗಳನ್ನು ತೋರಿಸಲು ನಿಮ್ಮ ಸಾಧನದ ಜಾಹಿರಾತು ಗುರುತು ಸಹಿತ ಡೇಟಾವನ್ನು ಸಂಗ್ರಹಿಸಬಹುದು.<br><br>
+ನೀವು <font color = "#43A047"><b>ಅನುಮತಿಸಬಹುದು</b></font> ಅಥವಾ <font color = "#F44336"><b>ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಬಹುದು</b></font> ವೈಯಕ್ತೀಕರಿಸಿದ ಜಾಹಿರಾತುಗಳನ್ನು.<br><br>
+ನೀವು ವೈಯಕ್ತೀಕರಣವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿದರೆ, ನಾವು ಕೇವಲ ವೈಯಕ್ತಿಕವಲ್ಲದ ಜಾಹಿರಾತುಗಳನ್ನು ತೋರಿಸುತ್ತೇವೆ.<br><br>]]></string>
+
+    <string name="permit"><![CDATA[<br><br><b>ಆಪ್ ಈ ಕೆಳಗಿನ ಡೇಟಾ ಪ್ರಕಾರಗಳನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುತ್ತದೆ:</b><br><br>
+<em>1. ಮೊಬೈಲ್ ನೆಟ್ವರ್ಕ್ ಸಿಗ್ನಲ್ ಮಟ್ಟ.</em><br>
+<em>2. ಡೇಟಾ ಸಂಚಾರದ ಪ್ರಕಾರ.</em><br>
+<em>3. ಸಕ್ರಿಯ ಸಿಮ್ ಕಾರ್ಡ್ ಸ್ಲಾಟ್ ಸಂಖ್ಯೆ.</em><br>
+<em>4. ಸಿಮ್ ಕಾರ್ಡ್ ಹೆಸರು.</em><br><br>
+ಈ ಸಿಮ್ ಸಂಬಂಧಿತ ಮಾಹಿತಿಯನ್ನು ಪಡೆಯಲು ಆಪ್<b> ಕಾಲ್ ನಿರ್ವಹಣೆಗೆ</b> ಅನುಮತಿಯ ಅಗತ್ಯವಿರುತ್ತದೆ.<br><br>
+ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ <b>“ಗೌಪ್ಯತೆ”</b> ಐಕಾನ್ ಕ್ಲಿಕ್ ಮಾಡಿ.<br><br>
+ಆಪ್‌ನ ದೀರ್ಘ ಮತ್ತು ಸ್ಥಿರ ಕಾರ್ಯಾಚರಣೆಗೆ, ಸ್ಥಾಯಿ ಅಧಿಸೂಚನೆಯ ಅನುಮತಿಯ ಅಗತ್ಯವಿದೆ.<br>
+ಅಧಿಸೂಚನೆಯನ್ನು ಕಾರ್ಯಾಚರಣೆಯ ಸಮಯದಲ್ಲಿ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿದರೆ, ಆಪ್ ವ್ಯವಸ್ಥೆಯಿಂದ ನಿಲ್ಲಿಸಬಹುದು.<br><br>
+ಹಿನ್ನೆಲೆ ಚಟುವಟಿಕೆ ನಿಯಂತ್ರಣವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸುವುದು (ಶಿಫಾರಸು ಮಾಡಲಾಗಿದೆ) ಆಪ್ ಅನ್ನು ಹೆಚ್ಚು ಸ್ಥಿರವಾಗಿ ಓಡಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.<br><br>
+
+<b>ಆಪ್‌ನಲ್ಲಿ ಈ ಡೇಟಾ ಪ್ರಕಾರಗಳ ಸೂಚನೆಗಳನ್ನು ಬಳಸಲಾಗಿದೆ:</b> <br><br>
+<font color="#E040FB"><b> 5G </b></font> - NR (New Radio), 5G NSA, 5G SA <br>
+<font color="#2962FF"><b> 4G </b></font> - LTE, LTE (CA2), Evolved 3G (LTE) <br>
+<font color="#00C853"><b> 3G </b></font> - HSDPA, HSUPA, HSPA, EVDO_B, EHRPD, UMTS ಇತ್ಯಾದಿ.<br>
+<font color="#E53935"><b> 2G </b></font> - EDGE, GPRS, CDMA, 1xRTT, IDEN ಇತ್ಯಾದಿ.<br>
+<font color="#795548"><b> xG </b></font> - ಅಜ್ಞಾತ ಪ್ರಕಾರ, ಡೇಟಾ ಲಭ್ಯವಿಲ್ಲದಿರುವ ಕಾರಣ.<br><br>
+<b><font color="#43A047">RSRP&nbsp;&gt;&nbsp;&nbsp;-80&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-65&nbsp;=&nbsp;&nbsp;&nbsp;5</font></b><br>
+<b><font color="#7CB342">RSRP&nbsp;&gt;&nbsp;&nbsp;-90&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-75&nbsp;=&nbsp;&nbsp;&nbsp;4</font></b><br>
+<b><font color="#FBC02D">RSRP&nbsp;&gt;&nbsp;-100&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-85&nbsp;=&nbsp;&nbsp;&nbsp;3</font></b><br>
+<b><font color="#FB8C00">RSRP&nbsp;&gt;&nbsp;-110&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-95&nbsp;=&nbsp;&nbsp;&nbsp;2</font></b><br>
+<b><font color="#D32F2F">RSRP&nbsp;&gt;&nbsp;-120&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-120&nbsp;=&nbsp;1</font></b><br><br>
+<b>ಬೆಂಬಲಿತ ರೌಟರ್‌ಗಳು :</b><br>
+Keenetic | Netcraze<br>
+Cudy LT500 V2.0<br>
+TP-Link TL-MR150 v2<br>
+Huawei CPE B593s-22<br><br>
+<b>ಈ ಆಪ್ ಯಾವುದೇ ಮಾಪನ ಸಾಧನವಲ್ಲ.</b><br>
+ಗ್ರಾಫ್‌ಗಳಲ್ಲಿ ತೋರಿಸಲಾಗುವ ಡೇಟಾ ನಿಮ್ಮ ಸಾಧನದಿಂದ ಪಡೆಯಲಾಗುವ ಮಾಹಿತಿಯ ಆಧಾರದ ಮೇಲೆ ತಯಾರಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ಅದು ವಾಸ್ತವಿಕ ಡೇಟಾ ಹೋಲಿಕೆಗೆ ಆಗಿರದು.<br><br>
+]]></string>
+
+    <string name="notice"><![CDATA[<br><br><b>ಈ ಆಪ್ ಓಪನ್ ಸೋರ್ಸ್ ಮತ್ತು ತೃತೀಯ ಪಕ್ಷದ ಗ್ರಂಥಾಲಯಗಳನ್ನು ಒಳಗೊಂಡಿದೆ:</b><br><br>
+1. <b>MPAndroidChart</b> <a href="https://github.com/PhilJay/MPAndroidChart/">https://github.com/PhilJay/MPAndroidChart/</a><br>
+   Apache License, Version 2.0 ಅಡಿಯಲ್ಲಿ ಪರವಾನಗಿ ಪಡೆದಿದೆ.<br>
+   <b>ಲೇಖಕ:</b> Philipp Jahoda (PhilJay)<br><br>
+2. <b>Free data Animation</b> <a href="https://lottiefiles.com/free-animation/data-V8HWwl7oWO">https://lottiefiles.com/free-animation/data-V8HWwl7oWO</a><br>
+   Lottie Simple License (FL 9.13.21) ಅಡಿಯಲ್ಲಿ ಪರವಾನಗಿ ಪಡೆದಿದೆ.<br>
+   <b>ಲೇಖಕಿ:</b> Revital Cahani <br><br>
+3. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">https://github.com/airbnb/lottie-android</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Airbnb, Inc. <br><br>
+4. <b>OkHttp</b> <a href="https://github.com/square/okhttp">https://github.com/square/okhttp</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+5. <b>Okio</b> <a href="https://github.com/square/okio">https://github.com/square/okio</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+]]></string>
+
+
+</resources>

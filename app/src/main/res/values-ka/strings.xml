@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="start_promo_text">რეკლამა</string>
+    <string name="file_read_error">ფაილის წაკითხვის შეცდომა.</string>
+    <string name="no_data_to_display">მონაცემები არ არის.</string>
+    <string name="no_data_files">ფაილები ვერ მოიძებნა.</string>
+    <string name="need_choose_sim">აირჩიეთ SIM ბარათი.</string>
+    <string name="no_sim">SIM ბარათები არ არის ნაპოვნი.</string>
+    <string name="permission_denied">მოწოდება საჭიროებს ნებართვას.</string>
+    <string name="privacy_checkbox">დამოწმებული მაქვს, რომ გავეცანი და ვეთანხმები კონფიდენციალურობის პოლიტიკის პირობებს.</string>
+    <string name="service_stopped">გენერატორის შეხება.</string>
+    <string name="notification_title">Simlog მუშაობს.</string>
+    <string name="notification_text">არ ამოიღოთ ეს შეტყობინება.</string>
+    <string name="notification_channel">სერვისი.</string>
+    <string name="subscription_error">მოწყობილობა არ უჭერს მხარს აპლიკაციის ფუნქციონალს.</string>
+    <string name="collecting_time">მუშაობის დრო:</string>
+    <string name="collecting_write_lines">მონაცემების საერთო რაოდენობა:</string>
+    <string name="collecting_errors">შეცდომები:</string>
+    <string name="collecting_day">დ</string>
+    <string name="collecting_hour">ს</string>
+    <string name="collecting_min">წ</string>
+    <string name="collecting_sec">წმ</string>
+    <string name="ad_id_text"><![CDATA[<br><br>ჩვენ ვიყენებთ სარეკლამო ქსელს რეკლამის ჩვენებისთვის.<br><br>
+სარეკლამო ქსელმა შეიძლება შეაგროვოს მონაცემები, მათ შორის თქვენი მოწყობილობის სარეკლამო იდენტიფიკატორი, პერსონალიზებული რეკლამის ჩვენებისთვის.<br><br>
+თქვენ შეგიძლიათ <font color = "#43A047"><b>ნება მისცეთ</b></font> ან <font color = "#F44336"><b>გამორთოთ</b></font> სარეკლამო პერსონალიზაცია.<br><br>
+თუ გამორთავთ პერსონალიზაციას, ჩვენ მხოლოდ არაპერსონალიზებულ რეკლამას ვაჩვენებთ.<br><br>]]></string>
+
+    <string name="permit"><![CDATA[<br><br><b>აპლიკაცია ამუშავებს შემდეგ მონაცემთა ტიპებს:</b><br><br>
+<em>1. მობილური ქსელის სიგნალის დონე.</em><br>
+<em>2. მონაცემთა გადაცემის ტიპი.</em><br>
+<em>3. აქტიური SIM ბარათის სლოტის ნომერი.</em><br>
+<em>4. SIM ბარათის სახელი.</em><br><br>
+SIM ბარათთან დაკავშირებული ამ მონაცემების მისაღებად, აპლიკაცია მოითხოვს<b> ზარების მართვის ნებართვას.</b><br><br>
+დაწვრილებითი ინფორმაციისთვის დააჭირეთ ხატულას<b> „კონფიდენციალურობა“.</b><br><br>
+გარდა ამისა, გამძლე და სტაბილური მუშაობისთვის, აპლიკაციას სჭირდება უფლებები მუდმივი შეტყობინების ჩვენებისთვის.<br>
+    თუ შეტყობინება გამორთულია მუშაობის დროს, აპლიკაცია შეიძლება შეწყვიტოს სისტემამ.<br><br>
+    ფონური აქტივობის კონტროლის გამორთვა (გირჩევთ) დამატებით დაიცავს აპლიკაციას სისტემის მიერ გაჩერებისგან ხანგრძლივი მუშაობის დროს.<br><br>
+
+<b>აპლიკაციაში გამოიყენება შემდეგი მონაცემთა ტიპების აღნიშვნები:</b> <br><br>
+<font color="#E040FB"><b> 5G </b></font> - აღნიშნავს NR (New Radio), 5G NSA, 5G SA <br>
+<font color="#2962FF"><b> 4G </b></font> - აღნიშნავს LTE, LTE (CA2), Evolved 3G (LTE) <br>
+<font color="#00C853"><b> 3G </b></font> - აღნიშნავს HSDPA, HSUPA, HSPA, EVDO_B, EHRPD, UMTS.<br>
+<font color="#E53935"><b> 2G </b></font> - აღნიშნავს EDGE, GPRS, CDMA, 1xRTT, IDEN.<br>
+<font color="#795548"><b> xG </b></font> - აღნიშნავს უცნობ ტიპს, რადგან მონაცემთა გადაცემა არაა ხელმისაწვდომი.<br><br>
+<b><font color="#43A047">RSRP&nbsp;&gt;&nbsp;&nbsp;-80&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-65&nbsp;=&nbsp;&nbsp;&nbsp;5</font></b><br>
+<b><font color="#7CB342">RSRP&nbsp;&gt;&nbsp;&nbsp;-90&nbsp;&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-75&nbsp;=&nbsp;&nbsp;&nbsp;4</font></b><br>
+<b><font color="#FBC02D">RSRP&nbsp;&gt;&nbsp;-100&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-85&nbsp;=&nbsp;&nbsp;&nbsp;3</font></b><br>
+<b><font color="#FB8C00">RSRP&nbsp;&gt;&nbsp;-110&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-95&nbsp;=&nbsp;&nbsp;&nbsp;2</font></b><br>
+<b><font color="#D32F2F">RSRP&nbsp;&gt;&nbsp;-120&nbsp;||&nbsp;RSSI&nbsp;&gt;&nbsp;-120&nbsp;=&nbsp;1</font></b><br><br>
+<b>მხარდაჭერილი როუტერები :</b><br>
+Keenetic | Netcraze<br>
+Cudy LT500 V2.0<br>
+TP-Link TL-MR150 v2<br>
+Huawei CPE B593s-22<br><br>
+<b>აპლიკაცია არ არის გაზომვის ინსტრუმენტი.</b><br>
+გრაფიკებზე გამოსახული მონაცემები გენერირებულია თქვენს მოწყობილობაზე მიღებული ინფორმაციის საფუძველზე. ისინი შეიძლება განსხვავდებოდეს რეალური მონაცემებისგან.<br><br>
+
+]]></string>
+
+    <string name="notice"><![CDATA[<br><br><b>ეს აპლიკაცია შეიცავს ღია კოდის ბიბლიოთეკებს და მესამე მხარის ბიბლიოთეკებს:</b><br><br>
+1. <b>MPAndroidChart</b> <a href="https://github.com/PhilJay/MPAndroidChart/">https://github.com/PhilJay/MPAndroidChart/</a><br>
+   ლიცენზირებულია Apache License, Version 2.0-ის მიხედვით.<br>
+   <b>ავტორი:</b> Philipp Jahoda (PhilJay)<br><br>
+2. <b>უფასო ანიმაცია მონაცემებისთვის</b> <a href="https://lottiefiles.com/free-animation/data-V8HWwl7oWO">https://lottiefiles.com/free-animation/data-V8HWwl7oWO</a><br>
+   ლიცენზირებულია Lottie Simple License (FL 9.13.21)-ით.<br>
+   <b>ავტორი:</b> Revital Cahani<br><br>
+3. <b>Lottie</b> <a href="https://github.com/airbnb/lottie-android">https://github.com/airbnb/lottie-android</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Airbnb, Inc. <br><br>
+4. <b>OkHttp</b> <a href="https://github.com/square/okhttp">https://github.com/square/okhttp</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+5. <b>Okio</b> <a href="https://github.com/square/okio">https://github.com/square/okio</a><br>
+   Licensed under the Apache License, Version 2.0<br>
+   <b>Copyright ©</b> Square, Inc. <br><br>
+]]></string>
+
+
+</resources>
