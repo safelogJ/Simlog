@@ -1,3 +1,7 @@
+[![Google Play](https://img.shields.io/badge/Google_Play-000000?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.safelogj.simlog)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/playlist?list=PL5Ch75WcmOXSz-TVd8ihTaQO3eE4FP1MI)
+
+
 ## An application for tracking the history of mobile signal strength and data transmission type (internet). The app records the collected data (per minute) and creates a daily graph from it.
 
 With this app, you can compare how different SIM cards perform under identical conditions or simply check the signal status at any given time during the day.
