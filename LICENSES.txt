@@ -15,22 +15,37 @@ limitations under the License.
 The following libraries are used in this project:
 
 
-
-1. MPAndroidChart (https://github.com/PhilJay/MPAndroidChart/)
-
+1. MPAndroidChart
  Copyright 2020 Philipp Jahoda
+ Licensed under the Apache License, Version 2.0
+ https://github.com/PhilJay/MPAndroidChart/
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this software except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+   http://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+
+2.Lottie
+      Copyright © Airbnb, Inc.
+      Licensed under the Apache License, Version 2.0
+      https://github.com/airbnb/lottie-android
+
+3. OkHttp
+      Copyright © Square, Inc.
+      Licensed under the Apache License, Version 2.0
+      https://github.com/square/okhttp
+
+4. Okio
+      Copyright © Square, Inc.
+      Licensed under the Apache License, Version 2.0
+      https://github.com/square/okio
 
 
                                  Apache License
@@ -237,8 +252,10 @@ The following libraries are used in this project:
 
 
 
-2. Free data Animation (Lottie Simple License (FL 9.13.21))
+5. Free data Animation
    Licensed under the Lottie Simple License (FL 9.13.21)
+   Author: Revital Cahani
+   https://lottiefiles.com/free-animation/data-V8HWwl7oWO
 
 
 Lottie Simple License (FL 9.13.21)

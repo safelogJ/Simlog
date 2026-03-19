@@ -1,2 +1,199 @@
-The app collects data on the network signal level and the type of data transfer for each selected SIM card.
-And based on this data, it draws a graph.
+## An application for tracking the history of mobile signal strength and data transmission type (internet). The app records the collected data (per minute) and creates a daily graph from it.
+
+With this app, you can compare how different SIM cards perform under identical conditions or simply check the signal status at any given time during the day.
+The application is not a measurement tool.
+The data displayed on the graphs is generated based on information received from your device and may differ from actual values.
+All information about SIM card performance is stored locally on your phone in text files located in the app's folder. The data is not shared or transmitted anywhere.
+
+#### Data handled by the app:
+- Mobile network signal strength.
+- Type of data transmission.
+- Active SIM card slot number.
+- SIM card name.
+#### To access such information from your phone, the app requires permission to manage calls.
+
+The app functions as a background service, so for stable and long-term operation, it requires permission to display a persistent notification. It is also recommended to disable battery optimization for the app to ensure uninterrupted activity tracking.
+
+#### Supported routers :
+
+🔹 Keenetic | Netcraze
+
+🔹 Cudy — LT500 V2.0
+
+🔹 TP-Link — TL-MR150 v2
+
+🔹 Huawei CPE B593s-22
+
+### With this app, you can also display a graph of the signal level and internet type of your MikroTik router with an LTE modem by following this guide.
+![Simlog](./simlogNew5.png)
+
+#### The script has been tested on hAP ac³ LTE6 RouterOS 7.20.4, modem firmware R11e-LTE6_V039.
+#### Your router must have the email tool configured (/tool/email).
+
+#### 1. Add a scheduler using terminal command:
+```bash
+ /system/scheduler/add name=simlogger start-time=startup interval=00:00:55 on-event=simlogger
+ ```
+#### 2. Create a script named simlogger and add the following code.
+Don't forget to specify your email in the script:
+```bash
+:local toEmail "you@mail.net"
+:local MAXMINUTE 1438
+:local id [/system/identity/get name]
+
+:local lteData [/interface/lte print as-value]
+:local ifaceName ""
+:if ([:len $lteData] > 0) do={
+    :set ifaceName ([:pick $lteData 0]->"name")
+} else={
+    :quit
+}
+
+:global LTELog
+:if ([:len $LTELog] = 0) do={ :set LTELog "" }
+
+:local t [/system/clock/get time]
+:local hh [:tonum [:pick $t 0 2]]
+:local mi [:tonum [:pick $t 3 5]]
+:local minute (($hh * 60) + $mi)
+
+:local mon [/interface/lte monitor $ifaceName once as-value]
+
+:local techRaw ""
+:if ([:len ($mon->"access-technology")] > 0) do={
+    :set techRaw ($mon->"access-technology")
+} else={
+    :if ([:len ($mon->"data-class")] > 0) do={
+        :set techRaw ($mon->"data-class")
+    }
+}
+
+:local techMap {
+    "LTE"="4G"; "LTE-A"="4G"; "LTE CA"="4G"; "LTE (CA)"="4G"; "LTE (CA2)"="4G"; "E-UTRAN"="4G"; 
+    "Evolved 3G (LTE)"="4G"; "Evolved 3G (LTE CA2)"="4G";
+    "LTE (CA3)"="4G"; "Evolved 3G (LTE CA3)"="4G";
+    "NR5G"="5G"; "5G"="5G"; "NR"="5G"; "5G NSA"="5G"; "5G SA"="5G";
+    "3G"="3G"; "WCDMA"="3G"; "UTRAN"="3G"; "HSPA"="3G"; "HSPA+"="3G";
+    "HSUPA"="3G"; "3G HSUPA"="3G"; "HSDPA"="3G";
+    "HSDPA & HSUPA"="3G"; "HSDPS & HSUPA"="3G";
+    "3G HSDPA & HSUPA"="3G"; "3G HSDPS & HSUPA"="3G";
+    "3G HSPA+"="3G"; "3G HSDPA"="3G";
+    "GSM"="2G"; "GPRS"="2G"; "EDGE"="2G"; "EGPRS"="2G"; "GSM compact"="2G";
+    "GSM EGPRS"="2G"; "GSM GPRS"="2G"; "GSM EDGE"="2G"
+}
+
+:local tech "xG"
+:if ([:len ($techMap->$techRaw)] > 0) do={
+    :set tech ($techMap->$techRaw)
+}
+
+:local lvl -1
+:local rsrpStr ""
+
+:if ([:len ($mon->"rsrp")] > 0) do={
+    :set rsrpStr ($mon->"rsrp")
+} else={
+    :if ([:len ($mon->"primary-rsrp")] > 0) do={
+        :set rsrpStr ($mon->"primary-rsrp")
+    }
+}
+
+:local rsrp -140
+:if ([:len $rsrpStr] > 0) do={
+    :local L [:len $rsrpStr]
+    :if ($L > 3 && [:pick $rsrpStr ($L-3) $L] = "dBm") do={
+        :set rsrp [:tonum [:pick $rsrpStr 0 ($L-3)]]
+    } else={
+        :set rsrp [:tonum $rsrpStr]
+    }
+}
+
+:if ($rsrp > -120) do={
+    :if ($rsrp > -80) do={:set lvl 4} else={
+        :if ($rsrp > -90) do={:set lvl 3} else={
+            :if ($rsrp > -100) do={:set lvl 2} else={
+                :if ($rsrp > -110) do={:set lvl 1} else={
+                    :set lvl 0
+                }
+            }
+        }
+    }
+} else={
+  :local rssiStr ""
+  :if ([:len ($mon->"signal-strength")] > 0) do={
+      :set rssiStr ($mon->"signal-strength")
+  } else={
+      :if ([:len ($mon->"rssi")] > 0) do={
+          :set rssiStr ($mon->"rssi")
+      }
+  }
+
+  :local rssi -140
+  :if ([:len $rssiStr] > 0) do={
+      :local L [:len $rssiStr]
+      :if ($L > 3 && [:pick $rssiStr ($L-3) $L] = "dBm") do={
+          :set rssi [:tonum [:pick $rssiStr 0 ($L-3)]]
+      } else={
+          :set rssi [:tonum $rssiStr]
+      }
+  }
+
+  :if ($rssi > -65) do={:set lvl 4} else={
+      :if ($rssi > -75) do={:set lvl 3} else={
+          :if ($rssi > -85) do={:set lvl 2} else={
+              :if ($rssi > -95) do={:set lvl 1} else={
+                  :if ($rssi > -120) do={:set lvl 0}
+              }
+          }
+      }
+  }
+}
+
+:global LTELog
+:global LTEFileName
+:local line ($minute . "," . $tech . "," . $lvl)
+
+:if ($minute < $MAXMINUTE) do={
+    :if ([:len $LTELog] = 0) do={
+        :set LTELog $line
+    } else={
+        :set LTELog ($LTELog . "\r\n" . $line)
+    }
+} else={
+    :local dateStr [/system/clock/get date]
+    :set LTEFileName ($id . "_" . $dateStr . ".txt")
+    :if ([:len $LTEFileName] > 0) do={
+        :local oldFile [/file find name=$LTEFileName]
+        :if ([:len $oldFile] > 0) do={
+            /file remove $oldFile
+        }
+    }
+    :if ([:len $LTELog] > 0) do={
+        /file add name=$LTEFileName contents=$LTELog
+        /tool e-mail send to=$toEmail subject=("LTE Log for " . $dateStr . " (" . $id . ")") file=$LTEFileName
+        :set LTELog ""
+    }
+}
+```
+This script queries the LTE modem every 55 seconds for signal level and connection type, and stores the data in a global variable.
+- At 23:58, it sends the collected daily statistics to your email as a file.
+- At 23:59, it deletes the file from the router after sending it.
+
+#### The filename will consist of the router’s Identity and the current date. You must put this file to your phone in the folder: /Android/data/com.safelogj.simlog/files/ and then open it in the app.
+
+⚠️ If your SIM card has internet access but the graph shows an unknown network type (brown color,  type “xG”)
+the script may not recognize your Access Technology.
+Please check LTE interface → Cellular tab → Access Technology in WinBox and compare it with the values in the script:
+
+NR5G, 5G, NR, 5G NSA, 5G SA,
+LTE, LTE-A, LTE CA, LTE (CA), LTE (CA2), E-UTRAN, Evolved 3G (LTE), Evolved 3G (LTE CA2), LTE (CA3), Evolved 3G (LTE CA3),
+3G, WCDMA, UTRAN, HSPA, HSPA+, HSUPA, 3G HSUPA, HSDPA, HSDPA & HSUPA, HSDPS & HSUPA, 3G HSDPA & HSUPA, 3G HSDPS & HSUPA, 3G HSPA+, 3G HSDPA,
+GSM, GPRS, EDGE, EGPRS, GSM compact, GSM EGPRS, GSM GPRS, GSM EDGE
+
+#### If your value is missing, please report it to simlog-app@yandex.ru
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
