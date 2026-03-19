@@ -5,4 +5,4 @@ An app for recording SIM card signal strength and data transfer (internet) histo
 🔹 Cudy — LT500 V2.0
 🔹 TP-Link — TL-MR150 v2
 🔹 Huawei — CPE B593s-22
-🔹 Huawei E3372h-320
+🔹 Huawei — E3372h-320
