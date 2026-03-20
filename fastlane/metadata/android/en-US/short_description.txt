@@ -1,1 +1,1 @@
-Saving and displaying signal history and data transfer types for SIM cards in smartphones and routers.
+App saving and displaying signal history and data transfer types for SIM cards in smartphones and routers.
