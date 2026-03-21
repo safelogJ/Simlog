@@ -467,7 +467,9 @@ public class AppController extends Application {
 
     private byte[] encrypt(byte[] dataBytes) throws Exception {
         SecretKey secretKey = getOrCreateSecretKey();
-       // Cipher cipher = Cipher.getInstance(TRANSFORMATION);
+        if (mCipher == null) {
+            mCipher = Cipher.getInstance(TRANSFORMATION);
+        }
         mCipher.init(Cipher.ENCRYPT_MODE, secretKey);
 
         byte[] iv = mCipher.getIV();
