@@ -9,9 +9,7 @@ import android.widget.EditText;
 import com.safelogj.simlog.R;
 
 public class PassFieldListener implements View.OnTouchListener {
-
     private boolean isPasswordVisible = false;
-
 
     @Override
     public boolean onTouch(View v, MotionEvent event) {
@@ -27,26 +25,27 @@ public class PassFieldListener implements View.OnTouchListener {
                 int drawableWidth = drawableEnd.getBounds().width();
 
                 if (x >= (width - paddingEnd - drawableWidth)) {
-                    // 👇 сообщаем системе, что это клик
-                    v.performClick();
+                    // 1. Принудительно просим фокус для этого поля,
+                    // чтобы курсор в другом поле исчез корректно
+                    editText.requestFocus();
 
                     isPasswordVisible = !isPasswordVisible;
 
                     if (isPasswordVisible) {
                         editText.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-                        editText.setCompoundDrawablesRelativeWithIntrinsicBounds(
-                                0, 0, R.drawable.visibility_20px, 0
-                        );
+                        editText.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.visibility_20px, 0);
                     } else {
                         editText.setTransformationMethod(PasswordTransformationMethod.getInstance());
-                        editText.setCompoundDrawablesRelativeWithIntrinsicBounds(
-                                0, 0, R.drawable.visibility_off_20px, 0
-                        );
+                        editText.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.visibility_off_20px, 0);
                     }
 
+                    // 2. Ставим курсор в конец (теперь, когда фокус точно здесь, это безопасно)
                     editText.setSelection(editText.getText().length());
-                    editText.invalidate();
-                    return true;
+
+                    // 3. Сообщаем системе, что мы нажали на иконку
+                    v.performClick();
+
+                    return true; // Здесь оставляем true, так как по иконке мы попали
                 }
             }
         }
