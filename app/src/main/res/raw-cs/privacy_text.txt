@@ -1,4 +1,4 @@
-<br><br><b><a href="https://github.com/safelogJ/Simlog/blob/master/privacy/privacy_cs">Zásady ochrany osobních údajů pro Simlog</a></b><br><br>
+<br><br><b><a href="https://github.com/safelogJ/Simlog/blob/master/privacy/privacy_cs.txt">Zásady ochrany osobních údajů pro Simlog</a></b><br><br>
 
 Zásady ochrany osobních údajů<br>
 Poslední aktualizace: 05. února 2026.<br><br>
