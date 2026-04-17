@@ -23,7 +23,7 @@ public class RouterCookieJar implements CookieJar {
             mCookieList.addAll(cookies);
          //   Log.d(AppController.LOG_TAG, "Сохранены новые куки: " + cookies.size());
             for (Cookie c : cookies) {
-         //       Log.d(AppController.LOG_TAG, "сохранены Cookie: " + c.name() + "=" + c.value());
+             //   Log.d(AppController.LOG_TAG, "сохранены Cookie: " + c.name() + "=" + c.value());
             }
         }
     }
@@ -31,7 +31,10 @@ public class RouterCookieJar implements CookieJar {
     @NonNull
     @Override
     public synchronized List<Cookie> loadForRequest(@NonNull HttpUrl url) {
-      //  Log.d(AppController.LOG_TAG, "Запрошены куки для : " + url);
+        // Log.d(AppController.LOG_TAG, "Запрошены куки для : " + url);
+        for (Cookie c : mCookieList) {
+          //  Log.d(AppController.LOG_TAG, "отправлены Cookie: " + c.name() + "=" + c.value());
+        }
         return mCookieList;
     }
 

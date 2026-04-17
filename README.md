@@ -28,6 +28,10 @@ The app functions as a background service, so for stable and long-term operation
 
 🔹 Huawei CPE B593s-22
 
+🔹 Huawei E3372h-320
+
+🔹 Huawei B535-232a
+
 ### With this app, you can also display a graph of the signal level and internet type of your MikroTik router with an LTE modem by following this guide.
 ![Simlog](./simlogNew5.png)
 

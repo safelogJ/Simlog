@@ -3,7 +3,9 @@ package com.safelogj.simlog.collecting;
 import android.util.Log;
 
 import com.safelogj.simlog.AppController;
+import com.safelogj.simlog.routers.LoggingInterceptor;
 import com.safelogj.simlog.routers.cudy.CudyLT500Manager;
+import com.safelogj.simlog.routers.huawei.HuaweiManagerB535a232a;
 import com.safelogj.simlog.routers.huawei.HuaweiManagerB593s;
 import com.safelogj.simlog.routers.huawei.HuaweiManagerE3372h320;
 import com.safelogj.simlog.routers.keenetic.KeeneticManagerCdc;
@@ -37,7 +39,8 @@ public class SimCardDataRouter extends SimCardData {
             new HuaweiManagerB593s(),
             new CudyLT500Manager(),
             new TpLinkMr150Manager(),
-            new HuaweiManagerE3372h320()
+            new HuaweiManagerE3372h320(),
+            new HuaweiManagerB535a232a()
     };
 
     private static final CellDataUpdatable KEENETIC_CUSTOM_CMD_MANAGER = new KeeneticManagerCustomCmd();
@@ -55,7 +58,7 @@ public class SimCardDataRouter extends SimCardData {
             .readTimeout(5, TimeUnit.SECONDS)    // Время на ожидание ответа от роутера
             .callTimeout(FULL_TIMEOUT, TimeUnit.SECONDS) // Общее время на весь запрос с ответом, чтоб не переподключалось много раз
             .retryOnConnectionFailure(true)
-           //  .addInterceptor(new LoggingInterceptor())
+          //   .addInterceptor(new LoggingInterceptor())
             .cookieJar(new RouterCookieJar()).build();
     private volatile CellDataUpdatable routerManager;
 

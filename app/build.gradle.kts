@@ -6,14 +6,14 @@ plugins {
 
 configure <ApplicationExtension> {
     namespace = "com.safelogj.simlog"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.safelogj.simlog"
         minSdk = 29
-        targetSdk = 36
-        versionCode = 62
-        versionName = "3.0.5"
+        targetSdk = 37
+        versionCode = 63
+        versionName = "3.0.6"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
